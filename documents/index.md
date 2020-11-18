@@ -3,6 +3,8 @@
 This is a wiki for gathering and sharing information about
 [Anki Vector](https://www.anki.com/en-us/vector) 
 
+[PDF version](https://randym32.github.io/Anki.Vector.Documents/Vector-Wiki.pdf)
+
 ## Personalizing Vector
 This is for notes on how to customize or personalize Vector.
 You may have to consult the How-To's below.
@@ -62,7 +64,8 @@ PC/Mobile SDK (HTTPS API)
 
 - Python Communication SDK: [Vector - Python SDK](https://github.com/ikkez/vector-python-sdk)
 - C# Communication SDK: [Anki.Vector.SDK](https://github.com/codaris/Anki.Vector.SDK)
-- C# [Anki.Resources.SDK](https://github.com/randym32/Anki.Resources.SDK)
+- C# [Anki.Vector.WebVizSDK](https://github.com/randym32/Anki.Vector.WebVizSDK) to access the WebViz related information in developer builds.
+- C# [Anki.Resources.SDK](https://github.com/randym32/Anki.Resources.SDK) to access, analyze local (that is, on your computer) copies of the Vectors' application resources/assets
 
 - See the SDK examples
 
