@@ -10,18 +10,18 @@ from github or other git repository.
 It has enough to sketch out the idea, but it isn't complete.
 
 The thought is after shaking out the prototype is to put this into an main project github
-repo (like gooey), and build the docs for project-victor.org from there. Possibly using a
-script that checks for git repo changes.?
+repo (like https://github.com/GooeyChickenman/victor), and build the docs for project-victor.org
+from there. Possibly using a script that checks for git repo changes.?
 The documentation git repo can be forked ad infinitum, and changes -- such as those with lots
 of files --  can be sent upstream with pull requrests.
 The contributions folder wll describes how this works, as we shake it out..
 
 One thing to decide is what the main project github repo will be:
 
-* gooey has been a good goto place.
-* The drawback is that Gooey has the problem that only a few people have access to contribute
-or approve directly, and we can't authorize people.  Ideally we could expand the approvers,
-contributers so that any changes go smoothly, with little bottleneck.
+* https://github.com/GooeyChickenman/victor has been a good goto place.
+* The drawback is that https://github.com/GooeyChickenman/victor has the problem that only
+  a few people have access to contribute or approve directly, and we can't authorize people.
+  Ideally we could expand the approvers, contributers so that any changes go smoothly, with little bottleneck.
 
 (Todo need to ensure it places nice with rest of site)
 

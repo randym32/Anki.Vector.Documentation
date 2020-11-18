@@ -1,0 +1,68 @@
+site_name: Vector Documentation
+copyright: Copyright &copy; 2019-2020 Randall Maas and team
+repo_url: hhttps://github.com/randym32/Anki.Vector.Documentation
+repo_name: Vector Community Documents
+edit_uri: edit/master/documents/
+
+theme:
+  name: material
+  custom_dir: theme
+  features:
+    - search.suggest
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+
+use_directory_urls: false
+markdown_extensions:
+  - toc:
+      permalink: true
+  - meta
+
+docs_dir: documents
+extra:
+  generator: false
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      prebuild_index: true
+  - localsearch
+  - with-pdf:
+        author: Randall Maas & the Project Victor contributors 
+        copyright: Copyright 2019-2020 Project Victor contributors 
+        #
+        #cover: false
+        #back_cover: true
+        #cover_title: TITLE TEXT
+        cover_subtitle: 
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+        #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        output_path: Vector-Wiki.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
