@@ -1,0 +1,5 @@
+Changes to to the code support more audio customization
+The audio event names are listed in the code.  That is, there is a procedure that maps a hash to the AK audio event name.
+This is included several times (which is redundant).
+This seems like it could be made separate file, to allow updating with
+out rebuilding code.

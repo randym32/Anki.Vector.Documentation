@@ -1,0 +1,24 @@
+Ideas on a scripting language for Vector behavior
+
+When the user says $X-list
+    $XList := $X
+    $XList := $X ‘,’ $XList
+    $X ::= intent name
+    #X ::=’”’ phrase ‘”’ map to intent name
+
+This could be a list of intents; mapped to a respondToUserIntents
+
+
+    animations::= animation
+    animations::=‘(‘ animation-list ‘)’
+    animation-list := animation
+    animation-list := animation ‘,’ animation-list
+
+This produces a list of animation names
+
+    rsequence::= randomized-animation
+    rsequence::= randomized-animation ‘,’ rsequence
+    randomized-animation ::=  [animations]{min,max}
+
+the randomized-animation becomes a DancePhraseConfig
+

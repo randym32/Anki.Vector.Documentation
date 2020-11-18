@@ -1,0 +1,23 @@
+#How to trace what is sent over a link or calls using GDB
+
+Start gdb and attach to the process of interest.
+Add the following scripted breakpoints:
+
+break write
+command
+silent
+printf "%d bytes\n", $r2
+x/80c $r1
+continue
+end
+
+break read
+command
+silent
+finish
+printf "%d bytes\n", $r2
+x/72c $r1
+continue
+end
+
+set pagination off

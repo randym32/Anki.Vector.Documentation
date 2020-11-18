@@ -1,0 +1,4758 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Console variables - Vector Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#console-variables" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="Vector Documentation" class="md-header-nav__button md-logo" aria-label="Vector Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Vector Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Console variables
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="hhttps://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+  
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    Vector Documentation
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+<a href="hhttps://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Vector Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/CONTRIBUTING_template.html" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/code_of_conduct.html" class="md-nav__link">
+      Contributor Covenant Code of Conduct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Customization%2C%20personalization.html" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Nose%20art.html" class="md-nav__link">
+      Nose Art Showcase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Document templates
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document templates" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Document templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/VEP-template.html" class="md-nav__link">
+      VEP Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/how-to.html" class="md-nav__link">
+      How-to template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/template.html" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      How to
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        How to
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/GDB%20tracing.html" class="md-nav__link">
+      How to trace calls using GDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Paper%20dolls.html" class="md-nav__link">
+      Making paper dolls for Vector to play with
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Using%20AudioKinetic%20WWise%20to%20convert%20sound%20files%20to%20WEM.html" class="md-nav__link">
+      Using AudioKinetic WWise to convert the sound files to WEM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Service
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Service" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Exploded%20View.html" class="md-nav__link">
+      Exploded View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Parts%20kits.html" class="md-nav__link">
+      Parts kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    <label class="md-nav__link" for="nav-7">
+      Software design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software design" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Software design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Animation%20triggers.html" class="md-nav__link">
+      Animation Triggers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20IDs.html" class="md-nav__link">
+      Behaviour IDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Console variables
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="Console%20variables.html" class="md-nav__link md-nav__link--active">
+      Console variables
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#console-variables" class="md-nav__link">
+    Console Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Console Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ab-testing-console-variables" class="md-nav__link">
+    A/B Testing console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aiwhiteboard-console-variables" class="md-nav__link">
+    AIWhiteboard console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alexa-console-variables" class="md-nav__link">
+    Alexa console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alexainit-console-variables" class="md-nav__link">
+    Alexa.Init console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alexamessaging-console-variables" class="md-nav__link">
+    Alexa.Messaging console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-console-variables" class="md-nav__link">
+    Animation console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationstreamer-console-variables" class="md-nav__link">
+    AnimationStreamer console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationstreamersystem-console-variables" class="md-nav__link">
+    AnimationStreamer.System console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audioanimationstream-console-variables" class="md-nav__link">
+    Audio.AnimationStream console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audiokeepalive-console-variables" class="md-nav__link">
+    Audio.KeepAlive console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audiomicrophone-console-variables" class="md-nav__link">
+    Audio.Microphone console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audioprocedural-console-variables" class="md-nav__link">
+    Audio.Procedural console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backpacklights-console-variables" class="md-nav__link">
+    BackpackLights console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basicactionsturntowardsobject-console-variables" class="md-nav__link">
+    BasicActions.TurnTowardsObject console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorbehaviorgohome-console-variables" class="md-nav__link">
+    Behavior.BehaviorGoHome console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorcheckforandreacttosalientpoint-console-variables" class="md-nav__link">
+    Behavior.CheckForAndReactToSalientPoint console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorcountinganimation-console-variables" class="md-nav__link">
+    BehaviorCountingAnimation console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviordancetothebeatcoordinator-console-variables" class="md-nav__link">
+    BehaviorDanceToTheBeatCoordinator console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorsbehaviorsystemmanager-console-variables" class="md-nav__link">
+    Behaviors.BehaviorSystemManager console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorenrollface-console-variables" class="md-nav__link">
+    Behavior.EnrollFace console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorexploring-console-variables" class="md-nav__link">
+    BehaviorExploring console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorhighlevelai-console-variables" class="md-nav__link">
+    BehaviorHighLevelAI console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorinteractwithfaces-console-variables" class="md-nav__link">
+    Behavior.InteractWithFaces console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorinternalstatesbehavior-console-variables" class="md-nav__link">
+    Behavior.InternalStatesBehavior console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorlookaroundinplace-console-variables" class="md-nav__link">
+    Behavior.LookAroundInPlace console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorplannertest-console-variables" class="md-nav__link">
+    BehaviorPlannerTest console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorputdownblock-console-variables" class="md-nav__link">
+    Behavior.PutDownBlock console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorpuzzlemaze-console-variables" class="md-nav__link">
+    Behavior.PuzzleMaze console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorreacttocliff-console-variables" class="md-nav__link">
+    Behavior.ReactToCliff console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorreacttohand-console-variables" class="md-nav__link">
+    Behavior.ReactToHand console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorreacttopalmedge-console-variables" class="md-nav__link">
+    Behavior.ReactToPalmEdge console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviortakeaphoto-console-variables" class="md-nav__link">
+    Behavior.TakeAPhoto console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-console-variables" class="md-nav__link">
+    Console console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpuprofiler-console-variables" class="md-nav__link">
+    CpuProfiler console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cubelightdesign-console-variables" class="md-nav__link">
+    CubeLightDesign console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cubespinner-console-variables" class="md-nav__link">
+    CubeSpinner console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-console-variables" class="md-nav__link">
+    Dev console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devbasebehavior-console-variables" class="md-nav__link">
+    DevBaseBehavior console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devsquawkboxbehavior-console-variables" class="md-nav__link">
+    DevSquawkBoxBehavior console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devviewlights-console-variables" class="md-nav__link">
+    DevViewLights console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockingmethodb0-t1-h2-console-variables" class="md-nav__link">
+    DockingMethod(B:0 T:1 H:2) console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockingtest-console-variables" class="md-nav__link">
+    DockingTest console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivetoactions-console-variables" class="md-nav__link">
+    DriveToActions console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facekeepalive-console-variables" class="md-nav__link">
+    Face.KeepAlive console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habitat-console-variables" class="md-nav__link">
+    Habitat console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trackingactions-console-variables" class="md-nav__link">
+    TrackingActions console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceparameterizedface-console-variables" class="md-nav__link">
+    Face.ParameterizedFace console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walltime-console-variables" class="md-nav__link">
+    WallTime console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facescanlinedistortion-console-variables" class="md-nav__link">
+    Face.ScanlineDistortion console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceinfoscreenmanager-console-variables" class="md-nav__link">
+    FaceInfoScreenManager console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glitchlights-console-variables" class="md-nav__link">
+    GlitchLights console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heldinpalmcoordinator-console-variables" class="md-nav__link">
+    HeldInPalm.Coordinator console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kwebvizupdateperiod-console-variables" class="md-nav__link">
+    kWebvizUpdatePeriod console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liftloadtest-console-variables" class="md-nav__link">
+    LiftLoadTest console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manualanimationplayback-console-variables" class="md-nav__link">
+    ManualAnimationPlayback console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micdata-console-variables" class="md-nav__link">
+    MicData console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-console-variables" class="md-nav__link">
+    Network console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networkemulator-console-variables" class="md-nav__link">
+    Network.Emulator console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networkstats-console-variables" class="md-nav__link">
+    Network.Stats console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatediskinfo-console-variables" class="md-nav__link">
+    OSState.DiskInfo console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatememoryinfo-console-variables" class="md-nav__link">
+    OSState.MemoryInfo console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatetemperature-console-variables" class="md-nav__link">
+    OSState.Temperature console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatetimezone-console-variables" class="md-nav__link">
+    OSState.Timezone console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatewifiinfo-console-variables" class="md-nav__link">
+    OSState.WifiInfo console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizer-console-variables" class="md-nav__link">
+    SpeechRecognizer console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizeralexa-console-variables" class="md-nav__link">
+    SpeechRecognizer.Alexa console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizeralexplayback-console-variables" class="md-nav__link">
+    SpeechRecognizer.AlexPlayback console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizervector-console-variables" class="md-nav__link">
+    SpeechRecognizer.Vector console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stayoncargeruntilcharged-console-variables" class="md-nav__link">
+    StayOnCargerUntilCharged console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texttospeech-console-variables" class="md-nav__link">
+    TextToSpeech console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visiongazedirection-console-variables" class="md-nav__link">
+    Vision.GazeDirection console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voicemessage-console-variables" class="md-nav__link">
+    VoiceMessage console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walltime-console-variables_1" class="md-nav__link">
+    WallTime console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-yet-classified" class="md-nav__link">
+    Not Yet Classified
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="channels.html" class="md-nav__link">
+      Channels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="classes.html" class="md-nav__link">
+      Software Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="files.html" class="md-nav__link">
+      Source File referenced in the binaries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Vector enhancement proposals
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vector enhancement proposals" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Vector enhancement proposals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/Overview.html" class="md-nav__link">
+      Vector Enhancement Proposals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP1%20-%20Update-engine%20changes.html" class="md-nav__link">
+      VEP1 - Update-engine changes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html" class="md-nav__link">
+      VEP2 - Package management for modules on Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP3%20-%20Developer%20configurations%20for%20robot.html" class="md-nav__link">
+      VEP3 - Developer configurations for robot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP4%20-%20Logging.html" class="md-nav__link">
+      VEP4 - Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+
+  <!-- Further information -->
+      <!-- Copyright and theme information -->
+        
+          <div style="font-size:60%;" xclass="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Randall Maas and team
+          </div>
+        
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#console-variables" class="md-nav__link">
+    Console Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Console Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ab-testing-console-variables" class="md-nav__link">
+    A/B Testing console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aiwhiteboard-console-variables" class="md-nav__link">
+    AIWhiteboard console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alexa-console-variables" class="md-nav__link">
+    Alexa console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alexainit-console-variables" class="md-nav__link">
+    Alexa.Init console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alexamessaging-console-variables" class="md-nav__link">
+    Alexa.Messaging console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-console-variables" class="md-nav__link">
+    Animation console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationstreamer-console-variables" class="md-nav__link">
+    AnimationStreamer console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animationstreamersystem-console-variables" class="md-nav__link">
+    AnimationStreamer.System console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audioanimationstream-console-variables" class="md-nav__link">
+    Audio.AnimationStream console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audiokeepalive-console-variables" class="md-nav__link">
+    Audio.KeepAlive console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audiomicrophone-console-variables" class="md-nav__link">
+    Audio.Microphone console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audioprocedural-console-variables" class="md-nav__link">
+    Audio.Procedural console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backpacklights-console-variables" class="md-nav__link">
+    BackpackLights console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basicactionsturntowardsobject-console-variables" class="md-nav__link">
+    BasicActions.TurnTowardsObject console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorbehaviorgohome-console-variables" class="md-nav__link">
+    Behavior.BehaviorGoHome console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorcheckforandreacttosalientpoint-console-variables" class="md-nav__link">
+    Behavior.CheckForAndReactToSalientPoint console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorcountinganimation-console-variables" class="md-nav__link">
+    BehaviorCountingAnimation console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviordancetothebeatcoordinator-console-variables" class="md-nav__link">
+    BehaviorDanceToTheBeatCoordinator console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorsbehaviorsystemmanager-console-variables" class="md-nav__link">
+    Behaviors.BehaviorSystemManager console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorenrollface-console-variables" class="md-nav__link">
+    Behavior.EnrollFace console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorexploring-console-variables" class="md-nav__link">
+    BehaviorExploring console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorhighlevelai-console-variables" class="md-nav__link">
+    BehaviorHighLevelAI console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorinteractwithfaces-console-variables" class="md-nav__link">
+    Behavior.InteractWithFaces console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorinternalstatesbehavior-console-variables" class="md-nav__link">
+    Behavior.InternalStatesBehavior console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorlookaroundinplace-console-variables" class="md-nav__link">
+    Behavior.LookAroundInPlace console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorplannertest-console-variables" class="md-nav__link">
+    BehaviorPlannerTest console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorputdownblock-console-variables" class="md-nav__link">
+    Behavior.PutDownBlock console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorpuzzlemaze-console-variables" class="md-nav__link">
+    Behavior.PuzzleMaze console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorreacttocliff-console-variables" class="md-nav__link">
+    Behavior.ReactToCliff console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorreacttohand-console-variables" class="md-nav__link">
+    Behavior.ReactToHand console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviorreacttopalmedge-console-variables" class="md-nav__link">
+    Behavior.ReactToPalmEdge console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviortakeaphoto-console-variables" class="md-nav__link">
+    Behavior.TakeAPhoto console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-console-variables" class="md-nav__link">
+    Console console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpuprofiler-console-variables" class="md-nav__link">
+    CpuProfiler console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cubelightdesign-console-variables" class="md-nav__link">
+    CubeLightDesign console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cubespinner-console-variables" class="md-nav__link">
+    CubeSpinner console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-console-variables" class="md-nav__link">
+    Dev console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devbasebehavior-console-variables" class="md-nav__link">
+    DevBaseBehavior console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devsquawkboxbehavior-console-variables" class="md-nav__link">
+    DevSquawkBoxBehavior console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devviewlights-console-variables" class="md-nav__link">
+    DevViewLights console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockingmethodb0-t1-h2-console-variables" class="md-nav__link">
+    DockingMethod(B:0 T:1 H:2) console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockingtest-console-variables" class="md-nav__link">
+    DockingTest console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivetoactions-console-variables" class="md-nav__link">
+    DriveToActions console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facekeepalive-console-variables" class="md-nav__link">
+    Face.KeepAlive console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habitat-console-variables" class="md-nav__link">
+    Habitat console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trackingactions-console-variables" class="md-nav__link">
+    TrackingActions console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceparameterizedface-console-variables" class="md-nav__link">
+    Face.ParameterizedFace console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walltime-console-variables" class="md-nav__link">
+    WallTime console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facescanlinedistortion-console-variables" class="md-nav__link">
+    Face.ScanlineDistortion console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceinfoscreenmanager-console-variables" class="md-nav__link">
+    FaceInfoScreenManager console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glitchlights-console-variables" class="md-nav__link">
+    GlitchLights console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heldinpalmcoordinator-console-variables" class="md-nav__link">
+    HeldInPalm.Coordinator console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kwebvizupdateperiod-console-variables" class="md-nav__link">
+    kWebvizUpdatePeriod console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liftloadtest-console-variables" class="md-nav__link">
+    LiftLoadTest console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manualanimationplayback-console-variables" class="md-nav__link">
+    ManualAnimationPlayback console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micdata-console-variables" class="md-nav__link">
+    MicData console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-console-variables" class="md-nav__link">
+    Network console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networkemulator-console-variables" class="md-nav__link">
+    Network.Emulator console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networkstats-console-variables" class="md-nav__link">
+    Network.Stats console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatediskinfo-console-variables" class="md-nav__link">
+    OSState.DiskInfo console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatememoryinfo-console-variables" class="md-nav__link">
+    OSState.MemoryInfo console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatetemperature-console-variables" class="md-nav__link">
+    OSState.Temperature console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatetimezone-console-variables" class="md-nav__link">
+    OSState.Timezone console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osstatewifiinfo-console-variables" class="md-nav__link">
+    OSState.WifiInfo console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizer-console-variables" class="md-nav__link">
+    SpeechRecognizer console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizeralexa-console-variables" class="md-nav__link">
+    SpeechRecognizer.Alexa console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizeralexplayback-console-variables" class="md-nav__link">
+    SpeechRecognizer.AlexPlayback console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognizervector-console-variables" class="md-nav__link">
+    SpeechRecognizer.Vector console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stayoncargeruntilcharged-console-variables" class="md-nav__link">
+    StayOnCargerUntilCharged console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texttospeech-console-variables" class="md-nav__link">
+    TextToSpeech console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visiongazedirection-console-variables" class="md-nav__link">
+    Vision.GazeDirection console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voicemessage-console-variables" class="md-nav__link">
+    VoiceMessage console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walltime-console-variables_1" class="md-nav__link">
+    WallTime console variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-yet-classified" class="md-nav__link">
+    Not Yet Classified
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="edit/master/documents/software-design/Console variables.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Console variables</h1>
+                
+                
+                <h2 id="console-variables">Console Variables<a class="headerlink" href="#console-variables" title="Permanent link">&para;</a></h2>
+<p>Console Variables are part of the developer build.
+They allow the developer to test, diagnose, and tweak (inject data into) the various modules.</p>
+<p>This note is to help gather a description of each of console variables.
+This format lets us gather information on them, and help understand where they
+fit in.</p>
+<p>These tables are not suitable for the TRM at this time; they may go better in
+the software design description in the future.</p>
+<p>Note: the k seems to be dropped or optional in matching</p>
+<h3 id="ab-testing-console-variables">A/B Testing console variables<a class="headerlink" href="#ab-testing-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kForceDisableABTesting</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="aiwhiteboard-console-variables">AIWhiteboard console variables<a class="headerlink" href="#aiwhiteboard-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kBW_PossibleObjectClose_mm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alexa-console-variables">Alexa console variables<a class="headerlink" href="#alexa-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kAcousticTestMode</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kAlexaEnabledInAU</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kAlexaEnabledInUK</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kAlexaHackCheckForSystemClockSyncPeriod_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kAlexaIdleDelay_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kAlexaMaxIdleDelay_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kAllowAudioOnCharger</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kDEV_ONLY_EnableAlexaTemplateRendererStub</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kLogAlexaDirectives</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kNotchPower</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alexainit-console-variables">Alexa.Init console variables<a class="headerlink" href="#alexainit-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDumpAlexaTriggerAudio</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alexamessaging-console-variables">Alexa.Messaging console variables<a class="headerlink" href="#alexamessaging-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kLogAlexaMessages</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kStealAlexaWakewordAudio</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="animation-console-variables">Animation console variables<a class="headerlink" href="#animation-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kShouldPreCacheSprites</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kEyeDartFocusValue_pix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kIgnoreAnimWhitelist</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="animationstreamer-console-variables">AnimationStreamer console variables<a class="headerlink" href="#animationstreamer-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnableBackpackLightsTrack</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kShouldDisplayPlaybackTime</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="animationstreamersystem-console-variables">AnimationStreamer.System console variables<a class="headerlink" href="#animationstreamersystem-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDisplayCPUThrottling</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kDisplayHighTemperature</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kDisplayMemoryPressure</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kThermalAlertTemp_C</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="audioanimationstream-console-variables">Audio.AnimationStream console variables<a class="headerlink" href="#audioanimationstream-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kAudioAnimationOffset_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="audiokeepalive-console-variables">Audio.KeepAlive console variables<a class="headerlink" href="#audiokeepalive-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnableKeepAliveEyeBlinkAudioEvents</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kEnableKeepAliveEyeDartAudioEvents</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kEnableKeepAliveEyeSquintAudioEvents</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="audiomicrophone-console-variables">Audio.Microphone console variables<a class="headerlink" href="#audiomicrophone-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kNoiseFloorMin</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kNoiseFloorRange</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="audioprocedural-console-variables">Audio.Procedural console variables<a class="headerlink" href="#audioprocedural-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnableHeadProceduralMovement</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kEnableLiftProceduralMovement</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kEnableTreadProceduralMovement</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kHeadCoolDown_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kHeadMovementThreshold_rpms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kLiftCoolDown_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kLiftMovementThreshold_rpms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxHeadAccel_rpms2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxHeadSpeed_rpms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxLiftAccel_rpms2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxLiftSpeed_rpms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxTreadAccel_mmpms2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxTreadSpeed_mmps</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxTurnSpeed_mmps</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kTreadMovementThreshold_mmps</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kTreadCoolDown_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="backpacklights-console-variables">BackpackLights console variables<a class="headerlink" href="#backpacklights-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kOfflineCheckFreq_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kOfflineTimeBeforeLights_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="basicactionsturntowardsobject-console-variables">BasicActions.TurnTowardsObject console variables<a class="headerlink" href="#basicactionsturntowardsobject-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kInsertWaitsInTurnTowardsObjectVerify</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorbehaviorgohome-console-variables">Behavior.BehaviorGoHome console variables<a class="headerlink" href="#behaviorbehaviorgohome-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kGoHome_VisualVerification_SaveImages</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorcheckforandreacttosalientpoint-console-variables">Behavior.CheckForAndReactToSalientPoint console variables<a class="headerlink" href="#behaviorcheckforandreacttosalientpoint-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kCFARTSP_CooldownOverride_sec</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorcountinganimation-console-variables">BehaviorCountingAnimation console variables<a class="headerlink" href="#behaviorcountinganimation-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kSlowLoopBeginSize_loops</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviordancetothebeatcoordinator-console-variables">BehaviorDanceToTheBeatCoordinator console variables<a class="headerlink" href="#behaviordancetothebeatcoordinator-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDancingCooldown_sec</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorsbehaviorsystemmanager-console-variables">Behaviors.BehaviorSystemManager console variables<a class="headerlink" href="#behaviorsbehaviorsystemmanager-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDebugBehaviorStack</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorenrollface-console-variables">Behavior.EnrollFace console variables<a class="headerlink" href="#behaviorenrollface-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnrollFace_TimeoutForReLookForFace_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorexploring-console-variables">BehaviorExploring console variables<a class="headerlink" href="#behaviorexploring-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kExploringPostBumpReferenceProb</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMinObjectWidthToBump_rad</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProbReferenceOnResume</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorhighlevelai-console-variables">BehaviorHighLevelAI console variables<a class="headerlink" href="#behaviorhighlevelai-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kTimeMultiplier</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorinteractwithfaces-console-variables">Behavior.InteractWithFaces console variables<a class="headerlink" href="#behaviorinteractwithfaces-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kInteractWithFaces_DriveForwardIdealDist_mm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kWiggle_ForwardDist_mm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorinternalstatesbehavior-console-variables">Behavior.InternalStatesBehavior console variables<a class="headerlink" href="#behaviorinternalstatesbehavior-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDebugInternalStatesBehavior</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorlookaroundinplace-console-variables">Behavior.LookAroundInPlace console variables<a class="headerlink" href="#behaviorlookaroundinplace-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kVizConeOfFocus</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorplannertest-console-variables">BehaviorPlannerTest console variables<a class="headerlink" href="#behaviorplannertest-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kCubeDistance_mm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorputdownblock-console-variables">Behavior.PutDownBlock console variables<a class="headerlink" href="#behaviorputdownblock-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kBPDB_finalHeadAngle_deg</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorpuzzlemaze-console-variables">Behavior.PuzzleMaze console variables<a class="headerlink" href="#behaviorpuzzlemaze-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kPuzzleTimeout_sec</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorreacttocliff-console-variables">Behavior.ReactToCliff console variables<a class="headerlink" href="#behaviorreacttocliff-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kMaxNumRobotStopsBeforeGivingUp</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorreacttohand-console-variables">Behavior.ReactToHand console variables<a class="headerlink" href="#behaviorreacttohand-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kHandReaction_DriveForwardSpeed_mmps</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviorreacttopalmedge-console-variables">Behavior.ReactToPalmEdge console variables<a class="headerlink" href="#behaviorreacttopalmedge-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kMaxNumInitialReactAttemptsBeforeGivingUp</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="behaviortakeaphoto-console-variables">Behavior.TakeAPhoto console variables<a class="headerlink" href="#behaviortakeaphoto-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kHeadAngleDeg</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="console-console-variables">Console console variables<a class="headerlink" href="#console-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kSaveModifiedConsoleVarsOnly</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cpuprofiler-console-variables">CpuProfiler console variables<a class="headerlink" href="#cpuprofiler-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kMessageProfilerDuration</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>maxProcessingTimePerDrop_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cubelightdesign-console-variables">CubeLightDesign console variables<a class="headerlink" href="#cubelightdesign-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kLED1_s1_red</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cubespinner-console-variables">CubeSpinner console variables<a class="headerlink" href="#cubespinner-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kAdjustHeightOfSpinnerLift</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kDedupTimeAfterLock_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kIReallyReallyWantToBreakCubeSpinner</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dev-console-variables">Dev console variables<a class="headerlink" href="#dev-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kForceDisableAnkiDevFeatures</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="devbasebehavior-console-variables">DevBaseBehavior console variables<a class="headerlink" href="#devbasebehavior-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDevDispatchAfterShake</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="devsquawkboxbehavior-console-variables">DevSquawkBoxBehavior console variables<a class="headerlink" href="#devsquawkboxbehavior-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kLiftMovementDuration_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="devviewlights-console-variables">DevViewLights console variables<a class="headerlink" href="#devviewlights-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kCubeTriggerIdx</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dockingmethodb0-t1-h2-console-variables">DockingMethod(B:0 T:1 H:2) console variables<a class="headerlink" href="#dockingmethodb0-t1-h2-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDefaultDockingMethod</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dockingtest-console-variables">DockingTest console variables<a class="headerlink" href="#dockingtest-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kMaxNumAttempts</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="drivetoactions-console-variables">DriveToActions console variables<a class="headerlink" href="#drivetoactions-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnablePredockDistanceCheckFix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="facekeepalive-console-variables">Face.KeepAlive console variables<a class="headerlink" href="#facekeepalive-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kKeepAliveBlink_SpacingMaxTime_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveBlink_SpacingMinTime_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_DownMinScale</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_HotSpotPositionMultiplier</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_LongDistanceThresh_pix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_LongShiftFraction1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_LongShiftFraction2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_LongSquashFraction1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_LongSquashFraction2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_MaxDistFromCenter_pix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_MaxDistFromCenterFocused_pix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_MediumDistanceThresh_pix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_MediumShiftFraction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_MediumSquashFraction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_OuterEyeScaleIncrease</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_ShiftLagFraction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_SpacingMaxTime_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_SpacingMinTime_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kKeepAliveEyeDart_UpMaxScale</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxBlinkSpacingTimeForScreenProtection_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="habitat-console-variables">Habitat console variables<a class="headerlink" href="#habitat-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kDevForceBeginConfirmHabitat</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="trackingactions-console-variables">TrackingActions console variables<a class="headerlink" href="#trackingactions-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kOverride_PanDuration_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="faceparameterizedface-console-variables">Face.ParameterizedFace console variables<a class="headerlink" href="#faceparameterizedface-console-variables" title="Permanent link">&para;</a></h3>
+<h3 id="walltime-console-variables">WallTime console variables<a class="headerlink" href="#walltime-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kProcFace_AntiAliasingFilter</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_AntiAliasingSigmaFraction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_AntiAliasingSize</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_Display</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_EllipseDelta</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_EnableAntiAliasing</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_EyeLightnessMultiplier</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_Gamma</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_GammaType</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_HotspotFalloff</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_HotspotRender</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_InterpolationType</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_LineType</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_NoiseMaxLightness</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_NoiseMinLightness</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_NoiseNumFrames</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFace_NominalEyeSpacing</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_OverrideEyeParams</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_OverrideRightEyeParams</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_FromLinear</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_ToLinear</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_DefaultScanlineOpacity</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_NominalEyeSpacing</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_NoiseFraction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_UseAntiAliasedLines</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_GlowRender</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_GlowSizeMultiplier</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_GlowLightnessMultiplier</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_GlowGaussianFilter</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcFace_AntiAliasingGaussianFilter</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="facescanlinedistortion-console-variables">Face.ScanlineDistortion console variables<a class="headerlink" href="#facescanlinedistortion-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kProcFaceScanline_MaxShiftNoise</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFaceScanline_OffNoiseMaxWidth</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kProcFaceScanline_OffNoiseProb</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="faceinfoscreenmanager-console-variables">FaceInfoScreenManager console variables<a class="headerlink" href="#faceinfoscreenmanager-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kAlexaNotificationTimeout_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kButtonPressDurationForShutdown_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kFakeButtonPressType</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kToggleMuteTimeout_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="glitchlights-console-variables">GlitchLights console variables<a class="headerlink" href="#glitchlights-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kGlitchLightDelay_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kGlitchLightDuration_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="heldinpalmcoordinator-console-variables">HeldInPalm.Coordinator console variables<a class="headerlink" href="#heldinpalmcoordinator-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kMaxTimeForInitialHeldInPalmReaction_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="kwebvizupdateperiod-console-variables">kWebvizUpdatePeriod console variables<a class="headerlink" href="#kwebvizupdateperiod-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kWebvizUpdatePeriod</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="liftloadtest-console-variables">LiftLoadTest console variables<a class="headerlink" href="#liftloadtest-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kNumLiftRaises</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="manualanimationplayback-console-variables">ManualAnimationPlayback console variables<a class="headerlink" href="#manualanimationplayback-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kShouldDisplayKeyframeNumber</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kNumberOfFramesToIncrement</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="micdata-console-variables">MicData console variables<a class="headerlink" href="#micdata-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kBeatDetectorUseProcessedAudio</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kDevForceProcessState</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_ClipRecordTime_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_CollectRawTriggers</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_ForceDisableMicDataProc</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_ForceEnableMicDataProc</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_QuietTimeCooldown_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_SaveRawFullIntent</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_SaveRawFullIntent_WakeWordless</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMicData_SpeakerNoiseDisablesMics</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kSaveNotches</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="network-console-variables">Network console variables<a class="headerlink" href="#network-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnableVerboseNetworkLogging</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMaxPingTimesToTrackOverride</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPrintNetworkStats</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPrintNetworkStatsTimeSpacingMS</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="networkemulator-console-variables">Network.Emulator console variables<a class="headerlink" href="#networkemulator-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gUDPMaxLatency</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gUDPMinLatency</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gUDPNetEmulatorEnabled</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gUDPNetEmulatorRuntimeToggling</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gUDPRandomPacketLossPercentage</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="networkstats-console-variables">Network.Stats console variables<a class="headerlink" href="#networkstats-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kLogMessageLatencyOnce</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat1NumConnections</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat2LatencyAvg</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat3LatencySD</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat4LatencyMin</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat5LatencyMax</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat6PingArrivedPC</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat7ExtQueuedAvg_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat8ExtQueuedMin_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStat9ExtQueuedMax_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStatAQueuedAvg_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStatBQueuedMin_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gNetStatCQueuedMax_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kNetConnStatsUpdate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="osstatediskinfo-console-variables">OSState.DiskInfo console variables<a class="headerlink" href="#osstatediskinfo-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kHighDiskPressureMultiple</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMediumDiskPressureMultiple</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="osstatememoryinfo-console-variables">OSState.MemoryInfo console variables<a class="headerlink" href="#osstatememoryinfo-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kHighMemPressureMultiple</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMediumMemPressureMultiple</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="osstatetemperature-console-variables">OSState.Temperature console variables<a class="headerlink" href="#osstatetemperature-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kFakeCpuTemperature_degC</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kSendFakeCpuTemperature</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="osstatetimezone-console-variables">OSState.Timezone console variables<a class="headerlink" href="#osstatetimezone-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kOSState_FakeNoTime</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kOSState_FakeNoTimezone</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="osstatewifiinfo-console-variables">OSState.WifiInfo console variables<a class="headerlink" href="#osstatewifiinfo-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kHighWifiErrorRate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMediumWifiErrorRate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="speechrecognizer-console-variables">SpeechRecognizer console variables<a class="headerlink" href="#speechrecognizer-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kSuppressTriggerResponse</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="speechrecognizeralexa-console-variables">SpeechRecognizer.Alexa console variables<a class="headerlink" href="#speechrecognizeralexa-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kAlexaRecognizerModel</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kDefaultDetectThreshold</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kForceRunNotchDetector</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kSaveRawMicInput</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="speechrecognizeralexplayback-console-variables">SpeechRecognizer.AlexPlayback console variables<a class="headerlink" href="#speechrecognizeralexplayback-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kAlexaPlaybackRecognizerModel</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPlaybackRecognizerSampleCountThreshold</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="speechrecognizervector-console-variables">SpeechRecognizer.Vector console variables<a class="headerlink" href="#speechrecognizervector-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kVectorRecognizerModel</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kVectorRecognizerModelSensitivity</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="stayoncargeruntilcharged-console-variables">StayOnCargerUntilCharged console variables<a class="headerlink" href="#stayoncargeruntilcharged-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kSafeguardTimeout_s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="texttospeech-console-variables">TextToSpeech console variables<a class="headerlink" href="#texttospeech-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kEnablePausePrams</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kLeadingSilence_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kMinPlayableFrames</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPauseBracket_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPauseComma_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPausePunctuation_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPauseSemicolon_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kPauseSpelling_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kTrailingSilence_ms</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kVoicePitch</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kVoiceShaping</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kVoiceSpeed</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>kWriteTTSFile</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="visiongazedirection-console-variables">Vision.GazeDirection console variables<a class="headerlink" href="#visiongazedirection-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kFaceDirectedAtRobotMinXThres_mm</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="voicemessage-console-variables">VoiceMessage console variables<a class="headerlink" href="#voicemessage-console-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kRequireKnownUser</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="walltime-console-variables_1">WallTime console variables<a class="headerlink" href="#walltime-console-variables_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kFakeWallTimeIsSynced</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="not-yet-classified">Not Yet Classified<a class="headerlink" href="#not-yet-classified" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<footer class="md-footer">
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+
+<script src="https://unpkg.com/iframe-worker/polyfill"></script>
+<script src="../search/search_index.js"></script>
+
+
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['search.suggest', 'navigation.instant', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

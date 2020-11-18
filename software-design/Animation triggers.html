@@ -1,0 +1,3260 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Animation Triggers - Vector Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#animation-triggers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="Vector Documentation" class="md-header-nav__button md-logo" aria-label="Vector Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Vector Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Animation Triggers
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="hhttps://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+  
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    Vector Documentation
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+<a href="hhttps://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Vector Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/CONTRIBUTING_template.html" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/code_of_conduct.html" class="md-nav__link">
+      Contributor Covenant Code of Conduct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Customization%2C%20personalization.html" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Nose%20art.html" class="md-nav__link">
+      Nose Art Showcase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Document templates
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document templates" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Document templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/VEP-template.html" class="md-nav__link">
+      VEP Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/how-to.html" class="md-nav__link">
+      How-to template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/template.html" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      How to
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        How to
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/GDB%20tracing.html" class="md-nav__link">
+      How to trace calls using GDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Paper%20dolls.html" class="md-nav__link">
+      Making paper dolls for Vector to play with
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Using%20AudioKinetic%20WWise%20to%20convert%20sound%20files%20to%20WEM.html" class="md-nav__link">
+      Using AudioKinetic WWise to convert the sound files to WEM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Service
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Service" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Exploded%20View.html" class="md-nav__link">
+      Exploded View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Parts%20kits.html" class="md-nav__link">
+      Parts kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    <label class="md-nav__link" for="nav-7">
+      Software design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software design" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Software design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="Animation%20triggers.html" class="md-nav__link md-nav__link--active">
+      Animation Triggers
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20IDs.html" class="md-nav__link">
+      Behaviour IDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Console%20variables.html" class="md-nav__link">
+      Console variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="channels.html" class="md-nav__link">
+      Channels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="classes.html" class="md-nav__link">
+      Software Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="files.html" class="md-nav__link">
+      Source File referenced in the binaries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Vector enhancement proposals
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vector enhancement proposals" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Vector enhancement proposals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/Overview.html" class="md-nav__link">
+      Vector Enhancement Proposals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP1%20-%20Update-engine%20changes.html" class="md-nav__link">
+      VEP1 - Update-engine changes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html" class="md-nav__link">
+      VEP2 - Package management for modules on Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP3%20-%20Developer%20configurations%20for%20robot.html" class="md-nav__link">
+      VEP3 - Developer configurations for robot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP4%20-%20Logging.html" class="md-nav__link">
+      VEP4 - Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+
+  <!-- Further information -->
+      <!-- Copyright and theme information -->
+        
+          <div style="font-size:60%;" xclass="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Randall Maas and team
+          </div>
+        
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="edit/master/documents/software-design/Animation triggers.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                
+                <h1 id="animation-triggers">Animation Triggers<a class="headerlink" href="#animation-triggers" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Trigger Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AlexaError2Idle</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaErrorLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaErrorLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaIdle2Listen</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaIdle2Speak</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaListen2Error</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaListen2Idle</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaListen2Speak</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaListen2Think</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaListenLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaNotification</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaSignOut</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaSpeak2Error</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaSpeak2Idle</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaSpeak2Listen</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaSpeakLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaThink2Error</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaThink2Idle</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaThink2Speak</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaThinkLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>AlreadyAtFace</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioOnlyHuh</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_Deal</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_GetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_GoodLuck</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_Idle</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_Quit</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_Response</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_RtpIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_RtpPlayerNo</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_RtpPlayerYes</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_RtpRequest</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_RtpTimeOut</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_SpeechGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_SpeechShortStatement</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_Spread</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_Swipe</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_VictorBlackJackLose</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_VictorBlackJackWin</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_VictorBust</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_VictorLose</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_VictorPush</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJack_VictorWin</td>
+<td></td>
+</tr>
+<tr>
+<td>BumpObjectFastGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>BumpObjectFastGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>BumpObjectFastLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>BumpObjectSlowGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>BumpObjectSlowGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>BumpObjectSlowLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>Carrying</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingAlreadyHere</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingDrivingEnd</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingDrivingLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingDrivingStart</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingFailure</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingLeftTurn</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingRaiseLift</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingRequest</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingRequestGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingRequestPickup</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingRequestWaitLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingRightTurn</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSearchAfterCompletedSearch</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSearchSingleTurn</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSearchSingleTurnEnd</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSearchWaitForImages</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSettle</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSevereRequest</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSevereRequestGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerDockingSorryButLowBattery</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>ChargerReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>ClockGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ClockGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>ComeHereStart</td>
+<td></td>
+</tr>
+<tr>
+<td>ComeHereSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectToCubeFailure</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectToCubeGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectToCubeLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectToCubeLostConnection</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectToCubeSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectWakeUp</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectWakeUpLights</td>
+<td></td>
+</tr>
+<tr>
+<td>Connected</td>
+<td></td>
+</tr>
+<tr>
+<td>CountingFastLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>CountingGetInEven</td>
+<td></td>
+</tr>
+<tr>
+<td>CountingGetInOdd</td>
+<td></td>
+</tr>
+<tr>
+<td>CountingGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>CountingSlowLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceBackup</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceDriveGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceDriveGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceDriveLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceFake</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceGetOutBored</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceGetReady</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceGetUnready</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceIdleLiftDown</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceIdleLiftUp</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceLoseHand</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceLoseSession</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePouncePlayerLose</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePouncePlayerWin</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePouncePounceClose</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePouncePounceNormal</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceReactToCube</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceWinHand</td>
+<td></td>
+</tr>
+<tr>
+<td>CubePounceWinSession</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_AcknowledgeFaceNamed</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_AcknowledgeFaceUnnamed</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_AcknowledgeObject</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_ComeHere_SearchForFace</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_CubeMovedSense</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_CubeMovedUpset</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_DizzyReactionHard</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_DizzyReactionMedium</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_DizzyReactionSoft</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_DizzyShakeLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_DizzyShakeStop</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_DizzyStillPickedUp</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LaserAcknowledge</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LaserDriveEnd</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LaserDriveLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LaserDriveStart</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LaserGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LaserPounce</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_LookDownForLaser</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_NamedFaceInitialGreeting</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_SearchForFace_FoundFace</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_SearchForFace_Search</td>
+<td></td>
+</tr>
+<tr>
+<td>DEPRECATED_StackBlocksSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatCantDoThat</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatEyeHold</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatGetReady</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatListening</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceBeatNoBeatDetected</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceToTheBeat</td>
+<td></td>
+</tr>
+<tr>
+<td>DealerCardLayout</td>
+<td></td>
+</tr>
+<tr>
+<td>DockEndDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>DockLoopDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>DockStartDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveEndAngry</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveEndDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveEndHappy</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveEndLaunch</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveLoopAngry</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveLoopDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveLoopHappy</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveLoopLaunch</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveOffChargerFarLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveOffChargerFarRight</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveOffChargerLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveOffChargerRight</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveOffChargerStraight</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveStartAngry</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveStartDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveStartHappy</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveStartLaunch</td>
+<td></td>
+</tr>
+<tr>
+<td>DrivingTo</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringHuhClose</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringHuhFar</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringLookAround</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringLookAtHuman</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringQuickScan</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringReactToHandDrive</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringReactToHandGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringReactToHandGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringReactToHandLift</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringReactToHandReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringScanCenterFromLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringScanCenterFromRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringScanToLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ExploringScanToRight</td>
+<td></td>
+</tr>
+<tr>
+<td>EyeColorGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>EyeColorGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>EyeColorIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>EyeColorSwitch</td>
+<td></td>
+</tr>
+<tr>
+<td>EyeContactLookLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>FacePlantRoll</td>
+<td></td>
+</tr>
+<tr>
+<td>FacePlantRollArmUp</td>
+<td></td>
+</tr>
+<tr>
+<td>FailedToRightFromFace</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_Apology</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_BadRobot</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_BeQuiet</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_GoodRobot</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_ILoveYou</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_MeanWords</td>
+<td></td>
+</tr>
+<tr>
+<td>Feedback_ShutUp</td>
+<td></td>
+</tr>
+<tr>
+<td>FetchCubeFailure</td>
+<td></td>
+</tr>
+<tr>
+<td>FetchCubeSetDown</td>
+<td></td>
+</tr>
+<tr>
+<td>FetchCubeSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>FindCubeReactToCube</td>
+<td></td>
+</tr>
+<tr>
+<td>FindCubeTurns</td>
+<td></td>
+</tr>
+<tr>
+<td>FindCubeWaitLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>FistBumpIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>FistBumpLeftHanging</td>
+<td></td>
+</tr>
+<tr>
+<td>FistBumpRequestOnce</td>
+<td></td>
+</tr>
+<tr>
+<td>FistBumpRequestRetry</td>
+<td></td>
+</tr>
+<tr>
+<td>FistBumpSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>Flash</td>
+<td></td>
+</tr>
+<tr>
+<td>FlipDownFromBack</td>
+<td></td>
+</tr>
+<tr>
+<td>FoundFace</td>
+<td></td>
+</tr>
+<tr>
+<td>FrustratedByFailureMajor</td>
+<td></td>
+</tr>
+<tr>
+<td>GatherCubesAllCubesInBeacon</td>
+<td></td>
+</tr>
+<tr>
+<td>GatherCubesCubeInBeacon</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtFacesGetInLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtFacesGetInRight</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtFacesTurnLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtFacesTurnRight</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtSurfaceReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtSurfaceTurnLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtSurfacesGetInLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtSurfacesGetInRight</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtSurfacesTurnRight</td>
+<td></td>
+</tr>
+<tr>
+<td>GazingLookAtVectorReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>GoToSleepGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>GoToSleepOff</td>
+<td></td>
+</tr>
+<tr>
+<td>GoToSleepSleeping</td>
+<td></td>
+</tr>
+<tr>
+<td>GreetAfterLongTime</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmEdgeNervous</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmEdgeRelaxed</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmGetInNervous</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmGetInRelaxed</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmLookingNervous</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmNestling</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmPickupNervous</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmPickupRelaxed</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmPutDownNervous</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmPutDownRelaxed</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmReactToJolt</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmRollOff</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldOnPalmTransitionToRelaxed</td>
+<td></td>
+</tr>
+<tr>
+<td>HighTemperatureWarningFace</td>
+<td></td>
+</tr>
+<tr>
+<td>ICantDoThat</td>
+<td></td>
+</tr>
+<tr>
+<td>Idle_09</td>
+<td></td>
+</tr>
+<tr>
+<td>InitialWakeUp</td>
+<td></td>
+</tr>
+<tr>
+<td>InteractWithFaceTrackingIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>InteractWithFacesInitialNamed</td>
+<td></td>
+</tr>
+<tr>
+<td>InteractWithFacesInitialUnnamed</td>
+<td></td>
+</tr>
+<tr>
+<td>Interacting</td>
+<td></td>
+</tr>
+<tr>
+<td>InteractingBehaviorLock</td>
+<td></td>
+</tr>
+<tr>
+<td>InvalidAnimTrigger</td>
+<td></td>
+</tr>
+<tr>
+<td>InvestigateHeldCubeGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>InvestigateHeldCubeGetOutBored</td>
+<td></td>
+</tr>
+<tr>
+<td>InvestigateHeldCubeGetOutCubeLost</td>
+<td></td>
+</tr>
+<tr>
+<td>InvestigateHeldCubeOnSetDown</td>
+<td></td>
+</tr>
+<tr>
+<td>InvestigateHeldCubeTrackingLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphAnswer</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphListening</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphSearching</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphSearchingFail</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphSearchingFailGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphSearchingGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphSearchingGetOutSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraphSuccessReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAround</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAtDevice</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAtDeviceGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAtDeviceGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAtUserEndearingly</td>
+<td></td>
+</tr>
+<tr>
+<td>LookInPlaceForFacesBodyPause</td>
+<td></td>
+</tr>
+<tr>
+<td>LookInPlaceForFacesBodyPause_Active</td>
+<td></td>
+</tr>
+<tr>
+<td>LookInPlaceForFacesHeadMovePause</td>
+<td></td>
+</tr>
+<tr>
+<td>LowBattery</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictor</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorConfusion</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorDuplicateName</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorLookFace</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorLookFaceInterrupt</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorSawWrongFace</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorSayName</td>
+<td></td>
+</tr>
+<tr>
+<td>MeetVictorSayNameAgain</td>
+<td></td>
+</tr>
+<tr>
+<td>MessagingMessageDeletedShort</td>
+<td></td>
+</tr>
+<tr>
+<td>MessagingMessageGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>MessagingMessageGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>MessagingMessageLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>MessagingMessageRecordReaction</td>
+<td></td>
+</tr>
+<tr>
+<td>MessagingMessageRewind</td>
+<td></td>
+</tr>
+<tr>
+<td>MovementDriveBackward</td>
+<td></td>
+</tr>
+<tr>
+<td>MovementDriveForward</td>
+<td></td>
+</tr>
+<tr>
+<td>MovementTurnAround</td>
+<td></td>
+</tr>
+<tr>
+<td>MovementTurnLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>MovementTurnRight</td>
+<td></td>
+</tr>
+<tr>
+<td>Muted</td>
+<td></td>
+</tr>
+<tr>
+<td>NeutralFace</td>
+<td></td>
+</tr>
+<tr>
+<td>NoCloudGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>NoCloudIcon</td>
+<td></td>
+</tr>
+<tr>
+<td>NoWifiGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>NoWifiIcon</td>
+<td></td>
+</tr>
+<tr>
+<td>NoWifiSearching</td>
+<td></td>
+</tr>
+<tr>
+<td>NothingToDoBoredIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingIdleEyesOnly</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingIdleWithHeadLookingStraight</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingIdleWithHeadLookingUp</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingLookStraight</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingLookUp</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingOnCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingOnChargerGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservingOnChargerGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>Off</td>
+<td></td>
+</tr>
+<tr>
+<td>Offline</td>
+<td></td>
+</tr>
+<tr>
+<td>Offline_Off</td>
+<td></td>
+</tr>
+<tr>
+<td>Onboarding</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingComeHere</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingComeHereGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingCubeDriveGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingCubeDriveGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingCubeDriveLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingCubeHuh</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingDriveOffCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingDriveOffCharger_1p0</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingListenGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingListenGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookAround</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookAtPhoneDown</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookAtPhoneLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookAtPhoneUp</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookAtUser</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookAtUserGetOut_1p0</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookDown</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingLookForCube</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingReactToFaceHappy</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingWakeUp</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingWakeWordGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>OnboardingWakeWordSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>PRDemoGreeting</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingBlissGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingBlissLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel1</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel1Getout</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel2</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel2Getout</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel3</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel3Getout</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel4</td>
+<td></td>
+</tr>
+<tr>
+<td>PettingLevel4Getout</td>
+<td></td>
+</tr>
+<tr>
+<td>PickupCubePreperation</td>
+<td></td>
+</tr>
+<tr>
+<td>PickupCubeRetry</td>
+<td></td>
+</tr>
+<tr>
+<td>PickupCubeSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>PlaceCubeByChargerFail</td>
+<td></td>
+</tr>
+<tr>
+<td>PlaceCubeByChargerReactToCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>PlaceCubeByChargerSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>PlanningGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>PlanningGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>PlanningLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>PlayerCardLayout</td>
+<td></td>
+</tr>
+<tr>
+<td>PokeObjectDriveLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>PokeObjectGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>PokeObjectGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>PopAWheelieInitial</td>
+<td></td>
+</tr>
+<tr>
+<td>PopAWheeliePreActionNamedFace</td>
+<td></td>
+</tr>
+<tr>
+<td>PopAWheeliePreActionUnnamedFace</td>
+<td></td>
+</tr>
+<tr>
+<td>PopAWheelieRealign</td>
+<td></td>
+</tr>
+<tr>
+<td>PopAWheelieRetry</td>
+<td></td>
+</tr>
+<tr>
+<td>PounceFail</td>
+<td></td>
+</tr>
+<tr>
+<td>PounceSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>PounceWProxForward</td>
+<td></td>
+</tr>
+<tr>
+<td>PutDownBlockKeepAlive</td>
+<td></td>
+</tr>
+<tr>
+<td>PutDownBlockPutDown</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_120Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_120Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_150Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_150Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_30Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_30Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_60Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_60Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_Ambient</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_Back</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_Front</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Awake_Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_120Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_120Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_150Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_150Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_30Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_30Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_60Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_60Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_Ambient</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_Back</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_Front</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OffCharger_Sleep_Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_120Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_120Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_150Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_150Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_30Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_30Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_60Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_60Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_Ambient</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_Back</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_Front</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Awake_Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_120Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_120Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_150Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_150Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_30Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_30Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_60Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_60Right</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_Ambient</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_Back</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_Front</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_Left</td>
+<td></td>
+</tr>
+<tr>
+<td>RTS_OnCharger_Sleep_Right</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliff</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffBack</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffBackLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffBackRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffFront</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffFrontLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffFrontRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffTurnLeft120</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffTurnLeft180</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffTurnLeft60</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffTurnRight120</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffTurnRight180</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCliffTurnRight60</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeSearchForCubeLvl1</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeSearchForCubeLvl2</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeSearchForCubeLvl3</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapCubeFound</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapCubeNotFound</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapCubeTappedLvl1</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapCubeTappedLvl2</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapCubeTappedLvl3</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapInteractionGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToCubeTapInteractionLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToDarkness</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToGoodBye</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToGoodMorning</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToGoodNight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToGreeting</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToHabitat</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionLeftGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionRightGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionTurnLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionTurnRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionTurnUp</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionUp</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToMotionUpGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToObstacle</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToOnLeftSideGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToOnLeftSideLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToOnRightSideGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToOnRightSideLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToOnSideEffort</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToOnSideGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToPerchedOnBlock</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToPickupInitial</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToPickupLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToPutDown</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShakeSnowGlobe_GetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShakeSnowGlobe_Lvl1InHand</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShakeSnowGlobe_Lvl1Loop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShakeSnowGlobe_Lvl1OnGround</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShakeSnowGlobe_Lvl1Waiting</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_GetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl1InHand</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl1Loop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl1OnGround</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl1Waiting</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl2InHand</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl2Loop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl2OnGround</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl2Waiting</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl3InHand</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl3Loop</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl3OnGround</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToShake_Lvl3Waiting</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTouchInitial</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerBehind</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerBehindLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerBehindRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerFrontLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerFrontRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToTriggerWordOffChargerRight</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToUnclaimedIntent</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToUnclaimedIntentInAir</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactToUnexpectedMovement</td>
+<td></td>
+</tr>
+<tr>
+<td>RollBlockRealign</td>
+<td></td>
+</tr>
+<tr>
+<td>RollBlockRetry</td>
+<td></td>
+</tr>
+<tr>
+<td>RollBlockSuccess</td>
+<td></td>
+</tr>
+<tr>
+<td>SeasonalHappyHolidays</td>
+<td></td>
+</tr>
+<tr>
+<td>SeasonalHappyNewYear</td>
+<td></td>
+</tr>
+<tr>
+<td>ShutDown</td>
+<td></td>
+</tr>
+<tr>
+<td>Sleep</td>
+<td></td>
+</tr>
+<tr>
+<td>SleepNoFade</td>
+<td></td>
+</tr>
+<tr>
+<td>SoundOnlyLiftEffortPickup</td>
+<td></td>
+</tr>
+<tr>
+<td>SoundOnlyLiftEffortPlaceHigh</td>
+<td></td>
+</tr>
+<tr>
+<td>SoundOnlyLiftEffortPlaceLow</td>
+<td></td>
+</tr>
+<tr>
+<td>SoundOnlyLiftEffortPlaceRoll</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeedTapLose</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeedTapWin</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueCelebration</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueCycle</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueHoldTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueLockIn</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueLocked</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueLockedPulse</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerBlueSelectTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenCelebration</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenCycle</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenHoldTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenLockIn</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenLocked</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenLockedPulse</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerGreenSelectTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPlayerError</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleCelebration</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleCycle</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleHoldTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleLockIn</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleLocked</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleLockedPulse</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerPurpleSelectTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedCelebration</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedCycle</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedHoldTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedLockIn</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedLocked</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedLockedPulse</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerRedSelectTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerStartGame</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowCelebration</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowCycle</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowHoldTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowLockIn</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowLocked</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowLockedPulse</td>
+<td></td>
+</tr>
+<tr>
+<td>SpinnerYellowSelectTarget</td>
+<td></td>
+</tr>
+<tr>
+<td>Streaming</td>
+<td></td>
+</tr>
+<tr>
+<td>StuckOnEdgeGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>StuckOnEdgeIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>StuckOnEdgeLeftGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>StuckOnEdgeLeftIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>StuckOnEdgeRightGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>StuckOnEdgeRightIdle</td>
+<td></td>
+</tr>
+<tr>
+<td>SuccessfulWheelie</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAPictureCapture</td>
+<td></td>
+</tr>
+<tr>
+<td>TakeAPictureFocusing</td>
+<td></td>
+</tr>
+<tr>
+<td>TapResponsePulse</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureDoubleDig</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureNegDoubleDig</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureNegSingleDig</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureNegTripleDig</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureSingleDig</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureTripleDig</td>
+<td></td>
+</tr>
+<tr>
+<td>TestAllLeds</td>
+<td></td>
+</tr>
+<tr>
+<td>TestOffset</td>
+<td></td>
+</tr>
+<tr>
+<td>TestRotation</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechGetLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerCancelGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerCancelTimer</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerCheckTimeGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerCheckTimeGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerRing</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerRingGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerRingGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerSetGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerSetGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>UnitTestAnim</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_IntentNeutral</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_ListeningGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_ListeningGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_ListeningLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_SleepingToListeningGetIn</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_SleepingToListeningGetOut</td>
+<td></td>
+</tr>
+<tr>
+<td>VC_SleepingToListeningLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>Visible</td>
+<td></td>
+</tr>
+<tr>
+<td>VolumeLevel1</td>
+<td></td>
+</tr>
+<tr>
+<td>VolumeLevel2</td>
+<td></td>
+</tr>
+<tr>
+<td>VolumeLevel3</td>
+<td></td>
+</tr>
+<tr>
+<td>VolumeLevel4</td>
+<td></td>
+</tr>
+<tr>
+<td>VolumeLevel5</td>
+<td></td>
+</tr>
+<tr>
+<td>WakeUp</td>
+<td></td>
+</tr>
+<tr>
+<td>WakeupGetout</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondCloudy_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondColdClear_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondRain_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondSnow_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondStars_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondSunny_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondThunderstorms_01</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherCondWindy_01</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<footer class="md-footer">
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+
+<script src="https://unpkg.com/iframe-worker/polyfill"></script>
+<script src="../search/search_index.js"></script>
+
+
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['search.suggest', 'navigation.instant', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
