@@ -3,7 +3,7 @@
 This is a wiki for gathering and sharing information about
 [Anki Vector](https://www.anki.com/en-us/vector) 
 
-[PDF version](https://randym32.github.io/Anki.Vector.Documents/Vector-Wiki.pdf)
+[PDF version](./Vector-Wiki.pdf)
 
 ## Personalizing Vector
 This is for notes on how to customize or personalize Vector.
