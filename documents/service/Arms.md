@@ -25,3 +25,10 @@ From Discord:
 
 > Reassembly is the reverse of the above. The important thing to notice during disassembly is that the lower arms have a certain angle where they easily come out. You have to use that angle to pop them in and out. If they are not coming out/going in easily, the angle is not high enough or too high.
 
+## Spare parts
+
+[Anki Vector Lifting Forks](https://www.thingiverse.com/thing:3731746)
+by Dauler July 05, 2019
+
+[3D Model .stl Vector Robot Lift Forks FDM and Resin Models](https://www.etsy.com/listing/804921489/3d-model-stl-vector-robot-lift-forks-fdm)
+DesignsByDauler

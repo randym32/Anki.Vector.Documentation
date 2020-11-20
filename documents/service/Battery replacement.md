@@ -1,5 +1,7 @@
 # Replacing the Battery
 
+<img style="float:right;height:200pt !important;width:auto;" src="Battery.png" />
+
 Please fill this in!
 
 See this [iFixit instruction](https://www.ifixit.com/Guide/Anki+Vector++Battery+Replacement/123279)
