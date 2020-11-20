@@ -1,0 +1,74 @@
+#!/bin/sh
+#
+# platform/config/bin/vic-log-upload
+#
+# Victor log upload file
+#
+# This script uploads a given file to a local server
+#
+# If upload fails, exit with an appropriate error. There is no attempt
+# at retry or deferred send.
+#
+#
+# Default configuration values may be overridden by environment.
+#
+set -eu
+
+: ${VIC_LOG_URL:="http://192.168.1.224:8888"}
+
+#
+# Callers must provide FILE, on command line.
+#
+FILE="$1"
+
+if [ -z ${FILE}  ]; then
+  echo "Usage: $0 file"
+  exit 1
+fi
+
+#
+# Collect some metadata to describe the upload
+#
+esn="`/bin/emr-cat e`"
+timestamp="`/bin/date +%Y-%m-%d-%H-%M-%S`"
+version="`/bin/cat /anki/etc/version`"
+revision="`/bin/cat /anki/etc/revision`"
+osversion="`/bin/cat /etc/os-version`"
+osrevision="`/bin/cat /etc/os-version-rev`"
+pid="$$"
+
+#
+# Helper function to perform upload
+#
+function upload {
+  url=${1}
+  path=${2}
+  name=${3}
+  /usr/bin/curl -s -f -X PUT \
+    -H "Usr-RobotESN: ${esn}" \
+    -H "Usr-RobotTimestamp: ${timestamp}" \
+    -H "Usr-RobotVersion: ${version}" \
+    -H "Usr-RobotRevision: ${revision}" \
+    -H "Usr-RobotOSVersion: ${osversion}" \
+    -H "Usr-RobotOSRevision: ${osrevision}" \
+    --data-binary @${path} \
+    ${url}
+  status=$?
+  /bin/rm -f ${path}
+  if [ ${status} == 0 ]; then
+    echo "Uploaded ${name}"
+  else
+    echo "Failed to upload ${name}"
+    exit 1
+  fi
+}
+
+
+#
+# Prepare log messages for upload
+#
+name=`basename ${FILE}`
+
+upload ${VIC_LOG_URL}/${name} ${FILE} ${name}
+
+exit 0
