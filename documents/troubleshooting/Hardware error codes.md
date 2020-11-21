@@ -10,6 +10,10 @@ If something has gone wrong, an error will appear on Vector's face. These error 
 
 * Body board has a specific hardware fault.
 
+896(?)-897
+
+* Seems to be Whiskey specific. It seems to only show in their dev recovery and they work fine in normal firmware.
+
 898
 
 * There was an error when trying to communicate with the body board. If the board shows just a purple light and won't turn off, you need to wait for his battery to die. After that, turn him back on. If there is still a purple light, there could be a hardware issue with the body board.
@@ -17,6 +21,15 @@ If something has gone wrong, an error will appear on Vector's face. These error 
 899
 
 * The firmware was unable to find the body. If the board shows just a purple light and won't turn off, you need to wait for his battery to die. After that, turn him back on. If there is still a purple light, there could be a hardware issue with the body board.
+
+950
+
+* This error will only occur on a Whiskey. The software is unable to open the extra ToF sensors. It is possible that one or both of the sensors are broken. 
+* This can be fixed with an EMR/OEM swap. Instructions soon
+
+960
+
+* IMU hardware failed.
 
 970
 

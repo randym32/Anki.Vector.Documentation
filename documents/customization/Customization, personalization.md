@@ -51,15 +51,17 @@ Digital Dream Labs has made a Python script which makes it easy to turn GIFs int
 
 * The script gif_to_raw.py to convert the .gif to a raw image.
 
-1. Convert the .gif to a raw image:
+* Convert the .gif to a raw image:
 `python gif_to_raw.py bootscreen.gif`
 This will create a new file bootscreen.gif.raw
 
-2. Mount the filesystem for writing. Here we’ll do that from the host system:
+* Mount the filesystem for writing. Here we’ll do that from the host system:
 `ssh root@192.168.1.110 "mount -o remount,rw /"`
-3. Use scp to copy the file in to place:
+
+* Use scp to copy the file in to place:
 `scp bootscreen.gif.raw root@192.168.1.110:/anki/data/assets/cozmo_resources/config/engine/animations/boot_anim.raw`
-Reboot Vector from the host system:
+
+* Reboot Vector from the host system:
 `ssh root@192.168.1.110 "/sbin/reboot"`
 
 ## Sounds
