@@ -1,7 +1,7 @@
 # Project Vector Documentation Wiki
 
 This is a prototype of  documentation for a  Project Vector Documentation Wiki.
-A prototype  should be viewable at (https://randym32.github.io/Anki.Vector.Documentation)[https://randym32.github.io/Anki.Vector.Documentation] for review
+A prototype  should be viewable at [https://randym32.github.io/Anki.Vector.Documentation](https://randym32.github.io/Anki.Vector.Documentation) for review
 
 The Project Vector Documentation Wiki is generated via the [Material for mkdocs Documentation
 Generator](https://github.com/squidfunk/mkdocs-material). It can be scripted to pull changes
