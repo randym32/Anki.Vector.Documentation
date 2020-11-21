@@ -6,3 +6,22 @@
 .md-nav__title {
    padding:0 !important;
 }
+
+img {
+    transition: transform ease-in-out 0.3s;
+}
+
+img:active[src*="#zoom"] {
+    cursor: zoom-out;
+    transform: scale(2.0);
+}
+
+img[src*="#zoom"] {
+    cursor: zoom-in;
+}
+
+img[src*="#right"] {
+    float:right;
+    height:auto;
+    max-width:170px;
+}
