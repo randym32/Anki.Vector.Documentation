@@ -10,8 +10,9 @@ for all.  We love receiving contributions from our community, all contributions 
 * workshops
 * etc
 
-There are many ways to contribute, including submitting bug reports, improving documentation, submitting feature
-requests, reviewing new submissions, or contributing bits that can be incorporated into the project.
+There are many ways to contribute, including submitting bug reports, improving
+documentation, submitting feature requests, reviewing new submissions, or
+contributing bits that can be incorporated into the project.
 
 ## Not sure how to start contributing?
 
@@ -26,8 +27,8 @@ Project Victor team on
 ## Pair programming
 
 Other projects offer free [pair programming sessions](https://gatsby.dev/contributing/pair-programming/)
-to the community.  I think that might be a neat idea, if there's something others
-would like to work on together......
+to the community.  I think that might be a neat idea, if there's something
+others would like to work on together......
 
 
 ## Code of Conduct
@@ -41,78 +42,50 @@ The important documents and links are on the [front page of the wiki.](../index.
 
 ## Improving Documentation
 
-If you have a suggestion for the documentation, I would recommend that you take a stab at making the chnages to the
-documentatin.
+If you have a suggestion for the documentation, I would recommend that you take
+a stab at making the changes to the documentatin.
 
-For large fixes, please build and test the documentation before submitting the pull-request to be sure you
-haven't accidentally introduced any layout or formatting issues.
+For large fixes, please build and test the documentation before submitting the
+pull-request to be sure you haven't accidentally introduced any layout or
+formatting issues.
 
-```
-Provide instructions on building and viewing documentation
-```
+### How to Create the HTML and PDF files
 
-## Contributing Code
+The source documentation text files can be found
+[documents directory](./documents). The built out files will be placed within a
+[site] directory.
 
-This section is used to get new contributors up and running with dependencies, development, testing, style rules, formatting rules, and other things they should know.
+First, install the documentation tools:
 
-If you have a label for beginner issues, talk about that here so they know where to look:
-
-> Unsure where to begin contributing to Atom? You can start by looking through these beginner and help-wanted issues: Beginner issues - issues which should only require a few lines of code, and a test or two. Help wanted issues - issues which should be a bit more involved than beginner issues.
-
-Working on your first open source project or pull request? Her are some helpful tutorials:
-
-* [How to Contribute to an Open Source Project on GitHub][2]
-* [Make a Pull Request][3]
-* [First Timers Only][4]
-
-### Getting Started
-
-Install these dependencies:
-
-```
-with some examples
-```
-
-Provide some instructions for your workflow (e.g. fork the repository)
-
-> You will need to fork the main repository to work on your changes. Simply navigate to our GitHub page and click the "Fork" button at the top. Once you've forked the repository, you can clone your new repository and start making edits.
-
-> In git it is best to isolate each topic or feature into a “topic branch”. While individual commits allow you control over how small individual changes are made to the code, branches are a great way to group a set of commits all related to one feature together, or to isolate different efforts when you might be working on multiple topics at the same time.
-
-> While it takes some experience to get the right feel about how to break up commits, a topic branch should be limited in scope to a single issue
-
-```
-# Checkout the master branch - you want your new branch to come from master
-git checkout master
-
-# Create a new branch named newfeature (give your branch its own simple informative name)
-git branch newfeature
-
-# Switch to your new branch
-git checkout newfeature
-```
-
-For more information on the GitHub fork and pull-request processes, [please see this helpful guide][5].
-
-### Finding an Issue
-
-The list of outstanding feature requests and bugs can be found on our on our [GitHub issue tracker][6]. Pick an unassigned issue that you think you can accomplish and add a comment that you are attempting to do it.
-
-Provide notes on different kinds of issues or labels
-
-> `starter` labeled issues are deemed to be good low-hanging fruit for newcomers to the project
-> `help-wanted` labeled issues may be more difficult than `starter` and may include new feature development
-> `doc` labeled issues must only touch content in the `docs` folder.
+    pip3 install mkdocs-material
+    pip3 install mkdocs-localsearch
 
 
-### Style Guidelines
+Then you can build the html site simply by:
 
-If your code has any style guidelines, add them here or provide links to relevant documents. If you have an automated checker, make sure to provide instructions on how to run it.
+    mkdocs build
+
+### Building a PDF file as well
+You can also build the PDF.  First install the tools:
+
+    pip3 install mkdocs-with-pdf
+
+There is some further installation, see the following link for more details:
+[https://pypi.org/project/mkdocs-with-pdf/](https://pypi.org/project/mkdocs-with-pdf/)
+
+Rename the "mkdocs.yml" file
+Then rename "mkdocs-pdf.yml" to "mkdocs.yml"
+
+To build is the same as before
+
+    mkdocs build
 
 
 ### Whitespace Cleanup
 
-Don’t mix code changes with whitespace cleanup! If you are fixing whitespace, include those changes separately from your code changes. If your request is unreadable due to whitespace changes, it will be rejected.
+Don’t mix code or documentation changes with whitespace cleanup! If you are
+fixing whitespace, include those changes separately from your code changes. If
+your request is unreadable due to whitespace changes, it will be rejected.
 
 > Please submit whitespace cleanups in a separate pull request.
 
