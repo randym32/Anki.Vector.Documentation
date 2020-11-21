@@ -254,7 +254,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../contributing/CONTRIBUTING_template.html" class="md-nav__link">
+    <a href="../contributing/CONTRIBUTING.html" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -351,6 +351,19 @@
   <a href="#customizing-animations" class="md-nav__link">
     Customizing animations
   </a>
+  
+    <nav class="md-nav" aria-label="Customizing animations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boot-animation-draft" class="md-nav__link">
+    Boot animation draft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -651,6 +664,18 @@
   <li class="md-nav__item">
     <a href="../how-to/How%20to%20make%20a%20companion%20cube.html" class="md-nav__link">
       How to make a companion cube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link">
+      How to unzip the OTA file
     </a>
   </li>
 
@@ -989,6 +1014,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../troubleshooting/FAC.html" class="md-nav__link">
+      FAC (Factory) Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../troubleshooting/Hardware%20error%20codes.html" class="md-nav__link">
       Hardware error codes
     </a>
@@ -1134,6 +1171,19 @@
     Customizing animations
   </a>
   
+    <nav class="md-nav" aria-label="Customizing animations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boot-animation-draft" class="md-nav__link">
+    Boot animation draft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1197,8 +1247,37 @@ the export.. but since   Maya is expensive, and hard.. </p>
  and such for I suspect the value vs effort isn’t there for such a specialized area, but who knows?</p>
 <p>Tools for generating animation files.</p>
 <p>What about mixing-matching existing animations, and adjusting them slightly?</p>
+<h3 id="boot-animation-draft">Boot animation draft<a class="headerlink" href="#boot-animation-draft" title="Permanent link">&para;</a></h3>
+<p>Vector shows a boot animation at startup. This is located in /anki/data/assets/cozmo_resources/config/engine/animations/boot_anim.raw and it can be swapped out easily.</p>
+<p>Digital Dream Labs has made a Python script which makes it easy to turn GIFs into animations very easily.</p>
+<p><a href="https://oskr.ddl.io/doc/examples.html#change-boot-animation">DDL official instructions</a></p>
+<ul>
+<li>
+<p>A working installation of python with the Pillow package installed.</p>
+</li>
+<li>
+<p>An animated .gif with a resolution of 184x96 pixels</p>
+</li>
+<li>
+<p>The script gif_to_raw.py to convert the .gif to a raw image.</p>
+</li>
+<li>
+<p>Convert the .gif to a raw image:
+<code>python gif_to_raw.py bootscreen.gif</code>
+This will create a new file bootscreen.gif.raw</p>
+</li>
+<li>
+<p>Mount the filesystem for writing. Here we’ll do that from the host system:
+<code>ssh root@192.168.1.110 "mount -o remount,rw /"</code></p>
+</li>
+<li>Use scp to copy the file in to place:
+<code>scp bootscreen.gif.raw root@192.168.1.110:/anki/data/assets/cozmo_resources/config/engine/animations/boot_anim.raw</code>
+Reboot Vector from the host system:
+<code>ssh root@192.168.1.110 "/sbin/reboot"</code></li>
+</ul>
 <h2 id="sounds">Sounds<a class="headerlink" href="#sounds" title="Permanent link">&para;</a></h2>
 <h2 id="behavior-tree-crafting">Behavior tree crafting<a class="headerlink" href="#behavior-tree-crafting" title="Permanent link">&para;</a></h2>
+<p>There are many json files in /anki/data/assets/cozmo_resources/config/engine/behaviorComponent/. Maybe have some examples of edits of those?</p>
                 
               
               

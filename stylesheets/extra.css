@@ -25,3 +25,12 @@ img[src*="#right"] {
     height:auto;
     max-width:170px;
 }
+
+img[src*="#face"] {
+    width:auto;
+    max-height:195px;
+}
+img[src*="#smallface"] {
+    height:auto;
+    max-width:120px;
+}
