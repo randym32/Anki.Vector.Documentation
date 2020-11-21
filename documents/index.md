@@ -77,7 +77,7 @@ but there are a few implementations that you might wish to look at/reuse:
 - [Chrome & Javascript](https://github.com/kercre123/victor-web-setup) and [here](https://github.com/digital-dream-labs/vector-web-setup)
 
 ### WebViz and Console Variables
-The developer builds of Vector's softw w
+"Pure" Developer builds of Vector software contain an HTTP API and webserver. This shows what it is, how to use it, and how it works.
 
 ### Application Notes
 TODO
@@ -95,8 +95,9 @@ Some highlights:
 ## Historical Bots
 This might a place for odds and ends info 
 
-- DVT bot info
-- Whisky info
+- DVT1-4 bot info
+- Whiskey info
+- Bingo info
 - etc
 
 

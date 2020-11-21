@@ -17,3 +17,5 @@ In the current form, Whiskeys have a few software quirks. Regular dev bots have 
 
 These turn up from time to time on Ebay.
 
+![Anki Whiskey DVT1](Whiskey.jpg)
+

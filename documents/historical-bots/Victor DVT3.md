@@ -25,4 +25,6 @@ Some of these bots may boot up to an exclaimation point. Turning them upside-dow
 
 These turn up from time to time on Ebay.
 
+![Anki Victor DVT3 Orange Boot](VicDVT3OB.jpg)
+
 ![Anki Victor DVT3. The red treads are custom.](VicDVT3.jpg)
