@@ -20,7 +20,7 @@ fit in.
 |CpuProfiler    ||
 |FaceRecognizer    ||
 |FaceWorld    ||
-|JdocsManager    -- the cloud storage?||
+|JdocsManager|the cloud storage?|
 |Keyboard    ||
 |MessageProfiler    ||
 |Microphones||
