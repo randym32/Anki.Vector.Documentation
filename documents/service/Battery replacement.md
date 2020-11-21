@@ -1,6 +1,6 @@
 # Replacing the Battery
 
-<img style="float:right;height:200pt !important;width:auto;" src="Battery.png" />
+![](Battery.png#right)
 
 Please fill this in!
 

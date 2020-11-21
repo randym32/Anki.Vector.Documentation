@@ -41,12 +41,4 @@ What about mixing-matching existing animations, and adjusting them slightly?
 
 ## Behavior tree crafting
 
-## Body modifications
-
-
-* Ikkez sells cute ears, deedly-boppers at his [Etsy site](https://www.etsy.com/shop/ikkezLabs)
-* Dauler sells ear, horns, treads, stickers,  and other fanciful mods, and 3D STL's at [3D Designs by Dauler](https://designsbydauler.com/collections/vector-robot) and [Etsy](https://www.etsy.com/shop/DesignsByDauler)
-* [Cat ears](https://www.tinkercad.com/things/8ymTTpRAKnq) for Vector, as 3D files by "misconduct"
-
-
 

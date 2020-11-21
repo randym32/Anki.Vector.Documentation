@@ -1,6 +1,6 @@
 # LCD Replacement
 
-<img style="float:right;" src="LCD.png" />
+![](LCD.png#right)
 
 A batch of Vectors have LCD screens that form lines on them.
 The lines often start at the bottom, both marring the eyes and making

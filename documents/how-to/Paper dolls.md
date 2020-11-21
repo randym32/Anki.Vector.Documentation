@@ -1,6 +1,6 @@
 # Making paper dolls for Vector to play with
 
-<img style="float:right;height:240pt !important;width:auto;" src="Paper doll.png" />
+![](Paper doll.png#right)
 
 ## Laser Printer Version
 1. Download one of the two version of the pattern template:
