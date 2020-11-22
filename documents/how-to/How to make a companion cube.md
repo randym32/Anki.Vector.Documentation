@@ -13,7 +13,7 @@ You can buy [STL files](https://www.etsy.com/listing/804973883/3d-models-stl-vec
 ## Emulate the cubes electronics
 
 
-(Efforts to create a "clone" of the cubes electronics.)
-[https://forums.anki.com/t/communicating-with-vectors-cube/43042]
+[Efforts to create a "clone" of the cubes electronics.]
+(https://forums.anki.com/t/communicating-with-vectors-cube/43042)
  SparkFun Pro nRF52840 Mini bluetooth development
 

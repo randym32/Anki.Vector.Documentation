@@ -2,7 +2,7 @@
 
 |Behavior ID|Description|
 |-----------|-----------|
-AcousticTestMode||
+|AcousticTestMode||
 |Alexa||
 |AlexaSignInOut||
 |AskForHelp||
