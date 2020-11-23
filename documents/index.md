@@ -47,7 +47,7 @@ Some highlights:
 * Using GDB [to trace function calls](how-to/GDB tracing.md)
 * Using AudioKinetic WWise to [convert sound files to WEM format](how-to/Using AudioKinetic WWise to convert sound files to WEM.md)
 
-* Dauler sells stickers with the marker symbols prepirnt at (3D Designs by Dauler)[https://designsbydauler.com/collections/vector-robot]
+* Dauler sells stickers with the marker symbols prepirnt at [3D Designs by Dauler](https://designsbydauler.com/collections/vector-robot)
 
 ## Developer documentation
 These are reference documentation for programming tools to use Vector.
