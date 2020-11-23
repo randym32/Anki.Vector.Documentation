@@ -13,3 +13,5 @@ The animations tools had UIs with at least the following two screens:
 ![Animation Software](VectorAnimation-tool2.png)
 
 
+![](109d6b7a5281229d594cf7363a641112_original.gif)
+
