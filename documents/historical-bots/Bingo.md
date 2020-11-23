@@ -7,7 +7,7 @@ for running around the floors in homes.
 
 ## Mock ups of the idea, feel and inspiration
 
-An exploration of the character desinn:
+An exploration of the character design:
 ![Character exploration](Character exploration.jpg)
 
 Taking inspiration in its spirit and shape from dogs and other animals:
