@@ -79,9 +79,6 @@ but there are a few implementations that you might wish to look at/reuse:
 ### WebViz and Console Variables
 "Pure" Developer builds of Vector software contain an HTTP API and webserver. This shows what it is, how to use it, and how it works.
 
-### Application Notes
-TODO
-
 ### [Vector Enhancement Proposals](vector-enhancement-proposals/Overview.md)
 These are proposals for changes -- enhancements -- to the modules on Vector.
 
@@ -93,7 +90,7 @@ Some highlights:
 
 
 ## Historical Bots
-This might a place for odds and ends info 
+This is a place for info about robots that were part of Vector's evolution, but are products in their own right.
 
 - DVT1-4 bot info
 - Whiskey info
