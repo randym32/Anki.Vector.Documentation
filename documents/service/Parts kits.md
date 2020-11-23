@@ -5,7 +5,7 @@
 
 ## Cube service
 
-The cube uses a 1.5V "N" battery, aka "E90" or "LR1".   **DO NOT USE A A23 -- IT DESTROY THE ELECTRONICS**
+The cube uses a 1.5V "N" battery, aka "E90" or "LR1".   **DO NOT USE AN A23 -- IT WILL DESTROY THE ELECTRONICS**
 
 - Kinvert how to [change the battery](https://www.kinvert.com/replace-cube-battery-cozmo-vector/)
 - Official how to [change the battery](https://support.digitaldreamlabs.com/article/115-vectore28099s-cube)
