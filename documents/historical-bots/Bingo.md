@@ -8,10 +8,12 @@ for running around the floors in homes.
 ## Mock ups of the idea, feel and inspiration
 
 An exploration of the character design:
+
 ![Character exploration](Character exploration.jpg#zoom)
 
 Taking inspiration in its spirit and shape from dogs and other animals:
-![Dogs 1](83664161_775588262963003_2498500476014690304_n.jpg)
+
+![Dogs 1](83664161_775588262963003_2498500476014690304_n.jpg#zoom)
 
 ![Dogs 2](Bingo_RnD_2019_006b-e1582640749420.jpg#zoom)
 
