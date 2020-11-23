@@ -44,7 +44,7 @@ Below are some exploratory ideas.  Note: these are not what the robot would
 have looked like; they were trying out ideas for people to respond to and
 help iteratively craft the look.
 
-From Hans Belker's site:
+From Harald Belker's site:
 
 > The idea of having a self-navigating and self-balancing robot in the house was going to be the evolution to the current household smart speaker systems. In our mind it could only succeed if it moves around in a smooth and natural looking way.
 
@@ -56,7 +56,7 @@ From Hans Belker's site:
 
 ![](belker-bingo-1.jpg#zoom)
 
-All of the following pictures are from [Hans Belker's site](https://www.haraldbelker.com/wp-content/uploads/2020/04/)
+All of the following pictures are from [Harald Belker's site](https://www.haraldbelker.com/wp-content/uploads/2020/04/)
 
 ![](01_Bingo-1536x1024.jpg#zoom)
 
