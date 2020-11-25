@@ -1,7 +1,7 @@
 # Webots
 
-Anki used Maya to test Cozmo and Vector's emotion model  on the
-desktop using Webots before downloading.
+Anki used Webots to test Cozmo and Vector's emotion model  on the
+desktop before downloading.
 And perhaps the behavior tree.
 
 
