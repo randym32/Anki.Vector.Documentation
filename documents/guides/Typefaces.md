@@ -4,7 +4,7 @@ If you find that you wish to display text on Vector's display, you probably
 will have to create a picture with the text pre-rendered or create PNG's for
 the glyphs. 
 Vector doesn't included a "nice" font internally to display text.
-He does include a few for the digits, to display the weather, and fault codes.
+He does include a few of the digits, to display the weather, and fault codes.
 
 The typefaces you can consider are:
 
