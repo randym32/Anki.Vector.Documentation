@@ -1,4 +1,4 @@
-# Other URLS listed in the code
+# URLS listed in the code
 There are a bunch of URLs in Anki binary files…  these may be part of schemas, random comments, etc.
 
 ## Servers
@@ -37,7 +37,6 @@ There are a bunch of URLs in Anki binary files…  these may be part of schemas,
 
 ## Other
 - google.golang.org/genproto/googleapis/rpc/status
-- 
 - http://logo.verisign.com/vslogo.gif
 - google.golang.org/grpc/peer
 - google.golang.org/grpc/status
@@ -48,7 +47,7 @@ There are a bunch of URLs in Anki binary files…  these may be part of schemas,
 - google.golang.org/grpc/keepalive
 - google.golang.org/grpc/transport
 - google.golang.org/genproto/googleapis/rpc/status
-- 
+
 ## Some built in certificates?
 - http://www.certplus.com/CRL/class2.crl
 - http://fedir.comsign.co.il/crl/ComSignCA.crl
@@ -72,4 +71,3 @@ There are a bunch of URLs in Anki binary files…  these may be part of schemas,
 - http://www.quovadisglobal.com/cps
 - http://www.startssl.com/policy.pdf
 - http://www.startssl.com/intermediate.pdf
-- 
