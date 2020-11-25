@@ -65,10 +65,16 @@ The robot shaken file has a similar config:
 
 Look for the same block as above, and change the threshold.
 
-If you leave both "ReactToRobotShaken" and "ReactToRobotShakenGlobe", have the
+If you leave both "ReactToRobotShaken" and "ReactToRobotShakenSnowGlobe", have the
 first item with a higher number.
 If it is lower, it will always win.
 
 ## Reboot 
 
-Finally you have to reboot for the updates to load and take effect.
+Finally you have to restart the vic applications for the updates to load and take effect.
+This can be done with:
+
+    systemctl stop anki-robot.target
+    systemctl start anki-robot.target
+
+or a reboot.
