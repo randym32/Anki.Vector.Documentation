@@ -54,7 +54,7 @@ If something has gone wrong, an error will appear on Vector's face. These error 
 
 896(?)-897
 
-* Seems to be Whiskey specific. It seems to only show in their dev recovery and they work fine in normal firmware.
+* Seems to be Whiskey specific. It seems to only show in their dev recovery and they work fine in normal firmware, so this doesn't seem to be a worry.
 
 898
 
