@@ -8,7 +8,49 @@ If something has gone wrong, an error will appear on Vector's face. These error 
 
 870-895
 
-* Body board has a specific hardware fault.
+* Body board has a specific hardware fault. For all of these, try a reboot. If that doesn't work, your Vector probably needs some fixin'.
+
+870
+
+* The front right microphone is not working correctly.
+
+871
+
+* The front left microphone is not working correctly.
+
+872
+
+* The back right microphone is not working correctly.
+
+873
+
+* The back left microhpone is not working correctly.
+
+// I'm not sure if 870-873 actually show up as I have seen boards get through rampost without the backpack board connected.
+
+890
+
+* The front right cliff sensor is not working correctly.
+
+891
+
+* The front left cliff sensor is not working correctly.
+
+892
+
+* The back right cliff sensor is not working correctly.
+
+893
+
+* The back left cliff sensor is not working correctly.
+
+894
+
+* The front ToF sensor is not working correctly.
+
+895
+
+* The touch sensor is not working correctly.
 
 896(?)-897
 
