@@ -1,6 +1,6 @@
 ---
 title: VEP2 - Package management for modules on Vector
-summary: Supports installng and uninstalling packages/modules on Vector
+summary: Supports installing and uninstalling packages/modules on Vector
 authors: Randall Maas
 ---
 
@@ -103,7 +103,9 @@ Once the bugs are shaken out, the update-engine can be tweaked.  When the
 update-engine gets a URL with ".vpkg" (such as from the BLE app) at the 
 end, it downloads it, and then pass it to the package manager.
 
- 
 ## References
+
+The files are on github [https://github.com/randym32/Anki.Vector.PackageInstaller](https://github.com/randym32/Anki.Vector.PackageInstaller)
+
 ## Change history synopsis
 
