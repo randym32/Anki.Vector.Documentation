@@ -18,3 +18,6 @@ The animations tools had UIs with at least the following two screens:
 
 ![](109d6b7a5281229d594cf7363a641112_original.gif)
 
+### More Info
+* [Maya Tutorial (Beginner Video 2016)](https://youtu.be/tElsku3aKQI)
+* [AutoDesk Maya Tutorial Links](https://knowledge.autodesk.com/support/maya/learn-explore/caas/simplecontent/content/maya-tutorials.html)
