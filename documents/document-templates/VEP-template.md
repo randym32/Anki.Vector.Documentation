@@ -33,3 +33,7 @@ Has it been tried?  How much?  Where?
 
 ## Change history synopsis
 Summary of changes to help the reader
+
+|Date|Change|
+|----|------|
+|    |      |
