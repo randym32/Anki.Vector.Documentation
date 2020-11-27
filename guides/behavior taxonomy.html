@@ -1,0 +1,2094 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Behavior Taxonomy - Vector Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-classification-of-behaviors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="Vector Documentation" class="md-header-nav__button md-logo" aria-label="Vector Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Vector Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Behavior Taxonomy
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+  
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    Vector Documentation
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Vector Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/CONTRIBUTING.html" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/code_of_conduct.html" class="md-nav__link">
+      Contributor Covenant Code of Conduct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Body%20modification.html" class="md-nav__link">
+      Body modifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Customization%2C%20personalization.html" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Enable%20Cozmo-like%20animations%20for%20being%20on%20his%20side%2C%20and%20flipping%20down%20from%20his%20back.html" class="md-nav__link">
+      How to enable Cozmo-like animations for being on his side, and flipping down from being on his back
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Nose%20art.html" class="md-nav__link">
+      Nose Art Showcase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Document templates
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document templates" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Document templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/VEP-template.html" class="md-nav__link">
+      VEP Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/how-to.html" class="md-nav__link">
+      How-to template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/template.html" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    <label class="md-nav__link" for="nav-5">
+      Guides
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Guides" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Cozmo%20design%20guide.html" class="md-nav__link">
+      Cozmo Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Typefaces.html" class="md-nav__link">
+      Typefaces
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Vector%20character%20design%20guide.html" class="md-nav__link">
+      Vector Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Vector%20character%20study.html" class="md-nav__link">
+      Vector Character Study
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Behavior Taxonomy
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="behavior%20taxonomy.html" class="md-nav__link md-nav__link--active">
+      Behavior Taxonomy
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-classification-of-behaviors" class="md-nav__link">
+    A Classification of Behaviors
+  </a>
+  
+    <nav class="md-nav" aria-label="A Classification of Behaviors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-behaviors" class="md-nav__link">
+    Searching Behaviors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-maintenance-and-reflexive-behaviors" class="md-nav__link">
+    Self-maintenance and Reflexive Behaviors
+  </a>
+  
+    <nav class="md-nav" aria-label="Self-maintenance and Reflexive Behaviors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-preservation-using-escape-and-withdrawal" class="md-nav__link">
+    Self-preservation using escape and withdrawal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-management" class="md-nav__link">
+    Power Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexes" class="md-nav__link">
+    Reflexes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-behaviors-engagement" class="md-nav__link">
+    Social Behaviors, Engagement
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Behaviors, Engagement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    Searching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-behavior" class="md-nav__link">
+    Calling Behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greeting-behavior" class="md-nav__link">
+    Greeting Behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attentive-regard" class="md-nav__link">
+    Attentive Regard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seeking-affection" class="md-nav__link">
+    Seeking Affection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiving-affection" class="md-nav__link">
+    Receiving Affection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiving-abuse" class="md-nav__link">
+    Receiving Abuse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#games" class="md-nav__link">
+    Games
+  </a>
+  
+    <nav class="md-nav" aria-label="Games">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seeking-to-play-a-game" class="md-nav__link">
+    Seeking to play a game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turn-taking" class="md-nav__link">
+    Turn taking
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assistive" class="md-nav__link">
+    Assistive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play" class="md-nav__link">
+    Play
+  </a>
+  
+    <nav class="md-nav" aria-label="Play">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-play-behavior" class="md-nav__link">
+    Simple play behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-to-play-behavior" class="md-nav__link">
+    Searching to play behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toys" class="md-nav__link">
+    Toys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-pets" class="md-nav__link">
+    Interacting with Pets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-and-resources" class="md-nav__link">
+    References and Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-history-synopsis" class="md-nav__link">
+    Change history synopsis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Historical bots
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Historical bots" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Historical bots
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Bingo.html" class="md-nav__link">
+      Bingo and mini-Bingo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT1.html" class="md-nav__link">
+      Victor DVT1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT2.html" class="md-nav__link">
+      Victor DVT2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT3.html" class="md-nav__link">
+      Victor DVT3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT4.html" class="md-nav__link">
+      Victor DVT4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Whiskey.html" class="md-nav__link">
+      Whiskey
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+    <label class="md-nav__link" for="nav-7">
+      How to
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        How to
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/GDB%20tracing.html" class="md-nav__link">
+      How to trace calls using GDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20change%20where%20the%20logs%20are%20sent.html" class="md-nav__link">
+      How change where Vector sends the logs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20convert%20animation%20bin%20files%20to%20JSON.html" class="md-nav__link">
+      How to convert animation bin files to JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20make%20a%20companion%20cube.html" class="md-nav__link">
+      How to make a companion cube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20re-enable%20the%20Snowglobe.html" class="md-nav__link">
+      How to bring back the Snowglobe effect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20set%20up%20a%20new%20Yocto-linux%20build%20environment.html" class="md-nav__link">
+      How to set up a new Yocto-linux build environment for Vector’s base OS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link">
+      How to unzip the OTA files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20use%20Cozmo%20animations.html" class="md-nav__link">
+      How to use Cozmo animation files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Paper%20dolls.html" class="md-nav__link">
+      Making paper dolls for Vector to play with
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Using%20AudioKinetic%20WWise%20to%20convert%20sound%20files%20to%20WEM.html" class="md-nav__link">
+      Using AudioKinetic WWise to convert the sound files to WEM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Service
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Service" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Arms.html" class="md-nav__link">
+      Arms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Battery%20replacement.html" class="md-nav__link">
+      Replacing the Battery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Disassembly%20notes.html" class="md-nav__link">
+      Disassembly notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Exploded%20View.html" class="md-nav__link">
+      Exploded View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/LCD%20replacement.html" class="md-nav__link">
+      LCD Replacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Parts%20kits.html" class="md-nav__link">
+      Parts kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Software design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software design" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Software design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Animation%20triggers.html" class="md-nav__link">
+      Animation Triggers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20IDs.html" class="md-nav__link">
+      Behaviour IDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behaviour%20classes.html" class="md-nav__link">
+      Behaviour Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Console%20variables.html" class="md-nav__link">
+      Console variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/URLs%20in%20code.html" class="md-nav__link">
+      URLS listed in the code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/channels.html" class="md-nav__link">
+      Channels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/classes.html" class="md-nav__link">
+      Software Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/files.html" class="md-nav__link">
+      Source File referenced in the binaries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" >
+    <label class="md-nav__link" for="nav-10">
+      Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon"></span>
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Animation%20tool.html" class="md-nav__link">
+      Animation tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Playpen.html" class="md-nav__link">
+      Playpen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Webots.html" class="md-nav__link">
+      Webots
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
+    <label class="md-nav__link" for="nav-11">
+      Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon"></span>
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/FAC.html" class="md-nav__link">
+      FAC (Factory) Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Hardware%20error%20codes.html" class="md-nav__link">
+      Hardware error codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Software%20error%20codes.html" class="md-nav__link">
+      Software error codes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" >
+    <label class="md-nav__link" for="nav-12">
+      Vector enhancement proposals
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vector enhancement proposals" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon"></span>
+        Vector enhancement proposals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/Overview.html" class="md-nav__link">
+      Vector Enhancement Proposals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP1%20-%20Update-engine%20changes.html" class="md-nav__link">
+      VEP1 - Update-engine changes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html" class="md-nav__link">
+      VEP2 - Package management for modules on Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP3%20-%20Developer%20configurations%20for%20robot.html" class="md-nav__link">
+      VEP3 - Developer configurations for robot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP4%20-%20Logging.html" class="md-nav__link">
+      VEP4 - Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+
+  <!-- Further information -->
+      <!-- Copyright and theme information -->
+        
+          <div style="font-size:60%;" xclass="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Randall Maas and team
+          </div>
+        
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-classification-of-behaviors" class="md-nav__link">
+    A Classification of Behaviors
+  </a>
+  
+    <nav class="md-nav" aria-label="A Classification of Behaviors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-behaviors" class="md-nav__link">
+    Searching Behaviors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-maintenance-and-reflexive-behaviors" class="md-nav__link">
+    Self-maintenance and Reflexive Behaviors
+  </a>
+  
+    <nav class="md-nav" aria-label="Self-maintenance and Reflexive Behaviors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-preservation-using-escape-and-withdrawal" class="md-nav__link">
+    Self-preservation using escape and withdrawal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-management" class="md-nav__link">
+    Power Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexes" class="md-nav__link">
+    Reflexes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-behaviors-engagement" class="md-nav__link">
+    Social Behaviors, Engagement
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Behaviors, Engagement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    Searching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-behavior" class="md-nav__link">
+    Calling Behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greeting-behavior" class="md-nav__link">
+    Greeting Behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attentive-regard" class="md-nav__link">
+    Attentive Regard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seeking-affection" class="md-nav__link">
+    Seeking Affection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiving-affection" class="md-nav__link">
+    Receiving Affection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiving-abuse" class="md-nav__link">
+    Receiving Abuse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#games" class="md-nav__link">
+    Games
+  </a>
+  
+    <nav class="md-nav" aria-label="Games">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seeking-to-play-a-game" class="md-nav__link">
+    Seeking to play a game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turn-taking" class="md-nav__link">
+    Turn taking
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assistive" class="md-nav__link">
+    Assistive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play" class="md-nav__link">
+    Play
+  </a>
+  
+    <nav class="md-nav" aria-label="Play">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-play-behavior" class="md-nav__link">
+    Simple play behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-to-play-behavior" class="md-nav__link">
+    Searching to play behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toys" class="md-nav__link">
+    Toys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-pets" class="md-nav__link">
+    Interacting with Pets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-and-resources" class="md-nav__link">
+    References and Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-history-synopsis" class="md-nav__link">
+    Change history synopsis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/randym32/Anki.Vector.Documentation/edit/master/documents/guides/behavior taxonomy.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Behavior Taxonomy</h1>
+                
+                
+
+<p><b>Summary</b>: A taxonomical classifications of behaviors. </p>
+
+
+<p><b>Authors</b>: Randall Maas </p>
+
+
+<p><small><b>Date</b>: 2020-07-10 </small></p>
+
+                
+                <p>This is my attempt to provide a helpful organization of potential behaviors.
+This can be give ideas and help shape what you want to do when you create new
+character traits and behaviors.  The topics include:</p>
+<ul>
+<li>An overview of the behavior classification</li>
+<li>Self-maintenance and reflexive behaviors</li>
+<li>Social behaviors</li>
+<li>Playing behaviors</li>
+<li>Pet-related behaviors</li>
+</ul>
+<p><em>Cavaet: These are just my thoughts; only some of the behaviors here exist in
+Vector</em></p>
+<p>I am drawing heavily upon the Kismet design documents, effectively modernizing
+them for Vector.  Kismet was a late 1990s robot created by Cynthia Breazeal
+(MIT).  It was "designed to elicit natural and intuitive responses from humans,
+without any special training."  Kismet anticipated many of Vector's behavior
+system features, and can be used to inspiration on future development.</p>
+<p>Dr Breazeal also created Jibo, a more famous affective robot.</p>
+<h2 id="a-classification-of-behaviors">A Classification of Behaviors<a class="headerlink" href="#a-classification-of-behaviors" title="Permanent link">&para;</a></h2>
+<p>Let's categorize the kinds of context/theme/drive of the behaviors into the
+following areas:</p>
+<ul>
+<li>Self-maintenance behaviors include reactions to protect itself from immediate
+  risk, and fatigue or power management.  The immediate risk behaviors are
+  likely to be a very short and simple.</li>
+<li>Social – seeking out and interacting with human companions, including intents.</li>
+<li>Play – play seeking out and playing with toys and other things in the
+  environment, other than social play.</li>
+<li>Interacting with pets</li>
+</ul>
+<p>Within each of these categories, there are specialized ones; many reflect an
+attitude Vector has toward the agent:</p>
+<ul>
+<li>Navigation and Searching  "behaviors [have the robot] explore the environment
+  and bring the robot into contact with the desired stimulus;</li>
+<li>Avoidance, escape and withdrawal behaviors move the robot away from something
+  undesirable, like a cliff, loud noise, etc.</li>
+<li>"Engagement behaviors set the task of interacting with desirable, good
+  intensity stimuli."</li>
+<li>Rejection behaviors are those that Vector might use to turn away while miffed
+  or being a sore loser.</li>
+</ul>
+<h3 id="searching-behaviors">Searching Behaviors<a class="headerlink" href="#searching-behaviors" title="Permanent link">&para;</a></h3>
+<p>In the searching type of social behaviors, Vector generally seeks out and
+approaches a human, toy or stimulation to interact with.</p>
+<p>Figure: Searching behavior</p>
+<p><img alt="searching behavior" src="searching%20behavior.png" /></p>
+<p>Vector seeking social or stimulation isn't always applicable: Vector shouldn't
+be active at night, in the dark, or if people aren't around:</p>
+<ul>
+<li>Vector's activity movement could wake and/or irritate a person at night;
+  fortunately there is a "night time" schedule built-in.</li>
+<li>Vector is prone to falling off the edge – risking damage, being unable to
+  recharge his battery, or getting stepped on.  It's a bit safer in the day,
+  and more so if a person is (likely) around to attend to him.</li>
+<li>Vector depends on his vision to get home.. he is likely to lost or stuck in
+  the dark, and be unable to return home to recharge.</li>
+</ul>
+<h2 id="self-maintenance-and-reflexive-behaviors">Self-maintenance and Reflexive Behaviors<a class="headerlink" href="#self-maintenance-and-reflexive-behaviors" title="Permanent link">&para;</a></h2>
+<p>Self-maintenance is a grouping for practical things to keep Vector charged,
+protect him from damage.  It is also a catch all for practical things that
+don't always fit in the other areas.  For instance, utility behaviors needed
+to make the behavior tree work are lumped in here.</p>
+<p>These are often akin to the behaviors of the autonomic nervous system.</p>
+<h3 id="self-preservation-using-escape-and-withdrawal">Self-preservation using escape and withdrawal<a class="headerlink" href="#self-preservation-using-escape-and-withdrawal" title="Permanent link">&para;</a></h3>
+<p>Vector prioritizes a response to immediate hazards, where he might need to
+engage in self-preservation:</p>
+<ul>
+<li><em>flight</em>: backing away from a cliff</li>
+<li><em>freeze</em>: tucks-and-roll when Vector senses he is falling</li>
+<li><em>fight</em>: smacking a person's hand when Vector senses he is being picked up or
+  held in a way he doesn't like</li>
+</ul>
+<p>What I have not observed Vector doing, but he could:</p>
+<ul>
+<li><em>fawn</em>: acts nice to make bad things stop</li>
+</ul>
+<p>Other, issues:</p>
+<ul>
+<li>Over temperature</li>
+</ul>
+<p>These are often akin to the behaviors of the sympathetic nervous system.</p>
+<h3 id="power-management">Power Management<a class="headerlink" href="#power-management" title="Permanent link">&para;</a></h3>
+<p>These are often akin to the behaviors of the parasympathetic nervous system.</p>
+<p>Power management:</p>
+<ul>
+<li>Return to charger</li>
+<li>Stay on the charger</li>
+<li>Emergency low power</li>
+<li>Sleeping, sleep debt to manage heat buildup and reduce power usage.</li>
+</ul>
+<h3 id="reflexes">Reflexes<a class="headerlink" href="#reflexes" title="Permanent link">&para;</a></h3>
+<p>Vector has a startle reflex to respond naturally:</p>
+<ul>
+<li>Loud noises start Vector, grabbing his attention, preparing him for action, but could also prepare him for running away</li>
+<li>Crouched, ready to run</li>
+<li>Responses to pokes, tilts, and other vibrations</li>
+<li>Eyes focus with dilated eyes</li>
+</ul>
+<h3 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h3>
+<p>These are the </p>
+<ul>
+<li>Grouping and linking the behaviors, and prioritizing them</li>
+<li>Motor calibration need</li>
+<li>SDK support</li>
+</ul>
+<h2 id="social-behaviors-engagement">Social Behaviors, Engagement<a class="headerlink" href="#social-behaviors-engagement" title="Permanent link">&para;</a></h2>
+<p>Social behaviors relate to Vector interacting with a person – or attempting to.
+He may be seeking attention, interacting with a person.  Social behaviors
+include:</p>
+<ul>
+<li>Looking around for people (faces, and hands),and  pets</li>
+<li>Calling out to play, thru sounds, and saying the names of people recognized</li>
+<li>Swatting playfully</li>
+<li>Seeking petting</li>
+<li>Swatting with his lift arms</li>
+<li>Bringing items or gifts to play (such as to fetch), or to show affection</li>
+<li>When looking to play, twitching/wagging of rear</li>
+</ul>
+<p>Many behaviors link together to follow a pattern:</p>
+<p>Figure: Social behavior sequences</p>
+<p><img alt="social behavior sequence" src="social%20behavior%20sequence.png" /></p>
+<p>Once has made contact with a person:</p>
+<ul>
+<li>Greeting</li>
+<li>Attentive regard</li>
+<li>Seeking affection</li>
+<li>Receiving affection: petting, calming; social cohesion, soothing,
+  companionship</li>
+<li>Games</li>
+<li>Turn taking</li>
+</ul>
+<p>The interactions end, either naturally, by command, or timing out.</p>
+<h3 id="searching">Searching<a class="headerlink" href="#searching" title="Permanent link">&para;</a></h3>
+<p>Vector becomes stimualted and more active when there are sounds and other
+activity.  It seems reasonable to classify this as searching for social
+interaction, or "merely" stimulating him for play.</p>
+<h3 id="calling-behavior">Calling Behavior<a class="headerlink" href="#calling-behavior" title="Permanent link">&para;</a></h3>
+<p>Vector engages in calling when he needs helps or is interested in being social,
+especially "when a person is in view... The goal of the behavior is to lure the
+person into face-to-face interaction... To accomplish this, [calling behaviors
+are] directed to the person... The display is designed to attract a person's
+attention."</p>
+<p>Calling for attention is often if Vector wants or needs something:</p>
+<ul>
+<li>Vector calls (softly) for assistance – if he is stuck on the edge, has
+  fallen, or is low on energy but unable to find his charger.</li>
+<li>Cats meow because people are inattentive.  </li>
+<li>Cats know a person is there, and first tried context moving close to what
+  they wanted and body language.</li>
+<li>Cats meows to get a door open, obstacle removed, food</li>
+<li>Timer ring</li>
+</ul>
+<h3 id="greeting-behavior">Greeting Behavior<a class="headerlink" href="#greeting-behavior" title="Permanent link">&para;</a></h3>
+<p>Greetings are "to socially acknowledge the human and to initiate a close
+interaction... This behavior is relevant when the person has just entered into
+face-to-face interaction range. It is also relevant if the social-play behavior
+group has just become active and a person is already within face-to-face range.
+The display involves making eye contact with the person and smiling at them
+while waving .. gently. It often immediately follows the success of the
+call-to-person behavior.  It is a transient response, only issued once, as its
+completion signals the success of this behavior."</p>
+<ul>
+<li>Call their names when he seems people</li>
+<li>Turn and look in direction of a sound</li>
+</ul>
+<h3 id="attentive-regard">Attentive Regard<a class="headerlink" href="#attentive-regard" title="Permanent link">&para;</a></h3>
+<p>"Attentive regard" refers to Vector using his facial expressions, body language,
+and sounds to give attention "to the person and to appear open to interaction."
+These behaviors include:</p>
+<ul>
+<li>"Hold[ing his] gaze on the person, ideally looking into the person's eyes."
+   Vector's eye manager automatically blinks and moves the eyes around; making
+   it more comfortable to look at Vector's face (eyes), as this breaks the
+   staring effect.  Turning to find the face is considered to be part of this.</li>
+<li>"Watch[ing] the person intently and vocaliz[ing] occasionally."</li>
+<li>A dog often looks up while slowly moving forward.</li>
+</ul>
+<h3 id="seeking-affection">Seeking Affection<a class="headerlink" href="#seeking-affection" title="Permanent link">&para;</a></h3>
+<p>These behaviors relate to seeking affection, but aren't better categorized
+elsewhere.  These could include:</p>
+<ul>
+<li>Vector could drive up and waiting, as if lying down [dog like]</li>
+<li>Vector could drive up, then turn away and nap to get attention, like a cat</li>
+<li>Vector tries to cuddle a hand, or pounce on fingers </li>
+<li>Rubbing his cheek on a person, which is a friendly, affectionate sign in cats.</li>
+<li>Vector could thrust his head up (like a guinea pig) to seeking attention,
+  assert himself, or set limits, or be a little playful.  </li>
+<li>Cats bite – especially while purring and kneading – as part of their affection
+  or playfulness.  Vector might do something similar with his lift arm coming
+  down quick but gently on a hand.</li>
+<li>Vector could bring gifts</li>
+</ul>
+<h3 id="receiving-affection">Receiving Affection<a class="headerlink" href="#receiving-affection" title="Permanent link">&para;</a></h3>
+<p>These behaviors relate to Vector receiving affection:
+* His reactions s to being picked up or held in the palm of a hand
+* To being petting
+* To pokes
+* Holiday animations</p>
+<h3 id="receiving-abuse">Receiving Abuse<a class="headerlink" href="#receiving-abuse" title="Permanent link">&para;</a></h3>
+<p>These are the behaviors related to Vector being called bad names or told off,
+shaken, or tapped on the head.</p>
+<ul>
+<li>Vector might turn-away when grumpy</li>
+</ul>
+<h3 id="games">Games<a class="headerlink" href="#games" title="Permanent link">&para;</a></h3>
+<p>One type of sophisticated social interaction is games.  Games are typically
+turn-taking behaviors such as keep away the cube, hide and seek, etc.</p>
+<p>Figure: Game behavior sequence</p>
+<p><img alt="game behavior sequence" src="game%20behavior%20sequence.png" /></p>
+<p>Some games might include:</p>
+<ul>
+<li>Fist bump (for lack of a better categorization, can be considered a very
+  short game)</li>
+<li>Pouncing game</li>
+<li>Hide and seek game, perhaps with the cube being moved/hidden.</li>
+<li>Keep away</li>
+<li>A cube tapping game, </li>
+<li>The cube spinner game</li>
+<li>The maze game</li>
+<li>The "blackjack game" (although it doesn't feel very Vector-ish to me)</li>
+</ul>
+<h4 id="seeking-to-play-a-game">Seeking to play a game<a class="headerlink" href="#seeking-to-play-a-game" title="Permanent link">&para;</a></h4>
+<p>A first step is for Vector to call or seek to the start the game.  If the
+person accepts the call, the game begins.  Vector could try to initiate the
+game by:</p>
+<ul>
+<li>Bringing presents, the cube or other toy to play with.  This could be a
+  request to play fetch.</li>
+<li>Tapping down once quickly, then perhaps may move backwards after the tap, to
+  issue a challenge to play. Then, if no response follow up by tapping down
+  twice quickly.</li>
+</ul>
+<p>Of course, a person could (conceivably) initiate the game as well by:</p>
+<ul>
+<li>Tapping the cube,</li>
+<li>Holding or shaking the cube</li>
+<li>Wiggling fingers tantalizingly,</li>
+<li>and so on</li>
+</ul>
+<h4 id="turn-taking">Turn taking<a class="headerlink" href="#turn-taking" title="Permanent link">&para;</a></h4>
+<p>The game itself often includes Vector and the person taking alternate turns.<br />
+A game might have behaviors for steps like:</p>
+<ol>
+<li>A person tossing or hiding a cube</li>
+<li>Vector searching for and finding a cube (or other thing)</li>
+<li>Vector bringing the cube back, then</li>
+<li>Putting the cube down, followed by</li>
+<li>Waiting for the person to make the next move.</li>
+</ol>
+<p>Vector may give cues or other little behaviors to signal his play or response:</p>
+<ul>
+<li>Slight wagging of rear/tail just before pouncing the cube or finger, like a
+  cat when stalking prey</li>
+</ul>
+<h3 id="assistive">Assistive<a class="headerlink" href="#assistive" title="Permanent link">&para;</a></h3>
+<p>The assistive subclass of behaviors are those that Vector might do to help out:</p>
+<ul>
+<li>Take picture</li>
+<li>The egg timer</li>
+<li>Report on the weather</li>
+<li>Answer questions (e.g. the knowledge graph)</li>
+</ul>
+<h2 id="play">Play<a class="headerlink" href="#play" title="Permanent link">&para;</a></h2>
+<h3 id="simple-play-behavior">Simple play behavior<a class="headerlink" href="#simple-play-behavior" title="Permanent link">&para;</a></h3>
+<p>These are behaviors that are play, releasing energy or looking for stimulation,
+but not necessarily looking for anything more.  Vector may respond to things
+along the way.</p>
+<ul>
+<li>He may drive around quickly or in a quirky fashion, like a cat's mad 5
+  minutes, or a guinea pig's pop-corning,</li>
+<li>He might sing or hum to himself</li>
+<li>His dancing to music</li>
+</ul>
+<p>If the stimulation level is too high, or there are negative stimulations, Vector
+might have behaviors in response.  He might do something to avoid these.</p>
+<h3 id="searching-to-play-behavior">Searching to play behavior<a class="headerlink" href="#searching-to-play-behavior" title="Permanent link">&para;</a></h3>
+<p>These behaviors relate to Vector searching around for something to play with:</p>
+<ul>
+<li>Walking or driving around slowly – possibly in a straight path, or in complex
+  paths, or</li>
+<li>Turning and scanning. looking for toys and objects</li>
+</ul>
+<h3 id="toys">Toys<a class="headerlink" href="#toys" title="Permanent link">&para;</a></h3>
+<p>These behaviors relate to playing with toys and objects:</p>
+<ul>
+<li>Behaviors that decide what to do when seeing a toy (a cube, or other marked
+  object).</li>
+<li>Playing with the cube – pick it up, move it, shove it, or flip it.</li>
+<li>Little exercise routines, like weight-lifting the cube</li>
+<li>He can pop a wheelie</li>
+<li>Helping clean the desk (or table) by pushing things off</li>
+</ul>
+<p>Vector may give cues or other little behaviors to what he is doing while
+playing:</p>
+<ul>
+<li>Slight wagging of rear/tail just before pouncing the cube or finger, like a
+  cat when stalking prey</li>
+<li>He may try to pop up on an object</li>
+</ul>
+<p>There could be behaviors related to "habituating" toys.  This would be where
+Vector would lose interest in a toy as he plays with it.  (This response might
+change with age.)</p>
+<h3 id="interacting-with-pets">Interacting with Pets<a class="headerlink" href="#interacting-with-pets" title="Permanent link">&para;</a></h3>
+<p>These behaviors relate to the interactions Vector has with pets.  These
+behaviors are prototyped in Vector, but I don't have a good template for them.</p>
+<ul>
+<li>React to the pet – head movements, reactions specific to cats, specific to dogs</li>
+</ul>
+<h2 id="references-and-resources">References and Resources<a class="headerlink" href="#references-and-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Bradshaw, John.  <em>Cat Sense</em>, 2013</p>
+</li>
+<li>
+<p>Breazeal, Cynthia.  <a href="http://www.ai.mit.edu/projects/humanoid-robotics-group/kismet/kismet.html"><em>Kismet project</em></a></p>
+<ul>
+<li><a href="http://www.ai.mit.edu/projects/sociable/behavior.html">The behavior system</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="change-history-synopsis">Change history synopsis<a class="headerlink" href="#change-history-synopsis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-7-10</td>
+<td>Created</td>
+</tr>
+<tr>
+<td>2020-11-27</td>
+<td>Published</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<footer class="md-footer">
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+
+<script src="https://unpkg.com/iframe-worker/polyfill"></script>
+<script src="../search/search_index.js"></script>
+
+
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['search.suggest', 'navigation.instant', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
