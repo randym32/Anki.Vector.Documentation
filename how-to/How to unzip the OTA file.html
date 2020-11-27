@@ -14,7 +14,7 @@
     
     
       
-        <title>How to unzip the OTA file - Vector Documentation</title>
+        <title>How to unzip the OTA files - Vector Documentation</title>
       
     
     
@@ -58,6 +58,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-unzip-the-ota-files" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              How to unzip the OTA file
+              How to unzip the OTA files
             
           </span>
         </div>
@@ -638,6 +643,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="How%20to%20set%20up%20a%20new%20Yocto-linux%20build%20environment.html" class="md-nav__link">
+      How to set up a new Yocto-linux build environment for Vector’s base OS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -645,10 +662,82 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to unzip the OTA files
+        <span class="md-nav__icon md-icon"></span>
+      </label>
     
     <a href="How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link md-nav__link--active">
-      How to unzip the OTA file
+      How to unzip the OTA files
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decrypting-the-ota-arcrhives" class="md-nav__link">
+    Decrypting the OTA arcrhives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unziping-the-system-filesystem-sysfs-archive" class="md-nav__link">
+    Unziping the system filesystem (sysfs) archive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unziping-the-boot-initramfs-filesystem-boot-archive" class="md-nav__link">
+    Unziping the boot initramfs filesystem (boot) archive
+  </a>
+  
+    <nav class="md-nav" aria-label="Unziping the boot initramfs filesystem (boot) archive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-and-windows-10-wsl-methd" class="md-nav__link">
+    Linux and Windows 10 WSL methd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imgtool-imjtool" class="md-nav__link">
+    imgtool / imjtool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-and-resources" class="md-nav__link">
+    References and Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -866,7 +955,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/URLs%20in%20code.html" class="md-nav__link">
-      Other URLS listed in the code
+      URLS listed in the code
     </a>
   </li>
 
@@ -1147,6 +1236,77 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decrypting-the-ota-arcrhives" class="md-nav__link">
+    Decrypting the OTA arcrhives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unziping-the-system-filesystem-sysfs-archive" class="md-nav__link">
+    Unziping the system filesystem (sysfs) archive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unziping-the-boot-initramfs-filesystem-boot-archive" class="md-nav__link">
+    Unziping the boot initramfs filesystem (boot) archive
+  </a>
+  
+    <nav class="md-nav" aria-label="Unziping the boot initramfs filesystem (boot) archive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-and-windows-10-wsl-methd" class="md-nav__link">
+    Linux and Windows 10 WSL methd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imgtool-imjtool" class="md-nav__link">
+    imgtool / imjtool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-and-resources" class="md-nav__link">
+    References and Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1157,21 +1317,75 @@
                   </a>
                 
                 
-                  <h1>How to unzip the OTA file</h1>
                 
-                
-                <p>See the <a href="https://github.com/GooeyChickenman/victor/tree/master/firmware">Project Victor Firmware folder</a> for a description how to download the .ota files and how to verify them.  It also includes a tool to perform the extraction.</p>
+                <h1 id="how-to-unzip-the-ota-files">How to unzip the OTA files<a class="headerlink" href="#how-to-unzip-the-ota-files" title="Permanent link">&para;</a></h1>
+<p>See the <a href="https://github.com/GooeyChickenman/victor/tree/master/firmware">Project Victor Firmware folder</a>
+for a description how to download the .ota files and how to verify them.  It
+also includes a tool that can aid with the extraction.</p>
+<p>There are three parts</p>
+<ol>
+<li>First, the OTA's have to be decrypted</li>
+<li>Next, the system files are extracted from the sysfs archive</li>
+<li>Finally boot initramfs files can be extracted.  (Their archive is a bit different)</li>
+</ol>
+<h2 id="decrypting-the-ota-arcrhives">Decrypting the OTA arcrhives<a class="headerlink" href="#decrypting-the-ota-arcrhives" title="Permanent link">&para;</a></h2>
 <p>The OTA files are tar.gz files, so they can be opened with tar (or similar tool).  Among the files inside are two files:</p>
 <p><code>apq8009-robot-boot.img.gz</code> (encrypted)</p>
 <p><code>apq8009-robot-sysfs.img.gz</code> (encrypted)</p>
 <p>Decrypting these files is done by:</p>
 <p><code>openssl enc -d -aes-256-ctr -pass file:ota.pas -in apq8009-robot-boot.img.gz -out apq8009-robot-boot.img.dec.gz</code></p>
 <p><code>openssl enc -d -aes-256-ctr -pass file:ota.pas -in apq8009-robot-sysfs.img.gz -out apq8009-robot-sysfs.img.dec.gz</code></p>
-<p>To use OpenSSL 1.1.0 or later, add “-md md5” to the command:</p>
+<p>With OpenSSL 1.1.0 or later, add “-md md5” to the command:</p>
 <p><code>openssl enc -d -aes-256-ctr -pass file:ota.pas -md md5 -in apq8009-robot-boot.img.gz -out apq8009-robot-boot.img.dec.gz</code></p>
 <p><code>openssl enc -d -aes-256-ctr -pass file:ota.pas -md md5 -in apq8009-robot-sysfs.img.gz -out apq8009-robot-sysfs.img.dec.gz</code></p>
 <p>The keys can be found in the <a href="https://github.com/GooeyChickenman/victor/tree/master/detail/keys">detail/keys folder</a> in the Project Victor repository.</p>
-<p>(from https://groups.google.com/forum/#!searchin/anki-vector-rooting/openssl%7Csort:date/anki-vector-rooting/YlYQsX08OD4/fvkAOZ91CgAJ) </p>
+<h2 id="unziping-the-system-filesystem-sysfs-archive">Unziping the system filesystem (sysfs) archive<a class="headerlink" href="#unziping-the-system-filesystem-sysfs-archive" title="Permanent link">&para;</a></h2>
+<p>On windows, the decoded <code>.img</code> files can extracted with 7zip</p>
+<p>On linux, you can mount the file</p>
+<ol>
+<li>gunzip the decrypted <code>apq8009-robot-sys.img.dec.gz</code></li>
+<li><code>sudo mkdir /media/iso</code></li>
+<li><code>sudo mount -o loop apq8009-robot-sys.img.dec /media/iso</code></li>
+</ol>
+<h2 id="unziping-the-boot-initramfs-filesystem-boot-archive">Unziping the boot initramfs filesystem (boot) archive<a class="headerlink" href="#unziping-the-boot-initramfs-filesystem-boot-archive" title="Permanent link">&para;</a></h2>
+<p>There are a couple of alterantives for tool sets:</p>
+<ul>
+<li>With Linux and Windows 10, there is a convenient tool </li>
+<li>For other systems, imgtool/imjtool from the New Android Book works</li>
+</ul>
+<h3 id="linux-and-windows-10-wsl-methd">Linux and Windows 10 WSL methd<a class="headerlink" href="#linux-and-windows-10-wsl-methd" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Go to 
+<a href="https://nerdschalk.com/how-to-unpack-and-repack-boot-and-ramdisk-files-easily/">How to unpack and repack boot and ramdisk files easily</a> 
+and follow the directions for the tool down load and installation</p>
+</li>
+<li>
+<p>Added them to my path,</p>
+</li>
+<li>Opened wsl</li>
+<li>gunzip the decrypted <code>apq8009-robot-boot.img.dec.gz</code></li>
+<li>Finally "unpack apq8009-robot-boot.img" </li>
+</ol>
+<h3 id="imgtool-imjtool">imgtool / imjtool<a class="headerlink" href="#imgtool-imjtool" title="Permanent link">&para;</a></h3>
+<p>For other systems there is a help tool already exists</p>
+<ol>
+<li>Download, build and install <a href="http://newandroidbook.com/tools/imjtool.html">imjtool</a></li>
+<li>gunzip the decrypted <code>apq8009-robot-boot.img.dec.gz</code></li>
+<li>Extracted the files using the image tool</li>
+</ol>
+<p><code>imjtool boot.dec.img extract</code></p>
+<p>That creates an extract folder with the ramdisk.  The ramdisk is in "cpio"
+format.</p>
+<p>Finally Extracted the files with</p>
+<p>cd extract
+  gzcat ramdisk| cpio -idmv</p>
+<h2 id="references-and-resources">References and Resources<a class="headerlink" href="#references-and-resources" title="Permanent link">&para;</a></h2>
+<p>The decryption was originally posted to the <a href="from https://groups.google.com/forum/#!searchin/anki-vector-rooting/openssl%7Csort:date/anki-vector-rooting/YlYQsX08OD4/fvkAOZ91CgAJ">Anki Vector Rooting google group</a> </p>
+<p><a href="https://nerdschalk.com/how-to-unpack-and-repack-boot-and-ramdisk-files-easily/">How to unpack and repack boot and ramdisk files easily</a> on Linux and windows 10</p>
+<ul>
+<li>imgtool — now called <a href="http://newandroidbook.com/tools/imjtool.html">imjtool</a></li>
+</ul>
                 
               
               

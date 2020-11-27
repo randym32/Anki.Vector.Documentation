@@ -704,8 +704,20 @@
 
 
   <li class="md-nav__item">
+    <a href="How%20to%20set%20up%20a%20new%20Yocto-linux%20build%20environment.html" class="md-nav__link">
+      How to set up a new Yocto-linux build environment for Vector’s base OS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link">
-      How to unzip the OTA file
+      How to unzip the OTA files
     </a>
   </li>
 
@@ -923,7 +935,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/URLs%20in%20code.html" class="md-nav__link">
-      Other URLS listed in the code
+      URLS listed in the code
     </a>
   </li>
 
@@ -1312,11 +1324,16 @@ shaken.  Here is how to re-enable it.</p>
 <pre><code>/anki/data/assets/cozmo_resources/config/engine/behaviorComponent/behaviors/victorBehaviorTree/reactions/reactToRobotShaken.json
 </code></pre>
 <p>Look for the same block as above, and change the threshold.</p>
-<p>If you leave both "ReactToRobotShaken" and "ReactToRobotShakenGlobe", have the
+<p>If you leave both "ReactToRobotShaken" and "ReactToRobotShakenSnowGlobe", have the
 first item with a higher number.
 If it is lower, it will always win.</p>
 <h2 id="reboot">Reboot<a class="headerlink" href="#reboot" title="Permanent link">&para;</a></h2>
-<p>Finally you have to reboot for the updates to load and take effect.</p>
+<p>Finally you have to restart the vic applications for the updates to load and take effect.
+This can be done with:</p>
+<pre><code>systemctl stop anki-robot.target
+systemctl start anki-robot.target
+</code></pre>
+<p>or a reboot.</p>
                 
               
               
