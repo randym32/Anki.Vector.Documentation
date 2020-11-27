@@ -12,6 +12,9 @@ The animations tools had UIs with at least the following two screens:
 
 ![Animation Software](VectorAnimation-tool2.png)
 
+![Animation Software](CozmoAnimation-tool1.jpg)
+
+![Animation Software](CozmoAnimation-tool2.jpg)
 
 ![](109d6b7a5281229d594cf7363a641112_original.gif)
 

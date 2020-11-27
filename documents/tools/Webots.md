@@ -9,5 +9,8 @@ And perhaps the behavior tree.
 
 ![Webots](Cozmo_EmotionSystem-768x456.jpg)
 
+![Webots 2](webots-2.jpg)
+
+
 [0]: https://designingsound.org/2016/11/15/sound-for-robots-an-interview-with-sr-sound-designer-ben-gabaldon/
 
