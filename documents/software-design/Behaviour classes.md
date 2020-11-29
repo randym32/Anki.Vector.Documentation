@@ -7,7 +7,7 @@
 |Alexa||
 |AlexaSignInOut||
 |AnimGetInLoop||
-|AnimSequence||
+|AnimSequence|This kind of behavior plays an animation.|
 |AnimSequenceWithFace||
 |AnimSequenceWithObject||
 |AskForHelp||
@@ -40,10 +40,10 @@
 |DevViewCubeBackpackLights||
 |DispatchAfterShake||
 |DispatcherPassThrough||
-|DispatcherQueue||
+|DispatcherQueue|This behavior runs each of the behaviors in the `behavior` array in order.|
 |DispatcherRandom||
-|DispatcherStrictPriority||
-|DispatcherStrictPriorityWithCooldown||
+|DispatcherStrictPriority|This behavior runs each of the behaviors in the `behavior` array in order.|
+|DispatcherStrictPriorityWithCooldown|This behavior runs each of the behaviors in the `behavior` array in order.  Behaviors still in a cooldown period are skipped.|
 |DisplayWallTime||
 |DisplayWeather||
 |DockingTestSimple||
@@ -173,4 +173,3 @@
 |Wait||
 |WallTimeCoordinator||
 |WiggleOntoChargerContacts||
-|

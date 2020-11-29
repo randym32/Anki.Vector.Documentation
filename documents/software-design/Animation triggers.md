@@ -241,7 +241,7 @@
 |HighTemperatureWarningFace||
 |ICantDoThat||
 |Idle_09||
-|InitialWakeUp||
+|[InitialWakeUp](startup behavior.md)|This is used by the [InitNormalOperationBehavior](startup behavior.md)|
 |InteractWithFaceTrackingIdle||
 |InteractWithFacesInitialNamed||
 |InteractWithFacesInitialUnnamed||

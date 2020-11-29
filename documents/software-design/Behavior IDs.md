@@ -3,7 +3,7 @@
 |Behavior ID|Description|
 |-----------|-----------|
 |AcknowledgeCharger||
-|AcousticTestMode||
+|AcousticTestMode|This behavior is the first behavior called when Vector staarts in an acousting testing mode|
 |ActiveLookForFaces||
 |AlexaSignInOut||
 |Alexa||
@@ -116,8 +116,8 @@
 |HighLevelAI||
 |HowOldAreYouCounting||
 |HowOldAreYou||
-|InitNormalOperation||
-|InitPRDemo||
+|InitNormalOperation|This behavior is the first behavior called when Vector starts normally.|
+|InitPRDemo|This behavior is the first behavior called when Vector starts in a PR demo mode.|
 |InitialHeldInPalmReaction||
 |InitialPickupAnimation||
 |IntentUnmatched||
@@ -154,7 +154,7 @@
 |MovementTurnRight||
 |NoCloud||
 |NoWifi||
-|NormalWakeUp||
+|NormalWakeUp|This is called by [*InitNormalBehavior* on start](startup behavior.md).  It plays the wake up animation --- if it isn't night time, and this isn't a maintenance reboot.|
 |NothingToDo_Idle||
 |ObservingDriveOffCharger||
 |ObservingEyeContact||
@@ -180,7 +180,7 @@
 |OnboardingTeachMeetVictor||
 |OnboardingTeachWakeWord||
 |OnboardingWakeUp||
-|Onboarding||
+|Onboarding|This behavior is the first behavior called when Vector starts "fresh" (new from factory or a clearing of user data) and is now onboarding a new human companion.|
 |PRDemoBigGreeting||
 |PRDemoComeHere||
 |PRDemoExploring||
