@@ -1,4 +1,8 @@
-# Start up behavior
+---
+title: Start up behavior
+summary: The initial startup behavior that kicks off normal operation.
+         (These are self-maintenance behaviors)
+---
 
 When Vector's application starts, it looks up a top level state to kick off
 the initial behavior -- has the robot been tested at the factory?  Has the
@@ -60,3 +64,11 @@ used:
 * `anim_power_offon_02`
 * `anim_power_offon_03`
 * `anim_power_offon_04`
+
+
+## Change history synopsis
+
+
+|Date|Change|
+|----|------|
+|2020-11-29|Created, setup format|
