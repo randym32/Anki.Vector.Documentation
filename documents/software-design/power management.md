@@ -53,7 +53,7 @@ turning off.
 
 | Name | Type | Value   | Description|
 |------|------|---------|------------|
-|powerButtonHeldToActivate_ms|int|ms|250 ms|The minimum time that the power button must be held down to activate the power off sequence.|
+|powerButtonHeldToActivate_ms|int|250 ms|The minimum time that the power button must be held down to activate the power off sequence.|
 |powerOnAnimName|animation|anim_power_offon_01|The animation to play if the button is released and Vector will resume.|
 |powerOffAnimName|animation|anim_power_onoff_01|The animation to play while powering off.|
 
