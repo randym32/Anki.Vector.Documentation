@@ -25,7 +25,13 @@ img[src*="#right"] {
     height:auto;
     max-width:170px;
 }
-
+/* for image caption */
+img + em {
+    font-style: normal;
+    display: inherit;
+    text-align: center;
+    font-size: 90%;
+}
 @media print {
   article {
     font-size: 9pt !important;

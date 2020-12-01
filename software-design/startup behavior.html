@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#start-up-behavior" class="md-skip">
+        <a href="#mapping-to-the-initial-behavior" class="md-skip">
           Skip to content
         </a>
       
@@ -957,14 +957,24 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="power%20management.html" class="md-nav__link">
+      Power management behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -979,8 +989,6 @@
       
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1006,6 +1014,13 @@
         <li class="md-nav__item">
   <a href="#other-variations" class="md-nav__link">
     Other variations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-history-synopsis" class="md-nav__link">
+    Change history synopsis
   </a>
   
 </li>
@@ -1264,8 +1279,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1294,6 +1307,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#change-history-synopsis" class="md-nav__link">
+    Change history synopsis
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1311,9 +1331,16 @@
                   </a>
                 
                 
+                  <h1>Start up behavior</h1>
                 
-                <h1 id="start-up-behavior">Start up behavior<a class="headerlink" href="#start-up-behavior" title="Permanent link">&para;</a></h1>
-<p>When Vector's application starts, it looks up a top level state to kick off
+                
+
+<p><b>Summary</b>: The initial startup behavior that kicks off normal operation. (These are self-maintenance behaviors) </p>
+
+
+
+                
+                <p>When Vector's application starts, it looks up a top level state to kick off
 the initial behavior -- has the robot been tested at the factory?  Has the
 owner gone thru on boarding?  And so on. </p>
 <p>This behavior is the root of the behavior tree that
@@ -1336,9 +1363,12 @@ sub-directories:</p>
 </code></pre>
 <p>These top-level states are mapped to initial behavior using
 <code>victor_behavior_config.json</code></p>
-<p><img alt="startup behavior diagram" src="startup%20behavior.svg" /></p>
+<p><img alt="startup behavior diagram" src="startup%20behavior.svg" />
+<em>Figure: The start-up behavior tree</em></p>
 <p>(In a few cases the mapping is hardcoded in the software.)</p>
-<p>In normal operation, this is the <code>InitNormalOperation</code> behavior.</p>
+<p>In normal operation, this is the <code>InitNormalOperation</code> behavior.  The behavior
+file is located at:</p>
+<p>behaviors/victorBehaviorTree/initNormalOperation.json</p>
 <h2 id="walk-thru-of-the-initnormaloperation-behavior">Walk thru of the InitNormalOperation behavior<a class="headerlink" href="#walk-thru-of-the-initnormaloperation-behavior" title="Permanent link">&para;</a></h2>
 <p>When the <code>InitNormalOperation</code> (class <code>DispatcherStrictPriorityWithCooldown</code>)
 behavior first starts, it does a one-off run of a <code>NormalWakeUp</code>  behavior.
@@ -1349,7 +1379,10 @@ settings its cooldown timer to a period that is infinitely long.</p>
 <p>The <code>NormalWakeUp</code> (class<code>AnimSequence</code>) behavior checks to see that it is not
 night time, and not a maintenance reboot.  It isn't, then it triggers the
 <code>InitialWakeUp</code> animation group.  The animation affect Vectors eyes, head angle,
-backpack lights, and sounds. (There are not any other movements)</p>
+backpack lights, and sounds. (There are not any other movements).  This behavior
+file is located at:</p>
+<pre><code>behaviors/victorBehaviorTree/normalWakeUp.json
+</code></pre>
 <p>After this it defers to <code>ModeSelector</code> behavior for the top level, prioritized
 behavior dispatch.</p>
 <h2 id="other-variations">Other variations<a class="headerlink" href="#other-variations" title="Permanent link">&para;</a></h2>
@@ -1360,6 +1393,27 @@ used:</p>
 <li><code>anim_power_offon_03</code></li>
 <li><code>anim_power_offon_04</code></li>
 </ul>
+<h2 id="change-history-synopsis">Change history synopsis<a class="headerlink" href="#change-history-synopsis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-11-29</td>
+<td>Created, setup format</td>
+</tr>
+<tr>
+<td>2020-11-30</td>
+<td>Added file references</td>
+</tr>
+</tbody>
+</table>
+                
+                  
                 
               
               
