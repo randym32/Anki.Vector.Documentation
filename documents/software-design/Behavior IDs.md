@@ -74,12 +74,12 @@
 |DriveOffChargerRandomlyAnim||
 |DriveOffChargerRandomly||
 |DriveOffChargerStraight||
-|EmergencyModeAnimDispatcher||
-|EmergencyModeFindAndGoToHome||
-|EmergencyModeInAir||
-|EmergencyModeOffCharger||
-|EmergencyModeTriggerWord||
-|EmergencyMode||
+|EmergencyModeAnimDispatcher |This behavior gives a visual animation why Vector about the emergency mode.|
+|EmergencyModeFindAndGoToHome|This specific behavior initiates the `FindAndGoToHome` when in emergency mode.|
+|EmergencyModeInAir |This behavior animates a request to be picked up an placed in the dock when he has fallen or picked up.|
+|EmergencyModeOffCharger |This behavior coordinates driving back to the charging dock|
+|EmergencyModeTriggerWord|This animates a response to the trigger word, usually why it can't respond to commands right now.|
+|EmergencyMode     |This behavior coordinates Vector driving to the charging dock, or requesting help.|
 |ExploringBumpObject||
 |ExploringExamineObstacle||
 |ExploringGetIn||
@@ -106,32 +106,32 @@
 |FrameFaces||
 |GlobalInterruptions||
 |GoHomeVoiceCommand||
-|GoHome||
-|GoToSleep||
-|GreetAfterLongTime||
+|GoHome    ||
+|GoToSleep ||
+|GreetAfterLongTime ||
 |HabitatMutedDispatcher||
 |HabitatMutedVoiceCommandResponse||
 |HeldInPalmDispatcher||
-|HeldInPalmResponses||
-|HighLevelAI||
+|HeldInPalmResponses ||
+|HighLevelAI  ||
 |HowOldAreYouCounting||
-|HowOldAreYou||
+|HowOldAreYou ||
 |InitNormalOperation|This behavior is the first behavior called when Vector starts normally.|
-|InitPRDemo|This behavior is the first behavior called when Vector starts in a PR demo mode.|
+|InitPRDemo |This behavior is the first behavior called when Vector starts in a PR demo mode.|
 |InitialHeldInPalmReaction||
-|InitialPickupAnimation||
-|IntentUnmatched||
+|InitialPickupAnimation ||
+|IntentUnmatched ||
 |InteractWithFaces||
 |InteractWithStaticCube||
 |InterruptingVoiceReactions||
 |InvestigateCubeConnectionGate||
-|InvestigateHeldCube||
+|InvestigateHeldCube ||
 |KeepawayVoiceCommand||
-|Keepaway||
+|Keepaway ||
 |KnowledgeGraphQuestion||
 |KnowledgeGraphTTS||
 |LeaveAMessage||
-|LiftLoadTest||
+|LiftLoadTest ||
 |ListenForBeatsLong||
 |ListenForBeatsVoiceCommand||
 |ListenForBeats||
@@ -145,15 +145,15 @@
 |MeetVictor||
 |MessagingPlaybackTTS||
 |MessagingRecordTTS||
-|ModeSelector||
-|MoveCube||
-|MovementBackward||
-|MovementForward||
+|ModeSelector |Top level dispatcher; this is called by many different start up modes.  See [power management](power management.md) for a description|
+|MoveCube ||
+|MovementBackward ||
+|MovementForward  ||
 |MovementTurnAround||
-|MovementTurnLeft||
-|MovementTurnRight||
+|MovementTurnLeft  ||
+|MovementTurnRight ||
 |NoCloud||
-|NoWifi||
+|NoWifi ||
 |NormalWakeUp|This is called by [*InitNormalBehavior* on start](startup behavior.md).  It plays the wake up animation --- if it isn't night time, and this isn't a maintenance reboot.|
 |NothingToDo_Idle||
 |ObservingDriveOffCharger||
@@ -295,17 +295,17 @@
 |SingletonICantDoThat||
 |SingletonPounceApproachWithProx||
 |SingletonPounceDispatcher||
-|SingletonPounceTurnLeft||
+|SingletonPounceTurnLeft ||
 |SingletonPounceTurnRight||
-|SingletonPounceWithProx||
-|SingletonPoweringRobotOff||
+|SingletonPounceWithProx ||
+|SingletonPoweringRobotOff|This behavior is active when Vector is powering down. See [power management](power management.md)|
 |SingletonTimerAlreadySet||
-|SingletonTimerAntic||
+|SingletonTimerAntic ||
 |SingletonTimerCheckTime||
-|SingletonTimerRinging||
-|SingletonTimerSet||
+|SingletonTimerRinging ||
+|SingletonTimerSet ||
 |SingletonWallTimeCoordinator||
-|SleepCycle||
+|SleepCycle  |This behavior is manages Vector going to sleep, playing and interacting. See [power management](power management.md)|
 |SleepingPersonCheck||
 |SleepingTriggerWord||
 |SleepingWakeUpLights||

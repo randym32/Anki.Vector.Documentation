@@ -33,10 +33,14 @@ These top-level states are mapped to initial behavior using
 `victor_behavior_config.json`
 
 ![startup behavior diagram](startup behavior.svg)
+*Figure: The start-up behavior tree*
 
 (In a few cases the mapping is hardcoded in the software.)
 
-In normal operation, this is the `InitNormalOperation` behavior.
+In normal operation, this is the `InitNormalOperation` behavior.  The behavior
+file is located at:
+
+   behaviors/victorBehaviorTree/initNormalOperation.json
 
 ## Walk thru of the InitNormalOperation behavior
 
@@ -50,7 +54,10 @@ settings its cooldown timer to a period that is infinitely long.
 The `NormalWakeUp` (class`AnimSequence`) behavior checks to see that it is not
 night time, and not a maintenance reboot.  It isn't, then it triggers the
 `InitialWakeUp` animation group.  The animation affect Vectors eyes, head angle,
-backpack lights, and sounds. (There are not any other movements)
+backpack lights, and sounds. (There are not any other movements).  This behavior
+file is located at:
+
+    behaviors/victorBehaviorTree/normalWakeUp.json
 
 After this it defers to `ModeSelector` behavior for the top level, prioritized
 behavior dispatch.
@@ -72,3 +79,5 @@ used:
 |Date|Change|
 |----|------|
 |2020-11-29|Created, setup format|
+|2020-11-30|Added file references|
+

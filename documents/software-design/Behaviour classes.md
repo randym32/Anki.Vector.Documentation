@@ -40,12 +40,12 @@
 |DevViewCubeBackpackLights||
 |DispatchAfterShake||
 |DispatcherPassThrough||
-|DispatcherQueue|This behavior runs each of the behaviors in the `behavior` array in order.|
+|DispatcherQueue |This behavior runs each of the behaviors in the `behavior` array in order.|
 |DispatcherRandom||
-|DispatcherStrictPriority|This behavior runs each of the behaviors in the `behavior` array in order.|
+|DispatcherStrictPriority |This behavior runs each of the behaviors in the `behavior` array in order.|
 |DispatcherStrictPriorityWithCooldown|This behavior runs each of the behaviors in the `behavior` array in order.  Behaviors still in a cooldown period are skipped.|
 |DisplayWallTime||
-|DisplayWeather||
+|DisplayWeather ||
 |DockingTestSimple||
 |DriveOffCharger||
 |DriveToFace||
@@ -103,9 +103,9 @@
 |PopAWheelie||
 |PounceWithProx||
 |PowerSaveStressTest||
-|PowerSaveTest||
-|PoweringRobotOff||
-|PRDemo||
+|PowerSaveTest   ||
+|PoweringRobotOff|This behavior is active when Vector is powering down. See [power management](power management.md)|
+|PRDemo    ||
 |PRDemoBase||
 |ProceduralClock||
 |PromptUserForVoiceCommand||
@@ -156,8 +156,8 @@
 |SelfTestScreenAndBackpack||
 |SelfTestSoundCheck||
 |SelfTestTouch||
-|SleepCycle||
-|Sleeping||
+|SleepCycle|This behavior is manages Vector going to sleep, playing and interacting. See [power management](power management.md)|
+|Sleeping  ||
 |StayOnChargerUntilCharged||
 |TakeAPhotoCoordinator||
 |TextToSpeechLoop||

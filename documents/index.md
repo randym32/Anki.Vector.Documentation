@@ -45,15 +45,18 @@ These try to tell you how to accomplish particular tasks.
 Some highlights:
 
 * Using GDB [to trace function calls](how-to/GDB tracing.md)
-* Using AudioKinetic WWise to [convert sound files to WEM format](how-to/Using AudioKinetic WWise to convert sound files to WEM.md)
-
-* Dauler sells stickers with the marker symbols prepirnt at [3D Designs by Dauler](https://designsbydauler.com/collections/vector-robot)
+* Using AudioKinetic WWise to [convert sound files to WEM
+  format](how-to/Using AudioKinetic WWise to convert sound files to WEM.md)
+* Dauler sells stickers with the marker symbols preprinte at
+  [3D Designs by Dauler](https://designsbydauler.com/collections/vector-robot)
 
 ## Developer documentation
 These are reference documentation for programming tools to use Vector.
 Some of them are for the remote-access SDK's.
 
+<a name="TRM"></a>
 ### [Technical Reference Manual](https://github.com/GooeyChickenman/victor/raw/master/documentation/Vector-TRM.pdf)
+
 * Details on how Vector _works_
 * Main architecture of the design (not necessarily the code though) and how it works
 * File system structure, files, formats and contents
