@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.20.1-->
+  <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d4"/>
+  <key attr.name="description" attr.type="string" for="node" id="d5"/>
+  <key for="node" id="d6" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d7" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d8"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d9"/>
+  <key for="edge" id="d10" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <data key="d0" xml:space="preserve"/>
+    <node id="n0">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.sbgn.UnitOfInformation">
+          <y:Geometry height="15.0" width="25.0" x="406.84472881259563" y="196.5170189008843"/>
+          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="center" visible="true" width="4.0" x="10.5" y="5.5">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="127.5199203491211" width="235.8131866455078" x="212.09340667724615" y="123.24003982543945"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="115.9065933227539" y="131.5199203491211"/>
+          <y:SVGNodeProperties usingVisualBounds="true"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="1"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.userMessage">
+          <y:Geometry height="23.0" width="80.0" x="140.00000000000006" y="85.5"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.01953125" x="23.990234375" xml:space="preserve" y="2.1494140625">State<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n3">
+      <data key="d4" xml:space="preserve"/>
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="70.0" width="144.0" x="506.7789634559997" y="283.038239232"/>
+          <y:Fill color="#EBF1EB" color2="#C3D7C3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#C3D7C3" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="center" visible="true" width="78.02734375" x="32.986328125" xml:space="preserve" y="4.0">InitialWakeUp</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="122.751953125" x="2.0" xml:space="preserve" y="30.701171875">ag_power_offon_01
+anim_power_offon_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n4" yfiles.foldertype="group">
+      <data key="d4" xml:space="preserve"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="96.55443954467773" width="225.48492431640625" x="495.9148664817965" y="154.79933029016115"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7C9E3" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="225.48492431640625" x="0.0" xml:space="preserve" y="0.0">InitNormalOperation</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
+              <y:Fill color="#F5F5F5" transparent="false"/>
+              <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="59.02685546875" x="-4.513427734375" xml:space="preserve" y="0.0">Folder 1</y:NodeLabel>
+              <y:Shape type="roundrectangle"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n4:">
+        <node id="n4::n0">
+          <data key="d6">
+            <y:SVGNode>
+              <y:Geometry height="39.853267669677734" width="195.48492431640625" x="510.9148664817965" y="188.50050216516115"/>
+              <y:Fill color="#CCCCFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="95.74246215820312" y="43.853267669677734"/>
+              <y:SVGNodeProperties usingVisualBounds="true"/>
+              <y:SVGModel svgBoundsPolicy="0">
+                <y:SVGContent refid="2"/>
+              </y:SVGModel>
+            </y:SVGNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <edge id="e0" source="n2" target="n1">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="39.48890038817615" sy="1.0855821500366716" tx="-52.0431526846487" ty="-63.76315380159308">
+            <y:Point x="278.1359352125948" y="97.83886079999999"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n1" target="n4::n0">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="117.93070780329828" sy="23.928934223619905" tx="-86.23040000000003" ty="2.4399999999999977"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n4::n0" target="n3">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-46.5" sy="19.93840000000006" tx="-16.5" ty="-34.97679999999997"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d7">
+    <y:Resources>
+      <y:Resource id="1" xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"&gt;
+&lt;!-- Generated by Microsoft Visio 11.0, SVG Export, v1.0 Drawing2.svg Page-1 --&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.45979in"
+		height="1.49396in" viewBox="0 0 177.105 107.565" xml:space="preserve" color-interpolation-filters="sRGB" class="st6"&gt;
+	&lt;v:documentProperties v:langID="1033" v:viewMarkup="false"/&gt;
+
+	&lt;style type="text/css"&gt;
+	&lt;![CDATA[
+		.st1 {fill:#ffffff}
+		.st2 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st3 {fill:#000000;font-family:Arial;font-size:0.666664em;font-style:italic;font-weight:bold}
+		.st4 {font-size:1em;font-weight:normal}
+		.st5 {font-size:1em;font-style:normal;font-weight:normal}
+		.st6 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]&gt;
+	&lt;/style&gt;
+
+	&lt;g v:mID="0" v:index="1" v:groupContext="foregroundPage"&gt;
+		&lt;title&gt;Page-1&lt;/title&gt;
+		&lt;v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/&gt;
+		&lt;v:layer v:name="Annotations" v:index="0"/&gt;
+		&lt;g id="group11-1" transform="translate(0.24,-9.89989)" v:mID="11" v:groupContext="group"&gt;
+			&lt;title&gt;Sheet.11&lt;/title&gt;
+			&lt;g id="shape1-2" v:mID="1" v:groupContext="shape" v:layerMember="0"&gt;
+				&lt;title&gt;15 ruled column.68&lt;/title&gt;
+				&lt;desc&gt;State factory acoustic testing onboardingBehavior postOnboard...&lt;/desc&gt;
+				&lt;v:userDefs&gt;
+					&lt;v:ud v:nameU="AntiScale" v:val="VT0(1):26"/&gt;
+					&lt;v:ud v:nameU="visVersion" v:val="VT0(11):26"/&gt;
+				&lt;/v:userDefs&gt;
+				&lt;v:textBlock v:margins="rect(0,4,4,4)" v:verticalAlign="0"/&gt;
+				&lt;v:textRect cx="48.375" cy="57.8399" width="96.75" height="95.4"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54 L96.75 10.14 L0 10.14 L0 105.54 Z" class="st1"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54 L96.75 10.14 L0 10.14 L0 105.54" class="st2"/&gt;
+				&lt;path d="M0 22.06 L96.75 22.06" class="st2"/&gt;
+				&lt;path d="M0 33.99 L96.75 33.99" class="st2"/&gt;
+				&lt;path d="M0 45.91 L96.75 45.91" class="st2"/&gt;
+				&lt;path d="M0 57.84 L96.75 57.84" class="st2"/&gt;
+				&lt;path d="M0 69.76 L96.75 69.76" class="st2"/&gt;
+				&lt;path d="M0 81.69 L96.75 81.69" class="st2"/&gt;
+				&lt;path d="M0 93.61 L96.75 93.61" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L96.75 105.54" class="st2"/&gt;
+				&lt;text x="38.59" y="19.08" class="st3" v:langID="1033"&gt;&lt;v:paragraph v:spLine="0.165625" v:horizAlign="1"/&gt;&lt;v:tabList/&gt;State&lt;v:newlineChar/&gt;&lt;v:paragraph
+							v:spLine="0.165625"/&gt;&lt;tspan x="4" dy="1.491em" class="st4"&gt;factory&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4"
+							dy="1.491em" class="st4"&gt;acoustic testing&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em" class="st4"&gt;onboardingBehavior&lt;v:lf/&gt;&lt;/tspan&gt;&lt;tspan
+							x="4" dy="1.491em" class="st4"&gt;postOnboardingBehavior&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em"
+							class="st4"&gt;normalBaseBehavior&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em" class="st4"&gt;devBaseBehavior&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan
+							x="4" dy="1.491em" class="st4"&gt;PR demo&lt;/tspan&gt;&lt;v:newlineChar/&gt;&lt;/text&gt;			&lt;/g&gt;
+			&lt;g id="shape2-27" v:mID="2" v:groupContext="shape" v:layerMember="0" transform="translate(96.75,0)"&gt;
+				&lt;title&gt;15 ruled column.69&lt;/title&gt;
+				&lt;desc&gt;Starting Behavior AcousticTestMode Onboarding ModeSelector In...&lt;/desc&gt;
+				&lt;v:userDefs&gt;
+					&lt;v:ud v:nameU="AntiScale" v:val="VT0(1):26"/&gt;
+					&lt;v:ud v:nameU="visVersion" v:val="VT0(11):26"/&gt;
+				&lt;/v:userDefs&gt;
+				&lt;v:textBlock v:margins="rect(0,4,4,4)" v:verticalAlign="0"/&gt;
+				&lt;v:textRect cx="39.9375" cy="57.8399" width="79.88" height="95.4"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54 L79.87 10.14 L0 10.14 L0 105.54 Z" class="st1"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54 L79.87 10.14 L0 10.14 L0 105.54" class="st2"/&gt;
+				&lt;path d="M0 22.06 L79.87 22.06" class="st2"/&gt;
+				&lt;path d="M0 33.99 L79.87 33.99" class="st2"/&gt;
+				&lt;path d="M0 45.91 L79.87 45.91" class="st2"/&gt;
+				&lt;path d="M0 57.84 L79.87 57.84" class="st2"/&gt;
+				&lt;path d="M0 69.76 L79.87 69.76" class="st2"/&gt;
+				&lt;path d="M0 81.69 L79.87 81.69" class="st2"/&gt;
+				&lt;path d="M0 93.61 L79.87 93.61" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;path d="M0 105.54 L79.87 105.54" class="st2"/&gt;
+				&lt;text x="4" y="19.08" class="st3" v:langID="1033"&gt;&lt;v:paragraph v:spLine="0.165625"/&gt;&lt;v:tabList/&gt;Starting Behavior&lt;v:newlineChar/&gt;&lt;v:newlineChar/&gt;&lt;tspan
+							x="4" dy="2.981em" class="st5"&gt;AcousticTestMode&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em"
+							class="st5"&gt;Onboarding&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em" class="st5"&gt;ModeSelector&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan
+							x="4" dy="1.491em" class="st5"&gt;InitNormalOperation&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em"
+							class="st5"&gt;DevBaseBehavior&lt;v:newlineChar/&gt;&lt;/tspan&gt;&lt;tspan x="4" dy="1.491em" class="st5"&gt;InitPRDemo&lt;/tspan&gt;&lt;/text&gt;			&lt;/g&gt;
+		&lt;/g&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;
+</y:Resource>
+      <y:Resource id="2" xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"&gt;
+&lt;!-- Generated by Microsoft Visio 11.0, SVG Export, v1.0 Drawing2.svg Page-1 --&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.05208in"
+		height="0.431755in" viewBox="0 0 147.75 31.0864" xml:space="preserve" color-interpolation-filters="sRGB" class="st3"&gt;
+	&lt;v:documentProperties v:langID="1033" v:viewMarkup="false"/&gt;
+
+	&lt;style type="text/css"&gt;
+	&lt;![CDATA[
+		.st1 {fill:none;stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st2 {fill:#000000;font-family:Arial;font-size:0.666664em;font-style:italic}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]&gt;
+	&lt;/style&gt;
+
+	&lt;g v:mID="0" v:index="1" v:groupContext="foregroundPage"&gt;
+		&lt;title&gt;Page-1&lt;/title&gt;
+		&lt;v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/&gt;
+		&lt;v:layer v:name="Flowchart" v:index="0"/&gt;
+		&lt;g id="shape3-1" v:mID="3" v:groupContext="shape" v:layerMember="0" transform="translate(1.2,-1.2)"&gt;
+			&lt;title&gt;Process group.40&lt;/title&gt;
+			&lt;desc&gt;NormalWakeUp&lt;/desc&gt;
+			&lt;v:userDefs&gt;
+				&lt;v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(12):26"/&gt;
+			&lt;/v:userDefs&gt;
+			&lt;v:textBlock v:margins="rect(2,4,2,14)" v:tabSpace="42.5197"/&gt;
+			&lt;v:textRect cx="38.7872" cy="16.7432" width="77.58" height="28.6864"/&gt;
+			&lt;path d="M0 31.09 L67.88 31.09 L77.57 16.74 L67.88 2.4 L0 2.4 L9.7 16.74 L0 31.09 Z" class="st1"/&gt;
+			&lt;text x="15.56" y="19.14" class="st2" v:langID="1033"&gt;&lt;v:paragraph v:horizAlign="1"/&gt;&lt;v:tabList/&gt;NormalWakeUp&lt;/text&gt;		&lt;/g&gt;
+		&lt;g id="shape4-4" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(68.9756,-1.2)"&gt;
+			&lt;title&gt;Process group.41&lt;/title&gt;
+			&lt;desc&gt;ModeSelector&lt;/desc&gt;
+			&lt;v:userDefs&gt;
+				&lt;v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(12):26"/&gt;
+			&lt;/v:userDefs&gt;
+			&lt;v:textBlock v:margins="rect(2,2,2,14)" v:tabSpace="42.5197"/&gt;
+			&lt;v:textRect cx="38.7872" cy="16.7432" width="77.58" height="28.6864"/&gt;
+			&lt;path d="M0 31.09 L67.88 31.09 L77.57 16.74 L67.88 2.4 L0 2.4 L9.7 16.74 L0 31.09 Z" class="st1"/&gt;
+			&lt;text x="20.11" y="19.14" class="st2" v:langID="1033"&gt;&lt;v:paragraph v:horizAlign="1"/&gt;&lt;v:tabList/&gt;ModeSelector&lt;/text&gt;		&lt;/g&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;
+</y:Resource>
+    </y:Resources>
+  </data>
+</graphml>

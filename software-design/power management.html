@@ -887,8 +887,20 @@
 
 
   <li class="md-nav__item">
-    <a href="Behaviour%20classes.html" class="md-nav__link">
-      Behaviour Classes
+    <a href="Behavior%20classes.html" class="md-nav__link">
+      Behavior Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20tree.html" class="md-nav__link">
+      Behavior Tree
     </a>
   </li>
 
@@ -948,7 +960,19 @@
 
   <li class="md-nav__item">
     <a href="files.html" class="md-nav__link">
-      Source File referenced in the binaries
+      Source Files referenced in the binaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="mandatoryPhysicalReactions.html" class="md-nav__link">
+      Mandatory physical reactions
     </a>
   </li>
 
@@ -1050,6 +1074,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="quiet%20mode.html" class="md-nav__link">
+      Quiet mode behaviors
+    </a>
   </li>
 
         
@@ -1407,18 +1443,18 @@
 
                 
                 <p>This note describes the power management-related behaviors.
-Please refer to the <a href="../index.html#TRM">Technical Reference Manual</a>
+Please refer to the <a href="index.md#TRM">Technical Reference Manual</a>
 for a description of Vector's internal power states, management, and sleep debt.</p>
 <p>The main power management behaviors are launched at a very high-level.
-These are launched by the <code>ModeSelector</code> (class <code>DispatcherStrictPriority</code>)
+These are launched by the <em>ModeSelector</em> (class <em>DispatcherStrictPriority</em>)
 behavior.  This behavior is invoked by:</p>
 <ul>
-<li><a href="startup%20behavior.html"><code>InitNormalOperation</code> behavior</a> during start of normal
+<li><a href="startup%20behavior.html"><em>InitNormalOperation</em> behavior</a> during start of normal
   behavior</li>
-<li><code>AcousticTestMode</code> behavior during aoustic testing at the factory</li>
-<li><code>DevBaseBehaviorInternal</code> behavior during start of developer mode</li>
+<li><em>AcousticTestMode</em> behavior during aoustic testing at the factory</li>
+<li><em>DevBaseBehaviorInternal</em> behavior during start of developer mode</li>
 </ul>
-<p><img alt="Power management behavior tree" src="power%20management.svg" />
+<p><img alt="Power management behavior tree" src="power%20management.svg#zoom" />
 <em>Figure: The power management behavior tree</em></p>
 <p>The behavior file is located at:</p>
 <pre><code>behaviors\victorBehaviorTree\modeSelector.json
@@ -1435,14 +1471,13 @@ the original one.</p>
 <li>SDK override (not related to power management)</li>
 <li>Being quiet related behaviors (not related to power management)</li>
 <li>Handle low battery and attempt to return to charger... if unable, turn off</li>
-<li>A sleep/quiet state manager.  Regular behaviors and interactions are started
-  in this behavior tree, so are at the lowest priority.</li>
+<li>A sleep/<a href="quiet%20mode.html">quiet state</a> manager.  Regular behaviors and
+  interactions are started in this behavior tree, so are at the lowest priority.</li>
 </ul>
 <h2 id="powering-off">Powering off<a class="headerlink" href="#powering-off" title="Permanent link">&para;</a></h2>
-<p>The highest priority behavior is the <code>SingletonPoweringRobotOff</code> (class
-<code>PoweringRobotOff</code>) behavior, that animates Vector while he is the process of
+<p>The highest priority behavior is the <em>SingletonPoweringRobotOff</em> (class
+<em>PoweringRobotOff</em>) behavior, that animates Vector while he is the process of
 turning off.</p>
-<p><em>Table: <code>PoweringRobotOff</code> configuration parameters</em></p>
 <table>
 <thead>
 <tr>
@@ -1473,13 +1508,14 @@ turning off.</p>
 </tr>
 </tbody>
 </table>
+<p><em>Table: <em>PoweringRobotOff</em> configuration parameters</em></p>
 <p>If the power button is released before Vector has turned off, the behavior
 begins the process of resuming, </p>
 <p>The animation reference is unusual.  It doesn't refer to the trigger of an
 animation group.  Instead it refers to a specific animation.</p>
 <h2 id="sleep">Sleep<a class="headerlink" href="#sleep" title="Permanent link">&para;</a></h2>
-<p>At the opposite end -- the <em>lowest</em> priority -- is the <code>SleepCycle</code> (class
-<code>SleepCycle</code>) behavior.  The behavior file is located at:</p>
+<p>At the opposite end -- the <em>lowest</em> priority -- is the <em>SleepCycle</em> (class
+<em>SleepCycle</em>) behavior.  The behavior file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/highLevelDelegates/sleeping/sleepCycle.json
 </code></pre>
 <p>This behavior arbitrates between:</p>
@@ -1488,10 +1524,12 @@ animation group.  Instead it refers to a specific animation.</p>
 <li>Interacting with a person (outside of Alexa).</li>
 <li>And going into a sleep state</li>
 </ul>
-<p>If Vector has no reason to sleep, this behavior lets the <code>CoordinateInHabitat</code>
+<p>If Vector has no reason to sleep, this behavior lets the <em>CoordinateInHabitat</em>
 behavior.  If it decides to sleep (the decision is made in the C++ code)
-It initiates the <code>FindHomeForSleeping</code> behavior to drive to the charging dock,
-if possible, to sleep.</p>
+It initiates the <em>FindHomeForSleeping</em> behavior to drive to the charging dock,
+if possible, to sleep.  (In turn it invokes
+<a href="mandatoryPhysicalReactions.html"><em>MandatoryPhysicalReactions</em></a> to respond to 
+environmental hazards while driving around.)</p>
 <p>This has a condition that keeps it in sleep, even if there is a higher
 priority interaction, if:</p>
 <ul>
@@ -1500,7 +1538,7 @@ priority interaction, if:</p>
 <li>Charging is stopped because it is too hot.</li>
 </ul>
 <p>Depending, it will initiate the looking for home to go to sleep.
-This is the <code>FindHomeForSleeping</code> behavior.</p>
+This is the <em>FindHomeForSleeping</em> behavior.</p>
 <p>Things that wake Vector up from the different kinds of sleep:</p>
 <table>
 <thead>
@@ -1524,15 +1562,16 @@ This is the <code>FindHomeForSleeping</code> behavior.</p>
 </tr>
 </tbody>
 </table>
+<p><em>Table: That wake Vector from sleep.</em></p>
 <p>This behavior includes a decision tree that sets a <code>reason</code> code for based on
 sensors that have trigger.  That reason code is used above.  By editting this
 behavior's decision tree, you can adjust how sensitive he is to conditions like
 touch, poking, illumination to wake him from sleep.</p>
-<p>Note: In power save mode -- a lower sleep state, the camera is turned off, so
+<p>Note: In power save mode -- a lower sleep state -- the camera is turned off, so
 Vector is not sensitive to light.</p>
 <h3 id="driving-to-the-charging-dock-to-sleep">Driving to the charging dock to sleep<a class="headerlink" href="#driving-to-the-charging-dock-to-sleep" title="Permanent link">&para;</a></h3>
-<p>When Vector is going into a sleep state, <code>FindHomeForSleeping</code> (class
-<code>DispatcherStrictPriority</code>) behavior to drive to the charging dock,
+<p>When Vector is going into a sleep state, <em>FindHomeForSleeping</em> (class
+<em>DispatcherStrictPriority</em>) behavior to drive to the charging dock,
 if possible, to sleep.  The behavior file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/highLevelDelegates/sleeping/findHomeForSleeping.json
 </code></pre>
@@ -1547,8 +1586,8 @@ and driving related behaviors.</p>
 </ul>
 <p>The way to exit emgency mode is for the battery level to rise above the low
 threshold, and for temperature to cool below the hot threshold.</p>
-<p>This is controlled by the <code>EmergencyMode</code> (class <code>DispatcherQueue</code>) behavior.</p>
-<p><img alt="Emergency mode" src="emergency%20mode.svg" />
+<p>This is controlled by the <em>EmergencyMode</em> (class <em>DispatcherQueue</em>) behavior.</p>
+<p><img alt="Emergency mode" src="emergency%20mode.svg#zoom" />
 <em>Figure: The emergency behavior tree</em></p>
 <p>The behavior file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/emergencyMode/emergencyMode.json
@@ -1558,34 +1597,40 @@ threshold, and for temperature to cool below the hot threshold.</p>
 albeit in a restricted manner.  If the trigger word is heard, it doesn't
 stream the audio to the voice server.  Instead it:</p>
 <ol>
-<li>Plays the <code>VC_ListeningGetIn</code> animation, then</li>
-<li>Plays the <code>StreamingDisabledButWithLight</code> animation to indicate that streaming is disabled, and filly</li>
-<li>Sends the <code>Play__Robot_Vic_Sfx__Wake_Word_On</code> audio event to play a feedback sound.</li>
+<li>Plays the <em>VC_ListeningGetIn</em> animation, then</li>
+<li>Plays the <em>StreamingDisabledButWithLight</em> animation to indicate that streaming is disabled, and filly</li>
+<li>Sends the <em>Play__Robot_Vic_Sfx__Wake_Word_On</em> audio event to play a feedback sound.</li>
 <li>It also links with the following animation to show the reason why</li>
 </ol>
-<p>Emergency mode uses the <code>EmergencyModeAnimDispatcher</code> (class <code>DispatcherQueue</code>)
+<p>Emergency mode uses the <em>EmergencyModeAnimDispatcher</em> (class <em>DispatcherQueue</em>)
 behavior to play different animations based on the the emergency condition:</p>
 <ul>
-<li>If the battery is low, it will trigger the <code>ChargerDockingSorryButLowBattery</code>
+<li>If the battery is low, it will trigger the <em>ChargerDockingSorryButLowBattery</em>
   animation.</li>
 <li>If the temperature is high, or too hot charge, it will trigger the
-  <code>HighTemperatureWarningFace</code> animation.</li>
+  <em>HighTemperatureWarningFace</em> animation.</li>
 </ul>
 <p>The behavior file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/emergencyMode/emergencyModeAnimDispatcher.json
 </code></pre>
 <p>If Vector is in picked up, or otherwise off his treads (but not being held),
-he plays the <code>ChargerDockingRequestPickup</code> animation.  This is done in the
-<code>EmergencyModeInAir</code> behavior.  The behavior file is located at:</p>
+he plays the <em>ChargerDockingRequestPickup</em> animation.  This is done in the
+<em>EmergencyModeInAir</em> behavior.  The behavior file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/emergencyMode/emergencyModeInAir.json
 </code></pre>
 <h3 id="returning-to-the-charging-dock">Returning to the charging dock<a class="headerlink" href="#returning-to-the-charging-dock" title="Permanent link">&para;</a></h3>
-<p>Emergency mode uses the <code>EmergencyModeOffCharger</code> (class <code>DispatcherStrictPriority</code>)
-behavior to to drive to the charging dock.  The behavior file is located at:</p>
+<p>There are a couple of behaviors that try to cause Vector to drive back to the
+charging dock.  These run a subset of navigation and driving related behaviors
+to drive to the charging dock. The first is the <em>EmergencyModeOffCharger</em> (class 
+<em>DispatcherStrictPriority</em>).  The behavior file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/emergencyMode/emergencyModeOffCharger.json
 </code></pre>
-<p>This runs a subset of navigation and driving related behaviors to drive to the
-charging dock.</p>
+<p>The second is the <em>QuietModeEmergencyModeGoHome</em> (class 
+<em>DispatcherStrictPriority</em>), which would be invoked while in quiet mode.
+<em>Commentary:  This behavior appears like it should
+not run; the same conditions that would trigger it would also trigger the much
+higher priority <em>EmergencyMode</em> behavior.  This behavior should be checked
+out and considered for removal.</em></p>
 <h2 id="change-history-synopsis">Change history synopsis<a class="headerlink" href="#change-history-synopsis" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1598,6 +1643,10 @@ charging dock.</p>
 <tr>
 <td>2020-11-30</td>
 <td>Created</td>
+</tr>
+<tr>
+<td>2020-12-1</td>
+<td>Quiet mode's emergency mode, and trigger word animation</td>
 </tr>
 </tbody>
 </table>

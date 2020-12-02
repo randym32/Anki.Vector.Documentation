@@ -887,8 +887,20 @@
 
 
   <li class="md-nav__item">
-    <a href="Behaviour%20classes.html" class="md-nav__link">
-      Behaviour Classes
+    <a href="Behavior%20classes.html" class="md-nav__link">
+      Behavior Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20tree.html" class="md-nav__link">
+      Behavior Tree
     </a>
   </li>
 
@@ -948,7 +960,19 @@
 
   <li class="md-nav__item">
     <a href="files.html" class="md-nav__link">
-      Source File referenced in the binaries
+      Source Files referenced in the binaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="mandatoryPhysicalReactions.html" class="md-nav__link">
+      Mandatory physical reactions
     </a>
   </li>
 
@@ -961,6 +985,18 @@
   <li class="md-nav__item">
     <a href="power%20management.html" class="md-nav__link">
       Power management behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="quiet%20mode.html" class="md-nav__link">
+      Quiet mode behaviors
     </a>
   </li>
 
@@ -1357,33 +1393,30 @@ Vector will use.  There are 7 of these broad, top level states:</p>
 <p><em>Note: when Vector exits the Customer Care screens, it resumes operation
 by re-running the top level behavior.</em></p>
 <h2 id="mapping-to-the-initial-behavior">Mapping to the initial behavior<a class="headerlink" href="#mapping-to-the-initial-behavior" title="Permanent link">&para;</a></h2>
-<p>Note: all of the behavior related files are in the following directory, and
-sub-directories:</p>
-<pre><code> /anki/data/assets/cozmo_resources/config/engine/behaviorComponent
-</code></pre>
 <p>These top-level states are mapped to initial behavior using
 <code>victor_behavior_config.json</code></p>
-<p><img alt="startup behavior diagram" src="startup%20behavior.svg" />
+<p><img alt="startup behavior diagram" src="startup%20behavior.svg#zoom" />
 <em>Figure: The start-up behavior tree</em></p>
 <p>(In a few cases the mapping is hardcoded in the software.)</p>
-<p>In normal operation, this is the <code>InitNormalOperation</code> behavior.  The behavior
+<p>In normal operation, this is the <em>InitNormalOperation</em> behavior.  The behavior
 file is located at:</p>
-<p>behaviors/victorBehaviorTree/initNormalOperation.json</p>
+<pre><code>behaviors/victorBehaviorTree/initNormalOperation.json
+</code></pre>
 <h2 id="walk-thru-of-the-initnormaloperation-behavior">Walk thru of the InitNormalOperation behavior<a class="headerlink" href="#walk-thru-of-the-initnormaloperation-behavior" title="Permanent link">&para;</a></h2>
-<p>When the <code>InitNormalOperation</code> (class <code>DispatcherStrictPriorityWithCooldown</code>)
-behavior first starts, it does a one-off run of a <code>NormalWakeUp</code>  behavior.
-This behavior is not run when <code>InitNormalOperation</code>
+<p>When the <em>InitNormalOperation</em> (class <em>DispatcherStrictPriorityWithCooldown</em>)
+behavior first starts, it does a one-off run of a <em>NormalWakeUp</em>  behavior.
+This behavior is not run when <em>InitNormalOperation</em>
 is started again later.  (For instance, it is run again when the Customer
 Care screens are exited.)  This one-shot execution is acheived by using 
 settings its cooldown timer to a period that is infinitely long.</p>
-<p>The <code>NormalWakeUp</code> (class<code>AnimSequence</code>) behavior checks to see that it is not
+<p>The <em>NormalWakeUp</em> (class <em>AnimSequence</em>) behavior checks to see that it is not
 night time, and not a maintenance reboot.  It isn't, then it triggers the
-<code>InitialWakeUp</code> animation group.  The animation affect Vectors eyes, head angle,
+<em>InitialWakeUp</em> animation group.  The animation affect Vectors eyes, head angle,
 backpack lights, and sounds. (There are not any other movements).  This behavior
 file is located at:</p>
 <pre><code>behaviors/victorBehaviorTree/normalWakeUp.json
 </code></pre>
-<p>After this it defers to <code>ModeSelector</code> behavior for the top level, prioritized
+<p>After this it defers to <em>ModeSelector</em> behavior for the top level, prioritized
 behavior dispatch.</p>
 <h2 id="other-variations">Other variations<a class="headerlink" href="#other-variations" title="Permanent link">&para;</a></h2>
 <p>There are three other animation variations on Vector that are currently not
@@ -1409,6 +1442,10 @@ used:</p>
 <tr>
 <td>2020-11-30</td>
 <td>Added file references</td>
+</tr>
+<tr>
+<td>2020-12-1</td>
+<td>Moved some intro material to <a href="behavior tree.md">behavior tree</a></td>
 </tr>
 </tbody>
 </table>

@@ -27,23 +27,29 @@ img[src*="#right"] {
 }
 /* for image caption */
 img + em {
-    font-style: normal;
+    font-style: ital;
+    display: inherit;
+    text-align: center;
+    font-size: 90%;
+}
+div.md-typeset__scrollwrap + p>em {
+    font-style: ital;
     display: inherit;
     text-align: center;
     font-size: 90%;
 }
 @media print {
-  article {
+  article, section {
     font-size: 9pt !important;
   }
-  article>p {
+  article>p,section>p {
     margin-left:7em !important;
   }
-  article>ul,article>dl,article>ol {
+  article>ul,article>dl,article>ol, section>ul,section>dl,section>ol {
     margin-left:8em !important;
-    padding-left: 20px !important;
   }
-  article>pre, article>blockquote,article>table {
+  article li {padding-inline-start:1em !important;}
+  article>pre, article>blockquote,article>table , section>pre, section>blockquote,section>table {
     margin-left:9em !important;
   }
 }
