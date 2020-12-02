@@ -3,16 +3,16 @@
 |Behavior ID|Description|
 |-----------|-----------|
 |AcknowledgeCharger||
-|AcousticTestMode|This behavior is the first behavior called when Vector staarts in an acousting testing mode|
+|AcousticTestMode|This behavior is the first behavior called when Vector starts in an acousting testing mode|
 |ActiveLookForFaces||
 |AlexaSignInOut||
-|Alexa||
+|Alexa ||
 |AskForHelpOnSide||
 |AskForHelp||
-|Asleep||
+|Asleep ||
 |BasicVoiceCommands||
-|BeQuietAnims||
-|BeQuietLoop||
+|BeQuietAnims|This behavior is used to animate Vector going into a quiet state, and animate his eyes looking around.  See [quiet mode](quiet mode.md)|
+|BeQuietLoop |This behavior is used to animate Vector's eyes looking around.  See [quiet mode](quiet mode.md)|
 |BlackJackGoodLuckTTS||
 |BlackJackHandleRTPResponses||
 |BlackJackHitOrStandPrompt||
@@ -75,11 +75,11 @@
 |DriveOffChargerRandomly||
 |DriveOffChargerStraight||
 |EmergencyModeAnimDispatcher |This behavior gives a visual animation why Vector about the emergency mode.|
-|EmergencyModeFindAndGoToHome|This specific behavior initiates the `FindAndGoToHome` when in emergency mode.|
-|EmergencyModeInAir |This behavior animates a request to be picked up an placed in the dock when he has fallen or picked up.|
+|EmergencyModeFindAndGoToHome|This specific behavior initiates the *FindAndGoToHome* behavior when in emergency mode.|
+|EmergencyModeInAir  |This behavior animates a request to be picked up an placed in the dock when he has fallen or picked up.|
 |EmergencyModeOffCharger |This behavior coordinates driving back to the charging dock|
 |EmergencyModeTriggerWord|This animates a response to the trigger word, usually why it can't respond to commands right now.|
-|EmergencyMode     |This behavior coordinates Vector driving to the charging dock, or requesting help.|
+|EmergencyMode      |This behavior coordinates Vector driving to the charging dock, or requesting help.|
 |ExploringBumpObject||
 |ExploringExamineObstacle||
 |ExploringGetIn||
@@ -117,7 +117,7 @@
 |HowOldAreYouCounting||
 |HowOldAreYou ||
 |InitNormalOperation|This behavior is the first behavior called when Vector starts normally.|
-|InitPRDemo |This behavior is the first behavior called when Vector starts in a PR demo mode.|
+|InitPRDemo  |This behavior is the first behavior called when Vector starts in a PR demo mode.|
 |InitialHeldInPalmReaction||
 |InitialPickupAnimation ||
 |IntentUnmatched ||
@@ -145,7 +145,7 @@
 |MeetVictor||
 |MessagingPlaybackTTS||
 |MessagingRecordTTS||
-|ModeSelector |Top level dispatcher; this is called by many different start up modes.  See [power management](power management.md) for a description|
+|ModeSelector  |Top level dispatcher; this is called by many different start up modes.  See [power management](power management.md) for a description.|
 |MoveCube ||
 |MovementBackward ||
 |MovementForward  ||
@@ -154,7 +154,7 @@
 |MovementTurnRight ||
 |NoCloud||
 |NoWifi ||
-|NormalWakeUp|This is called by [*InitNormalBehavior* on start](startup behavior.md).  It plays the wake up animation --- if it isn't night time, and this isn't a maintenance reboot.|
+|NormalWakeUp |This is called by [*InitNormalBehavior* on start](startup behavior.md).  It plays the wake up animation --- if it isn't night time, and this isn't a maintenance reboot.|
 |NothingToDo_Idle||
 |ObservingDriveOffCharger||
 |ObservingEyeContact||
@@ -180,7 +180,7 @@
 |OnboardingTeachMeetVictor||
 |OnboardingTeachWakeWord||
 |OnboardingWakeUp||
-|Onboarding|This behavior is the first behavior called when Vector starts "fresh" (new from factory or a clearing of user data) and is now onboarding a new human companion.|
+|Onboarding |This behavior is the first behavior called when Vector starts "fresh" (new from factory or a clearing of user data) and is now onboarding a new human companion.|
 |PRDemoBigGreeting||
 |PRDemoComeHere||
 |PRDemoExploring||
@@ -206,58 +206,58 @@
 |PlaypenMotorCalibration||
 |PlaypenPickupCube||
 |PlaypenSoundCheck||
-|PlaypenTest||
+|PlaypenTest ||
 |PlaypenWaitToStart||
 |PopAWheelieVoiceCommand||
-|PopAWheelie||
+|PopAWheelie ||
 |PowerSaveStressTest||
-|PowerSaveTest||
+|PowerSaveTest ||
 |ProceduralTurnToMicDirection||
 |PutDownBlockAtPose||
-|PutDownBlock||
+|PutDownBlock ||
 |PutDownDispatch_LookForFaceAndCube||
-|PuzzleMaze||
-|QuietModeEmergencyModeGoHome||
-|QuietMode||
-|ReactToAbuse||
+|PuzzleMaze ||
+|QuietModeEmergencyModeGoHome|This behavior coordinates driving back to the charging dock when the battery is low or overheated in quiet mode.  See [power managent](power management.md) for more details.|
+|QuietMode   |The *QuietMode* behavior is when Vector's has been asked to be silent.  See [quiet mode](quiet mode.md)|
+|ReactToAbuse ||
 |ReactToAffirmative||
-|ReactToApology||
+|ReactToApology ||
 |ReactToBatteryTooHotToCharge||
-|ReactToBody||
+|ReactToBody ||
 |ReactToCliffDuringFetch||
-|ReactToCliff||
-|ReactToDarkness||
+|ReactToCliff ||
+|ReactToDarkness ||
 |ReactToFrustrationMajor||
 |ReactToGazeDirectionSurface||
 |ReactToGazeDirection||
-|ReactToGoodBye||
+|ReactToGoodBye ||
 |ReactToGoodMorning||
-|ReactToHand||
-|ReactToHello||
+|ReactToHand ||
+|ReactToHello ||
 |ReactToJoltInPalm||
-|ReactToLove||
-|ReactToMotion||
+|ReactToLove ||
+|ReactToMotion ||
 |ReactToMotorCalibration||
-|ReactToNegative||
-|ReactToObstacle||
-|ReactToPalmTilt||
+|ReactToNegative ||
+|ReactToObstacle ||
+|ReactToPalmTilt ||
 |ReactToPickupFromPalm||
-|ReactToPlacedOnSlope||
+|ReactToPlacedOnSlope ||
 |ReactToPutDownFromPalm||
-|ReactToPutDown||
+|ReactToPutDown ||
 |ReactToRobotOnBack||
 |ReactToRobotOnFace||
 |ReactToRobotOnSide||
 |ReactToRobotShakenSnowGlobe||
 |ReactToRobotShaken||
 |ReactToSoundAsleep||
-|ReactToSoundAwake||
+|ReactToSoundAwake ||
 |ReactToSoundDirectionAsleep||
-|ReactToSoundDirectionAwake||
+|ReactToSoundDirectionAwake ||
 |ReactToTouchPetting||
-|ReactToTriggerDirectionAwake||
+|ReactToTriggerDirectionAwake ||
 |ReactToUncalibratedHeadAndLift||
-|ReactToUnclaimedIntent||
+|ReactToUnclaimedIntent ||
 |ReactToUnexpectedMovement||
 |RequestHomeBecauseStuck||
 |RequestToGoHome||
@@ -287,8 +287,8 @@
 |SelfTest||
 |ShortLookAroundForFaceAndCube||
 |ShowWallTime||
-|ShutUpAnims||
-|ShutUpMode||
+|ShutUpAnims|This behavior is used to animate Vector going into a quiet state (after beint told to shutup), and animate his eyes looking around.  See [quiet mode](quiet mode.md)|
+|ShutUpMode |The *ShutUpMode* behavior is when Vector's has been asked to "shut up."  See [quiet mode](quiet mode.md)|
 |SingletonAnticShowClock||
 |SingletonCancelTimer||
 |SingletonFindFaceInFrontWallTime||

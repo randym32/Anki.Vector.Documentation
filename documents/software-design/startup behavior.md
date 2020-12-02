@@ -24,42 +24,38 @@ by re-running the top level behavior.*
 
 ## Mapping to the initial behavior
 
-Note: all of the behavior related files are in the following directory, and
-sub-directories:
-
-     /anki/data/assets/cozmo_resources/config/engine/behaviorComponent
 
 These top-level states are mapped to initial behavior using
 `victor_behavior_config.json`
 
-![startup behavior diagram](startup behavior.svg)
+![startup behavior diagram](startup behavior.svg#zoom)
 *Figure: The start-up behavior tree*
 
 (In a few cases the mapping is hardcoded in the software.)
 
-In normal operation, this is the `InitNormalOperation` behavior.  The behavior
+In normal operation, this is the *InitNormalOperation* behavior.  The behavior
 file is located at:
 
-   behaviors/victorBehaviorTree/initNormalOperation.json
+    behaviors/victorBehaviorTree/initNormalOperation.json
 
 ## Walk thru of the InitNormalOperation behavior
 
-When the `InitNormalOperation` (class `DispatcherStrictPriorityWithCooldown`)
-behavior first starts, it does a one-off run of a `NormalWakeUp`  behavior.
-This behavior is not run when `InitNormalOperation`
+When the *InitNormalOperation* (class *DispatcherStrictPriorityWithCooldown*)
+behavior first starts, it does a one-off run of a *NormalWakeUp*  behavior.
+This behavior is not run when *InitNormalOperation*
 is started again later.  (For instance, it is run again when the Customer
 Care screens are exited.)  This one-shot execution is acheived by using 
 settings its cooldown timer to a period that is infinitely long.
 
-The `NormalWakeUp` (class`AnimSequence`) behavior checks to see that it is not
+The *NormalWakeUp* (class *AnimSequence*) behavior checks to see that it is not
 night time, and not a maintenance reboot.  It isn't, then it triggers the
-`InitialWakeUp` animation group.  The animation affect Vectors eyes, head angle,
+*InitialWakeUp* animation group.  The animation affect Vectors eyes, head angle,
 backpack lights, and sounds. (There are not any other movements).  This behavior
 file is located at:
 
     behaviors/victorBehaviorTree/normalWakeUp.json
 
-After this it defers to `ModeSelector` behavior for the top level, prioritized
+After this it defers to *ModeSelector* behavior for the top level, prioritized
 behavior dispatch.
 
 
@@ -80,4 +76,5 @@ used:
 |----|------|
 |2020-11-29|Created, setup format|
 |2020-11-30|Added file references|
+|2020-12-1|Moved some intro material to [behavior tree](behavior tree.md)|
 
