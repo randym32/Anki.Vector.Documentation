@@ -1,4 +1,4 @@
-# Source File referenced in the binaries
+# Source Files referenced in the binaries
 
 The following source code files were referenced in the binaries:
 
