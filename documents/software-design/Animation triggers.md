@@ -61,7 +61,7 @@
 |ChargerDockingRaiseLift||
 |ChargerDockingRequest||
 |ChargerDockingRequestGetout||
-|ChargerDockingRequestPickup||
+|ChargerDockingRequestPickup|This animation is played by [*EmergencyModeInAir*](power management.md) behavior to ask a human companion to put Vector in the charger.|
 |ChargerDockingRequestWaitLoop||
 |ChargerDockingRightTurn||
 |ChargerDockingSearchAfterCompletedSearch||
@@ -71,9 +71,7 @@
 |ChargerDockingSettle||
 |ChargerDockingSevereRequest||
 |ChargerDockingSevereRequestGetout||
-|ChargerDockingSorryButLowBattery||
-|ChargerReaction||
-|ChargerReaction||
+|ChargerDockingSorryButLowBattery |This animation is played by [*EmergencyModeAnimDispatcher*](power management.md) behavior to show that Vector's battery is low|
 |ChargerReaction||
 |ClockGetIn ||
 |ClockGetOut||
@@ -187,13 +185,13 @@
 |FacePlantRoll||
 |FacePlantRollArmUp||
 |FailedToRightFromFace||
-|Feedback_Apology||
-|Feedback_BadRobot||
-|Feedback_BeQuiet||
+|Feedback_Apology  ||
+|Feedback_BadRobot ||
+|Feedback_BeQuiet  |This animation is used when Vector enters quiet mode.|
 |Feedback_GoodRobot||
-|Feedback_ILoveYou||
+|Feedback_ILoveYou ||
 |Feedback_MeanWords||
-|Feedback_ShutUp||
+|Feedback_ShutUp   |This animation is used when Vector enters quiet mode, after being told to "shut up."|
 |FetchCubeFailure||
 |FetchCubeSetDown||
 |FetchCubeSuccess||
@@ -221,27 +219,27 @@
 |GazingLookAtSurfacesGetInRight||
 |GazingLookAtSurfacesTurnRight||
 |GazingLookAtVectorReaction||
-|GoToSleepGetIn||
-|GoToSleepOff||
-|GoToSleepSleeping||
+|GoToSleepGetIn |This animation is used when Vector enters sleep mode.|
+|GoToSleepOff   ||
+|GoToSleepSleeping |This animation is used while Vector is sleeping.|
 |GreetAfterLongTime||
-|HeldOnPalmEdgeNervous||
-|HeldOnPalmEdgeRelaxed||
+|HeldOnPalmEdgeNervous ||
+|HeldOnPalmEdgeRelaxed ||
 |HeldOnPalmGetInNervous||
 |HeldOnPalmGetInRelaxed||
 |HeldOnPalmLookingNervous||
 |HeldOnPalmNestling||
-|HeldOnPalmPickupNervous||
-|HeldOnPalmPickupRelaxed||
+|HeldOnPalmPickupNervous ||
+|HeldOnPalmPickupRelaxed ||
 |HeldOnPalmPutDownNervous||
 |HeldOnPalmPutDownRelaxed||
 |HeldOnPalmReactToJolt||
 |HeldOnPalmRollOff||
 |HeldOnPalmTransitionToRelaxed||
-|HighTemperatureWarningFace||
+|HighTemperatureWarningFace   |This animation is played by [*EmergencyModeAnimDispatcher*](power management.md) behavior to show that Vector's battery is too hot.|
 |ICantDoThat||
 |Idle_09||
-|[InitialWakeUp](startup behavior.md)|This is used by the [InitNormalOperationBehavior](startup behavior.md)|
+|[InitialWakeUp](startup behavior.md)|This is used by the [*InitNormalOperationBehavior*](startup behavior.md)|
 |InteractWithFaceTrackingIdle||
 |InteractWithFacesInitialNamed||
 |InteractWithFacesInitialUnnamed||
@@ -299,8 +297,8 @@
 |NoWifiGetIn||
 |NoWifiIcon||
 |NoWifiSearching||
-|NothingToDoBoredIdle||
-|ObservingIdleEyesOnly||
+|NothingToDoBoredIdle ||
+|ObservingIdleEyesOnly|This animation is used when Vector is sitting and only looking around.|
 |ObservingIdleWithHeadLookingStraight||
 |ObservingIdleWithHeadLookingUp||
 |ObservingLookStraight||
