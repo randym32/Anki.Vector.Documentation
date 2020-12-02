@@ -79,10 +79,6 @@ Go to about:config and make change to the following:
 * security.fileuri.strict_origin_policy set to false
 * privacy.file_unique_origin  set to false
 
-#### Chrome
-You can not use Chrome with a local file system.  You can, however, use an extension
-like "Web Server for Chrome"
-
 
 ## Getting help
 Being a new library, there is not yet an established usage pattern, clear place
