@@ -76,5 +76,5 @@ used:
 |----|------|
 |2020-11-29|Created, setup format|
 |2020-11-30|Added file references|
-|2020-12-1|Moved some intro material to [behavior tree](behavior tree.md)|
+|2020-12-1|Moved some intro material to [behavior tree](Behavior tree.md)|
 
