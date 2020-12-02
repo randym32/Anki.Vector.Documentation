@@ -1,4 +1,4 @@
-# Behaviour Classes
+# Behavior Classes
 
 |Behavior Classes|Description|
 |----------------|-----------|

@@ -164,6 +164,40 @@ EmergencyModeAnimDispatcher<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:Lab
         </y:GenericNode>
       </data>
     </node>
+    <node id="n10">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="133.6" width="211.60000000000002" x="570.2000000000003" y="672.0000000000001"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="201.42578125" x="5.0871093749999545" xml:space="preserve" y="4.0">QuietModeEmergencyModeGoHome</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="92.20703125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="201.42578125" x="2.0" xml:space="preserve" y="30.701171875">ReactToRobotOnBack
+ReactToRobotOnFace
+ReactToCliff
+ReactToPlacedOnSlope
+ReactToUnexpectedMovement
+EmergencyModeFindAndGoToHome<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n11">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="67.60000000000014" width="149.60000000000014" x="585.1999999999999" y="266.19999999999993"/>
+          <y:Fill color="#EBF1EB" color2="#C3D7C3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7E3C9" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.728515625" x="22.435742187500182" xml:space="preserve" y="4.0">VC_ListeningGetIn</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="143.423828125" x="2.0" xml:space="preserve" y="30.701171875">ag_vc_listening
+anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
     <edge id="e0" source="n1" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
@@ -203,7 +237,7 @@ EmergencyModeAnimDispatcher<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:Lab
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="103.61599999999919" sy="18.499999999999773" tx="-82.60154226997543" ty="-23.21533364739572">
-            <y:Point x="821.6521727999999" y="438.5942783999999"/>
+            <y:Point x="821.3900287999999" y="438.33213439999986"/>
             <y:Point x="821.7622784000004" y="504.9668352"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
@@ -277,6 +311,30 @@ EmergencyModeAnimDispatcher<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:Lab
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e10" source="n10" target="n7">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="105.77663999999993" sy="49.97049600000025" tx="79.0" ty="28.788176000000135">
+            <y:Point x="810.0" y="788.4428160000002"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="true"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n0" target="n11">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="-30.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
