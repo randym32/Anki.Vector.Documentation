@@ -17,7 +17,7 @@
     <node id="n0">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="69.19999999999993" width="184.80000000000018" x="567.5999999999999" y="171.40000000000003"/>
+          <y:Geometry height="69.19999999999993" width="184.80000000000018" x="567.4671999999997" y="109.00480000000002"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.708984375" x="45.04550781250009" xml:space="preserve" y="4.0">EmergencyMode</y:NodeLabel>
@@ -32,7 +32,7 @@ EmergencyModeOffCharger<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMo
     <node id="n1">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="70.0" width="183.20000000000005" x="793.7499999999999" y="195.0"/>
+          <y:Geometry height="70.0" width="183.20000000000005" x="793.6171999999997" y="132.60479999999998"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="179.40625" x="1.8968750000000227" xml:space="preserve" y="4.0">EmergencyModeAnimDispatcher</y:NodeLabel>
@@ -47,7 +47,7 @@ CriticalTemperatureAnimInternal<y:LabelModel><y:ErdAttributesNodeLabelModel/></y
     <node id="n2">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="74.0" width="272.0" x="1016.3" y="217.40000000000003"/>
+          <y:Geometry height="74.0" width="272.0" x="1016.1671999999998" y="155.00480000000002"/>
           <y:Fill color="#EBF1EB" color2="#C3D7C3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7E3C9" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="197.41796875" x="37.291015625" xml:space="preserve" y="4.0">ChargerDockingSorryButLowBattery</y:NodeLabel>
@@ -62,11 +62,11 @@ anim_chargerdocking_searchforcharger_canthelp<y:LabelModel><y:ErdAttributesNodeL
     <node id="n3">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="67.60000000000014" width="223.20000000000005" x="1017.5" y="304.99999999999994"/>
+          <y:Geometry height="67.60000000000014" width="223.20000000000005" x="1017.3671999999998" y="242.60479999999993"/>
           <y:Fill color="#EBF1EB" color2="#C3D7C3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7E3C9" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="168.736328125" x="27.23183593749991" xml:space="preserve" y="4.0">HighTemperatureWarningFace</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="216.126953125" x="2.0" xml:space="preserve" y="30.701171875">ag_powersavemode_temperature
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="216.126953125" x="2.0" xml:space="preserve" y="30.70117187500003">ag_powersavemode_temperature
 anim_powersavemode_temperature_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
@@ -186,12 +186,33 @@ EmergencyModeFindAndGoToHome<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:La
     <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="67.60000000000014" width="149.60000000000014" x="585.1999999999999" y="266.19999999999993"/>
+          <y:Geometry height="67.60000000000014" width="149.60000000000014" x="585.0671999999997" y="203.80479999999991"/>
           <y:Fill color="#EBF1EB" color2="#C3D7C3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7E3C9" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.728515625" x="22.435742187500182" xml:space="preserve" y="4.0">VC_ListeningGetIn</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="143.423828125" x="2.0" xml:space="preserve" y="30.701171875">ag_vc_listening
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7E3C9" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.728515625" x="22.435742187500068" xml:space="preserve" y="4.0">VC_ListeningGetIn</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="143.423828125" x="2.0" xml:space="preserve" y="30.70117187499997">ag_vc_listening
 anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n12">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="32.0" width="166.0" x="1018.2320000000002" y="335.4608000000002"/>
+          <y:Fill color="#F8D400" color2="#FFAB01" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#FFAB01" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.404296875" x="22.2978515625" xml:space="preserve" y="4.0">face_powersavemode</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Avenir" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="4.0" x="2.0" y="30.701171875">
+            <y:LabelModel>
+              <y:ErdAttributesNodeLabelModel/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ErdAttributesNodeLabelModelParameter/>
+            </y:ModelParameter>
+          </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
           </y:StyleProperties>
@@ -212,8 +233,8 @@ anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="91.59885353609059" sy="19.673061486048454" tx="-111.57551987129227" ty="-19.093036038068703">
-            <y:Point x="990.0" y="250.39999999999998"/>
-            <y:Point x="990.0" y="319.20000000000005"/>
+            <y:Point x="989.8671999999998" y="188.00479999999996"/>
+            <y:Point x="989.8671999999998" y="256.8048"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -261,7 +282,7 @@ anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
     <edge id="e5" source="n9" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="103.594515111399" sy="16.364091844860184" tx="14.650000000000091" ty="34.965235200000166">
+          <y:Path sx="103.594515111399" sy="16.364091844860184" tx="14.782800000000293" ty="34.98832000000013">
             <y:Point x="1068.176" y="457.16799999999995"/>
             <y:Point x="1067.6000000000001" y="390.0"/>
             <y:Point x="900.0" y="390.0"/>
@@ -306,7 +327,7 @@ anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="92.39136000000053" sy="23.584000000000003" tx="77.39999999999998" ty="-49.49599999999998">
-            <y:Point x="767.4000000000001" y="229.584"/>
+            <y:Point x="767.2671999999999" y="167.1888"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -315,7 +336,6 @@ anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
       </data>
     </edge>
     <edge id="e10" source="n10" target="n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="105.77663999999993" sy="49.97049600000025" tx="79.0" ty="28.788176000000135">
@@ -328,10 +348,20 @@ anim_wakeword_getin_01<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
       </data>
     </edge>
     <edge id="e11" source="n0" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="-30.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n3" target="n12">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-27.735199999999622" sy="33.79792000000003" tx="0.0" ty="-15.992480000000057"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>

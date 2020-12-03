@@ -38,6 +38,7 @@ div.md-typeset__scrollwrap + p>em {
     text-align: center;
     font-size: 90%;
 }
+
 @media print {
   article, section {
     font-size: 9pt !important;
