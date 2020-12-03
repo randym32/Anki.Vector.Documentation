@@ -25,7 +25,8 @@ Self-maintenance behaviors:
   self-protection behaviors like very low battery, and over temperature.
 - [Reacting to environmental conditions](mandatoryPhysicalReactions.md) while driving around
 - Drive home
-- Communication
+- [Communication trouble behaviors](communication trouble.md) are invoked when
+  Vector can't connect to a Wifi SSID or can't reach the voice server.
 - [Quiet mode](quiet mode.md) related to Vector being quiet -- not interacting
   with a person or toy, but also not asleep.
 - Sleep
