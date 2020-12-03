@@ -55,9 +55,8 @@ attitude Vector has toward the agent:
 In the searching type of social behaviors, Vector generally seeks out and
 approaches a human, toy or stimulation to interact with.
 
-Figure: Searching behavior
-
 ![searching behavior](searching behavior.png)
+*Figure: Searching behavior*
 
 Vector seeking social or stimulation isn't always applicable: Vector shouldn't
 be active at night, in the dark, or if people aren't around:
@@ -139,11 +138,11 @@ include:
 
 Many behaviors link together to follow a pattern:
 
-Figure: Social behavior sequences
 
 ![social behavior sequence](social behavior sequence.png)
+*Figure: Social behavior sequences*
  
-Once has made contact with a person:
+Once Vector has made contact with a person:
 
 * Greeting
 * Attentive regard
@@ -236,9 +235,8 @@ shaken, or tapped on the head.
 One type of sophisticated social interaction is games.  Games are typically
 turn-taking behaviors such as keep away the cube, hide and seek, etc.
 
-Figure: Game behavior sequence
-
 ![game behavior sequence](game behavior sequence.png)
+*Figure: Game behavior sequence*
  
 Some games might include:
 
