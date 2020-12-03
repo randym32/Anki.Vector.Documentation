@@ -6,7 +6,7 @@ summary: The behaviors related to turning off, handling very low-battery,
 ---
 
 This note describes the power management-related behaviors.
-Please refer to the [Technical Reference Manual](index.md#TRM)
+Please refer to the [Technical Reference Manual](../index.md#TRM)
 for a description of Vector's internal power states, management, and sleep debt.
 
 The main power management behaviors are launched at a very high-level.
@@ -162,7 +162,8 @@ behavior to play different animations based on the the emergency condition:
 * If the battery is low, it will trigger the *ChargerDockingSorryButLowBattery*
   animation.
 * If the temperature is high, or too hot charge, it will trigger the
-  *HighTemperatureWarningFace* animation.
+  *HighTemperatureWarningFace* animation; this will play the
+  *face_powersavemode* sprite sequence.
   
 The behavior file is located at:
 
