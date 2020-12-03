@@ -18,7 +18,7 @@ nicely ("be quiet") using the `imperative_quiet` user intent.
 
 
 It *QuietModeEmergencyModeGoHome* see [power management](power management.md)
-for a description emergency mode.
+for a description of emergency mode.
 
 The *BeQuietAnims* behavior is used to trigger the *Feedback_BeQuiet* animation,
 and lowers the Vector's drowsy head, using the *PutHeadDownInternal* behavior.
