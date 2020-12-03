@@ -2,7 +2,7 @@
 
 Adapted from Cozmo's "Brief" (see the [Cozmo design guide](Cozmo design guide.md) ):
 
-<div width="100%" height="900em" style="font-family:Avenir,Arial;font-size:11pt;background-image: linear-gradient(#F8D400, #FFAB01);color:white">
+<div width="100%" height="900em" style="font-family:Avenir,Arial;font-size:11pt;font-weight: 600;background-image: linear-gradient(#F8D400, #FFAB01);color:white">
 <div style="max-width:6200pt;line-height: 1.7em; padding:20pt;">
 <p style="color:#CF4C00;text-transform:uppercase">The ultimate goal for Cozmo and Vector is to create a real, believable robotic character that feels alive.
 
