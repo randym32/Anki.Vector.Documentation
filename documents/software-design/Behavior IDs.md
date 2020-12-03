@@ -152,8 +152,8 @@
 |MovementTurnAround||
 |MovementTurnLeft  ||
 |MovementTurnRight ||
-|NoCloud||
-|NoWifi ||
+|NoCloud|The behavior is invoked when Vector can't reach the voice server; see [Communication trouble behaviors](communication trouble.md)|
+|NoWifi |The behavior is invoked when Vector can't connect to a Wifi SSID; see [Communication trouble behaviors](communication trouble.md)|
 |NormalWakeUp |This is called by [*InitNormalBehavior* on start](startup behavior.md).  It plays the wake up animation --- if it isn't night time, and this isn't a maintenance reboot.|
 |NothingToDo_Idle||
 |ObservingDriveOffCharger||

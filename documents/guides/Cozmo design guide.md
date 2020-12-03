@@ -3,9 +3,14 @@
 Cozmo -- the generation prior to Vector -- paved a way for a lot of the character design.
 The principles Anki developped for his character apply to Vector as well.
 
+![](The_Cozmo_Brief.svg#zoom)
+*Figure: The Cozmo Brief*
+
 ![](cozmo-animation-guide.jpg#zoom)
+*Figure: Cozmo animation guide*
 
 ![](cozmo_initiates.jpg)
+*Figure: Example of a principle, where Cozmo initiates*
 
 ## The many faces of Cozmo
 
