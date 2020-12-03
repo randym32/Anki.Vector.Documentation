@@ -50,7 +50,7 @@ The behavior will play two animations:
 
 1. The *NoCloudGetIn* animation when the behavior starts.  Note that this is
    same as the *NoWifiGetIn* animation group.
-2. The *NoCloudIco*" animation will loop thereafter.
+2. The *NoCloudIcon* animation will loop thereafter.
    This will play the *face_nowifi_trouble_icon* sprite sequence.
 
 
