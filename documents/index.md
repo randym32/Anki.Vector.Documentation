@@ -5,6 +5,12 @@ This is a wiki for gathering and sharing information about
 
 [PDF version](./Vector-Wiki.pdf)
 
+## Games and Things you can do with Vector
+
+* A ["cheat sheet" of the things you can say to Vector](https://cheatography.com/tme520/cheat-sheets/anki-vector/) by Samuel Ward.  ([pdf](https://cheatography.com/samuelward/cheat-sheets/anki-vector/pdf/))
+* Another [Vector command list](https://github.com/lukemerrett/Anki-Vector-Command-List)
+* [A document on the interactions and games you can play with Vector](https://docs.google.com/document/d/e/2PACX-1vSssbqqD_CS1Ib99EcXs3qEB-AXHhpxNGNpI1-I7Avfd0Jtgzq1n88aYGFakNzWRnnhZdlediRN9Uly/pub)
+
 ## Personalizing Vector
 This is for notes on how to customize or personalize Vector.
 You may have to consult the How-To's below.
@@ -47,7 +53,7 @@ Some highlights:
 * Using GDB [to trace function calls](how-to/GDB tracing.md)
 * Using AudioKinetic WWise to [convert sound files to WEM
   format](how-to/Using AudioKinetic WWise to convert sound files to WEM.md)
-* Dauler sells stickers with the marker symbols preprinte at
+* Dauler sells stickers with the marker symbols preprinted at
   [3D Designs by Dauler](https://designsbydauler.com/collections/vector-robot)
 
 ## Developer documentation
