@@ -2,6 +2,10 @@
 title: Behavior Tree
 ---
 
+![Vector Behavior Tree v1.0.1](Vector Behavior Tree v1.0.1.png)
+*Figure: Vector Behavior Tree v1.0.1*
+
+
 Note: all of the behavior related files are in the following directory, and
 sub-directories:
 
@@ -37,11 +41,11 @@ Self-maintenance behaviors:
 - Being held
 - Playing
 - Helping out
-  * Question-Answer
-  * Timer
-  * Weather
+    * Question-Answer
+    * Timer
+    * Weather
 
-## Toys
+## Toys and Accessories
 
 ## Change history synopsis
 
