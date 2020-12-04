@@ -56,10 +56,10 @@
 |ChargerDockingDrivingEnd||
 |ChargerDockingDrivingLoop||
 |ChargerDockingDrivingStart||
-|ChargerDockingFailure||
+|ChargerDockingFailure ||
 |ChargerDockingLeftTurn||
 |ChargerDockingRaiseLift||
-|ChargerDockingRequest||
+|ChargerDockingRequest ||
 |ChargerDockingRequestGetout||
 |ChargerDockingRequestPickup|This animation is played by [*EmergencyModeInAir*](power management.md) behavior to ask a human companion to put Vector in the charger.|
 |ChargerDockingRequestWaitLoop||
@@ -73,8 +73,8 @@
 |ChargerDockingSevereRequestGetout||
 |ChargerDockingSorryButLowBattery |This animation is played by [*EmergencyModeAnimDispatcher*](power management.md) behavior to show that Vector's battery is low|
 |ChargerReaction||
-|ClockGetIn ||
-|ClockGetOut||
+|ClockGetIn  ||
+|ClockGetOut ||
 |ComeHereStart||
 |ComeHereSuccess||
 |ConnectToCubeFailure||
@@ -142,8 +142,8 @@
 |DanceBeatNoBeatDetected||
 |DanceToTheBeat||
 |DealerCardLayout||
-|DockEndDefault||
-|DockLoopDefault||
+|DockEndDefault ||
+|DockLoopDefault ||
 |DockStartDefault||
 |DriveEndAngry||
 |DriveEndDefault||
@@ -291,12 +291,13 @@
 |MovementTurnLeft||
 |MovementTurnRight||
 |Muted||
-|NeutralFace||
-|NoCloudGetIn||
-|NoCloudIcon||
-|NoWifiGetIn||
-|NoWifiIcon||
-|NoWifiSearching||
+|NeutralFace   ||
+|NoCloudGetIn  |This animation is played when the [*NoCloud* behavior](communication trouble.md)  starts.  Note that this is
+   same as the *NoWifiGetIn* animation group.|
+|NoCloudIcon   |This animation is used with the [*NoCloud* behavior](communication trouble.md). This will play the *face_nowifi_trouble_icon* sprite sequence.|
+|NoWifiGetIn   |This animation is played when the [*NoWifi* behavior](communication trouble.md) starts|
+|NoWifiIcon    |This animation is used with the [*NoWifi* behavior](communication trouble.md). This will play the *face_nowifi_icon* sprite sequence.|
+|NoWifiSearching|This animation is used while Vector is looking for a Wifi SSID; This will play the *face_nowifi_signal* sprite sequence.|
 |NothingToDoBoredIdle ||
 |ObservingIdleEyesOnly|This animation is used when Vector is sitting and only looking around.|
 |ObservingIdleWithHeadLookingStraight||
