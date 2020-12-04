@@ -1272,6 +1272,19 @@
     Documentation
   </a>
   
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-restart-step-after-installation" class="md-nav__link">
+    Adding a restart step after installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1399,6 +1412,19 @@
   <a href="#documentation" class="md-nav__link">
     Documentation
   </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-restart-step-after-installation" class="md-nav__link">
+    Adding a restart step after installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1540,6 +1566,34 @@ here everything has to be on a Vector.</p>
 <p>Uninstall.  To uninstall the vpkg later</p>
 <pre><code class="language-bash">   ./vector-pkg.py uninstall —pkg=demo-1
 </code></pre>
+<h3 id="adding-a-restart-step-after-installation">Adding a restart step after installation<a class="headerlink" href="#adding-a-restart-step-after-installation" title="Permanent link">&para;</a></h3>
+<p>There are four different ways to restart after applying the package.
+To simply restart Vector's application:</p>
+<pre><code>[post_deploy]
+0=systemctl stop anki-robot.target
+1=sleep
+2=systemctl start anki-robot.target
+</code></pre>
+<p>To restart Vector's application, but silently -- that is, not play the
+<em>InitialWakeUp</em> animation:</p>
+<pre><code>[post_deploy]
+0=systemctl stop anki-robot.target
+1=sleep
+2=echo 1 &gt; /data/maintenance_reboot
+3=systemctl start anki-robot.target
+</code></pre>
+<p>If <code>vector-pkg</code> is by called the modified <code>update-engine</code> it can tell it to
+reboot the operating system after the package has installed, using the key
+<code>reboot_after_install</code> in the <code>META</code> section.  For example:</p>
+<pre><code>[META]
+reboot_after_install=1
+</code></pre>
+<p>The following will reboot the operating system using a "maintenance reboot"
+so that the <em>InitialWakeUp</em> animation is not played:</p>
+<pre><code>[post_deploy]
+0=/anki/bin/vic-log-event update-engine robot.maintenance_reboot success
+1=echo 1 &gt; /data/maintenance_reboot
+</code></pre>
 <h2 id="cavaets">Cavaets<a class="headerlink" href="#cavaets" title="Permanent link">&para;</a></h2>
 <h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
 <p>Not tested by others yet.
@@ -1549,6 +1603,20 @@ end, it downloads it, and then pass it to the package manager.</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <p>The files are on github <a href="https://github.com/randym32/Anki.Vector.PackageInstaller">https://github.com/randym32/Anki.Vector.PackageInstaller</a></p>
 <h2 id="change-history-synopsis">Change history synopsis<a class="headerlink" href="#change-history-synopsis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-8-30</td>
+<td>Created</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
