@@ -92,6 +92,39 @@ Uninstall.  To uninstall the vpkg later
    ./vector-pkg.py uninstall —pkg=demo-1
 ```
 
+### Adding a restart step after installation
+
+There are four different ways to restart after applying the package.
+To simply restart Vector's application:
+
+    [post_deploy]
+    0=systemctl stop anki-robot.target
+    1=sleep
+    2=systemctl start anki-robot.target
+
+To restart Vector's application, but silently -- that is, not play the
+*InitialWakeUp* animation:
+
+    [post_deploy]
+    0=systemctl stop anki-robot.target
+    1=sleep
+    2=echo 1 > /data/maintenance_reboot
+    3=systemctl start anki-robot.target
+
+
+If `vector-pkg` is by called the modified `update-engine` it can tell it to
+reboot the operating system after the package has installed, using the key
+`reboot_after_install` in the `META` section.  For example:
+
+    [META]
+    reboot_after_install=1
+
+The following will reboot the operating system using a "maintenance reboot"
+so that the *InitialWakeUp* animation is not played:
+
+    [post_deploy]
+    0=/anki/bin/vic-log-event update-engine robot.maintenance_reboot success
+    1=echo 1 > /data/maintenance_reboot
 
 ## Cavaets
 
@@ -109,3 +142,8 @@ The files are on github [https://github.com/randym32/Anki.Vector.PackageInstalle
 
 ## Change history synopsis
 
+
+|Date|Change|
+|----|------|
+|2020-8-30|Created|
+|2020-12-3|Added how to restart after installing a package|
