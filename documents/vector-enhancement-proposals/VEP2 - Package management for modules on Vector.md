@@ -35,6 +35,17 @@ This is a package manager that does those, and adds in a few extras:
 - It is preferred to separate out the package manager from the update-engine
   as much as possible, to make int more understandable and support testing.
 
+- The package manager needs to protect the /mnt /dev directories; any access
+  to these could irreversible destroy the bot.  Since the packages are intended
+  to be used by lots of people who won't (or won't be able to) examine the
+  package for negative consequences we need to limit these unusual risks.
+  If changes are needed to these the owner should ssh in and consciously make
+  changes.
+  
+- It can't run arbitrary commands from the package file during installation;
+  the packager can be run as root and this could irreversible destroy the bot.
+  This has the same rationale as above.
+
 
 ### It just installs the packages
 This tool doesn't do everything that the other managers do:
@@ -94,37 +105,33 @@ Uninstall.  To uninstall the vpkg later
 
 ### Adding a restart step after installation
 
-There are four different ways to restart after applying the package.
+If `vector-pkg` is by called the modified `update-engine` it can tell it to
+restart the application or reboot the operating system after the package has
+installed.  This is done using a `restart_type=` key  in the `[META]` section.
+
+There are four different values to say how  to restart after applying the package.
 To simply restart Vector's application:
 
-    [post_deploy]
-    0=systemctl stop anki-robot.target
-    1=sleep
-    2=systemctl start anki-robot.target
+    [META]
+    restart_type=restart
 
 To restart Vector's application, but silently -- that is, not play the
 *InitialWakeUp* animation:
 
-    [post_deploy]
-    0=systemctl stop anki-robot.target
-    1=sleep
-    2=echo 1 > /data/maintenance_reboot
-    3=systemctl start anki-robot.target
+    [META]
+    restart_type=maintenance-restart
 
 
-If `vector-pkg` is by called the modified `update-engine` it can tell it to
-reboot the operating system after the package has installed, using the key
-`reboot_after_install` in the `META` section.  For example:
+To reboot the operating system after the package has installed:
 
     [META]
-    reboot_after_install=1
+    restart_type=reboot
 
 The following will reboot the operating system using a "maintenance reboot"
 so that the *InitialWakeUp* animation is not played:
 
-    [post_deploy]
-    0=/anki/bin/vic-log-event update-engine robot.maintenance_reboot success
-    1=echo 1 > /data/maintenance_reboot
+    [META]
+    restart_type=maintenance-reboot
 
 ## Cavaets
 
