@@ -23,7 +23,7 @@ This is a package manager that does those, and adds in a few extras:
 
 - Can set the premissions for the files.
 
-## Some Design decisions:
+## Some Design decisions
 - The tool had to be small, and not hard to deploy
 
 - The tool can’t be compiled (we don't know how)
