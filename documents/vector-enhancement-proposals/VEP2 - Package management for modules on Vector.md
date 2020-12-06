@@ -154,3 +154,4 @@ The files are on github [https://github.com/randym32/Anki.Vector.PackageInstalle
 |----|------|
 |2020-8-30|Created|
 |2020-12-3|Added how to restart after installing a package|
+|2020-12-5|Removed unsafe features, changed how to restart after installing a package|
