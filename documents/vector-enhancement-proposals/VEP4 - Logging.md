@@ -13,9 +13,10 @@ dumps to a server of our choosing.
 - Settings
 - DAS optin/optout
 
-Replace /anki/bin/vic-log-upload
- - moving aside, /anki/bin/vic-log-upload since it just does AWS, S3://
- - put in something that can contact our local server
+Replace `/anki/bin/vic-log-upload`
+
+- moving aside, `/anki/bin/vic-log-upload` since it just does AWS, S3://
+- put in something that can contact our local server
 
 Files:
 
@@ -23,4 +24,12 @@ Files:
 * log uploader
  
 ## References
+
+See [How change where Vector sends the logs](How to change where the logs are sent.md)
+for example changes to the configuration files.
+
 ## Change history synopsis
+
+|Date|Change|
+|----|------|
+|2020-11-17|Created|
