@@ -5,6 +5,8 @@ This is a wiki for gathering and sharing information about
 
 [PDF version](./Vector-Wiki.pdf)
 
+See also this other [Wiki by Xanathon](https://wiki.thedroidyouarelookingfor.info/doku.php?id=start)
+
 ## Games and Things you can do with Vector
 
 * A ["cheat sheet" of the things you can say to Vector](https://cheatography.com/tme520/cheat-sheets/anki-vector/) by Samuel Ward.  ([pdf](https://cheatography.com/samuelward/cheat-sheets/anki-vector/pdf/))
