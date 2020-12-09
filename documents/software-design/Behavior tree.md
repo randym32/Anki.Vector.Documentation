@@ -2,7 +2,7 @@
 title: Behavior Tree
 ---
 
-![Vector Behavior Tree v1.0.1](Vector Behavior Tree v1.0.1.png)
+![Vector Behavior Tree v1.0.1](Vector Behavior Tree v1.0.1.png#zoom)
 *Figure: Vector Behavior Tree v1.0.1*
 
 
