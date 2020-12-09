@@ -1,0 +1,1905 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>How to create a soundbank - Vector Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-create-a-soundbank" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="Vector Documentation" class="md-header-nav__button md-logo" aria-label="Vector Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Vector Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              How to create a soundbank
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+  
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    Vector Documentation
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Vector Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/CONTRIBUTING.html" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/code_of_conduct.html" class="md-nav__link">
+      Contributor Covenant Code of Conduct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Body%20modification.html" class="md-nav__link">
+      Body modifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Customization%2C%20personalization.html" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Enable%20Cozmo-like%20animations%20for%20being%20on%20his%20side%2C%20and%20flipping%20down%20from%20his%20back.html" class="md-nav__link">
+      How to enable Cozmo-like animations for being on his side, and flipping down from being on his back
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Nose%20art.html" class="md-nav__link">
+      Nose Art Showcase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Document templates
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document templates" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Document templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/VEP-template.html" class="md-nav__link">
+      VEP Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/how-to.html" class="md-nav__link">
+      How-to template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/template.html" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Guides
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Guides" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Cozmo%20design%20guide.html" class="md-nav__link">
+      Cozmo Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Typefaces.html" class="md-nav__link">
+      Typefaces
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Vector%20character%20design%20guide.html" class="md-nav__link">
+      Vector Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Vector%20character%20study.html" class="md-nav__link">
+      Vector Character Study
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/behavior%20taxonomy.html" class="md-nav__link">
+      Behavior Taxonomy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Historical bots
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Historical bots" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Historical bots
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Bingo.html" class="md-nav__link">
+      Bingo and mini-Bingo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT1.html" class="md-nav__link">
+      Victor DVT1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT2.html" class="md-nav__link">
+      Victor DVT2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT3.html" class="md-nav__link">
+      Victor DVT3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT4.html" class="md-nav__link">
+      Victor DVT4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Whiskey.html" class="md-nav__link">
+      Whiskey
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    <label class="md-nav__link" for="nav-7">
+      How to
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        How to
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="GDB%20tracing.html" class="md-nav__link">
+      How to trace calls using GDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20change%20where%20the%20logs%20are%20sent.html" class="md-nav__link">
+      How change where Vector sends the logs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20convert%20animation%20bin%20files%20to%20JSON.html" class="md-nav__link">
+      How to convert animation bin files to JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to create a soundbank
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="How%20to%20create%20a%20soundbank.html" class="md-nav__link md-nav__link--active">
+      How to create a soundbank
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools-you-will-need" class="md-nav__link">
+    Tools You will need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-sound-files" class="md-nav__link">
+    Your sound files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wwise-to-create-the-soundbank" class="md-nav__link">
+    WWise to create the soundbank
+  </a>
+  
+    <nav class="md-nav" aria-label="WWise to create the soundbank">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-project" class="md-nav__link">
+    Starting a Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-soundbank" class="md-nav__link">
+    Creating a soundbank
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-audio-files" class="md-nav__link">
+    Importing Audio files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-file-properties-ie-name-and-conversion" class="md-nav__link">
+    Setting the file properties, ie, name, and conversion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-event-and-action-to-play-it" class="md-nav__link">
+    Create an event and action to play it
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generating-the-soundbank" class="md-nav__link">
+    Generating the Soundbank
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging-and-installations" class="md-nav__link">
+    Packaging and Installations
+  </a>
+  
+    <nav class="md-nav" aria-label="Packaging and Installations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-folder-with-the-files" class="md-nav__link">
+    The folder with the files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-a-package" class="md-nav__link">
+    Making a package
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-improvements" class="md-nav__link">
+    Future improvements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20make%20a%20companion%20cube.html" class="md-nav__link">
+      How to make a companion cube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20re-enable%20the%20Snowglobe.html" class="md-nav__link">
+      How to bring back the Snowglobe effect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20set%20up%20a%20new%20Yocto-linux%20build%20environment.html" class="md-nav__link">
+      How to set up a new Yocto-linux build environment for Vector’s base OS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link">
+      How to unzip the OTA files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20use%20Cozmo%20animations.html" class="md-nav__link">
+      How to use Cozmo animation files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Paper%20dolls.html" class="md-nav__link">
+      Making paper dolls for Vector to play with
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Using%20AudioKinetic%20WWise%20to%20convert%20sound%20files%20to%20WEM.html" class="md-nav__link">
+      Using AudioKinetic WWise to convert the sound files to WEM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Service
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Service" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Arms.html" class="md-nav__link">
+      Arms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Battery%20replacement.html" class="md-nav__link">
+      Replacing the Battery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Disassembly%20notes.html" class="md-nav__link">
+      Disassembly notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Exploded%20View.html" class="md-nav__link">
+      Exploded View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/LCD%20replacement.html" class="md-nav__link">
+      LCD Replacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Parts%20kits.html" class="md-nav__link">
+      Parts kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Software design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software design" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Software design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Animation%20triggers.html" class="md-nav__link">
+      Animation Triggers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20IDs.html" class="md-nav__link">
+      Behaviour IDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20classes.html" class="md-nav__link">
+      Behavior Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20tree.html" class="md-nav__link">
+      Behavior Tree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Console%20variables.html" class="md-nav__link">
+      Console variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/URLs%20in%20code.html" class="md-nav__link">
+      URLS listed in the code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/channels.html" class="md-nav__link">
+      Channels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/classes.html" class="md-nav__link">
+      Software Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/communication%20trouble.html" class="md-nav__link">
+      Communication trouble behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/files.html" class="md-nav__link">
+      Source Files referenced in the binaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/mandatoryPhysicalReactions.html" class="md-nav__link">
+      Mandatory physical reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/power%20management.html" class="md-nav__link">
+      Power management behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/quiet%20mode.html" class="md-nav__link">
+      Quiet mode behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/startup%20behavior.html" class="md-nav__link">
+      Start up behavior
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" >
+    <label class="md-nav__link" for="nav-10">
+      Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon"></span>
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Animation%20tool.html" class="md-nav__link">
+      Animation tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Playpen.html" class="md-nav__link">
+      Playpen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Webots.html" class="md-nav__link">
+      Webots
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
+    <label class="md-nav__link" for="nav-11">
+      Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon"></span>
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/FAC.html" class="md-nav__link">
+      FAC (Factory) Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Hardware%20error%20codes.html" class="md-nav__link">
+      Hardware error codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Software%20error%20codes.html" class="md-nav__link">
+      Software error codes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" >
+    <label class="md-nav__link" for="nav-12">
+      Vector enhancement proposals
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vector enhancement proposals" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon"></span>
+        Vector enhancement proposals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/Overview.html" class="md-nav__link">
+      Vector Enhancement Proposals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP1%20-%20Update-engine%20changes.html" class="md-nav__link">
+      VEP1 - Update-engine changes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html" class="md-nav__link">
+      VEP2 - Package management for modules on Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP3%20-%20Developer%20configurations%20for%20robot.html" class="md-nav__link">
+      VEP3 - Developer configurations for robot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP4%20-%20Logging.html" class="md-nav__link">
+      VEP4 - Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+
+  <!-- Further information -->
+      <!-- Copyright and theme information -->
+        
+          <div style="font-size:60%;" xclass="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Randall Maas and team
+          </div>
+        
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools-you-will-need" class="md-nav__link">
+    Tools You will need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-sound-files" class="md-nav__link">
+    Your sound files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wwise-to-create-the-soundbank" class="md-nav__link">
+    WWise to create the soundbank
+  </a>
+  
+    <nav class="md-nav" aria-label="WWise to create the soundbank">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-project" class="md-nav__link">
+    Starting a Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-soundbank" class="md-nav__link">
+    Creating a soundbank
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-audio-files" class="md-nav__link">
+    Importing Audio files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-file-properties-ie-name-and-conversion" class="md-nav__link">
+    Setting the file properties, ie, name, and conversion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-event-and-action-to-play-it" class="md-nav__link">
+    Create an event and action to play it
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generating-the-soundbank" class="md-nav__link">
+    Generating the Soundbank
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging-and-installations" class="md-nav__link">
+    Packaging and Installations
+  </a>
+  
+    <nav class="md-nav" aria-label="Packaging and Installations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-folder-with-the-files" class="md-nav__link">
+    The folder with the files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-a-package" class="md-nav__link">
+    Making a package
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-improvements" class="md-nav__link">
+    Future improvements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/randym32/Anki.Vector.Documentation/edit/master/documents/how-to/How to create a soundbank.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                
+                <h1 id="how-to-create-a-soundbank">How to create a soundbank<a class="headerlink" href="#how-to-create-a-soundbank" title="Permanent link">&para;</a></h1>
+<p>Vector's audio engine does not directly use <code>mp3</code> or other common audio files.
+Vector uses AudioKinetic's WWise sound engine.  This engine uses a proprietary
+set of file <code>.bnk</code> and <code>.wem</code> files.  The result is a sophisticated mechanism
+to create audible responses, little physiological effects, and more.</p>
+<p>Unfortunately it is not intuitive to add sounds.  WWise is free for
+non-commercial use; but this is not an easy tool to use.  That is why I've
+written up this how-to.  It should make the process a lot more straight-forward.</p>
+<p>I won't describe how to hook the new sounds into the animations or behavior
+tree here.  That has its own multi-step process.</p>
+<p>The sample WWise project that we create below can be downloaded <a href="SoundbankStarter.zip">here</a></p>
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">&para;</a></h2>
+<h3 id="tools-you-will-need">Tools You will need<a class="headerlink" href="#tools-you-will-need" title="Permanent link">&para;</a></h3>
+<p>You will need AudioKinetic WWise, version 2017.2.
+This version is the one that creates file with the same version id that Vector
+is expecting.  (Other version may work, but the internet reports version
+mismatch is a very common cause of WWise errors.).</p>
+<ul>
+<li>Download and install AudioKinetic WWise by using teh <a href="https://www.audiokinetic.com/download/">WWise Launcher</a>
+    From there you will have to select this version.</li>
+<li><a href="https://www.audiokinetic.com/library/2017.2.10_6745/?source=Help&amp;id=welcome_to_wwise">WWise 2017.2 documentation</a></li>
+</ul>
+<p>The free version of WWise has a cap of 200 audio files; it is unlikely you will
+ever create that many in a single sound bank.  If you do, just break the sound
+bank up to two or more.</p>
+<h3 id="your-sound-files">Your sound files<a class="headerlink" href="#your-sound-files" title="Permanent link">&para;</a></h3>
+<p>You will need to convert your sound files to <code>WAV</code> files ahead of time. That is
+not described here.</p>
+<h2 id="wwise-to-create-the-soundbank">WWise to create the soundbank<a class="headerlink" href="#wwise-to-create-the-soundbank" title="Permanent link">&para;</a></h2>
+<p>This section we'll describe how to build a "media only" soundbank that can be
+added to Vector.</p>
+<h3 id="starting-a-project">Starting a Project<a class="headerlink" href="#starting-a-project" title="Permanent link">&para;</a></h3>
+<p>Launch WWise, from either your application menu or the WWise launcher.
+When WWise starts it will give you a window create a new project</p>
+<p><img alt="Starting WWise" src="wwise-1.png" />
+<em>Figure: Starting WWise</em></p>
+<p>Click "New"</p>
+<p>Note: Along the way WWise may present pop-ups to let you know that you don't a
+have a license -- that this is only for non-commercial and evaluation use.
+Click ok whenever that happens.</p>
+<p>After clicking new, it give a pop-up to do a little initial paperwork to create
+the project:</p>
+<p><img alt="Create a new project" src="wwise-2.png" />
+<em>Figure: Create a new project</em></p>
+<ol>
+<li>Fill in the name of the project with whatever you want.  Be unique</li>
+<li>Add the linux platform: click the "Add" and then select Linux.
+   (I don't know that this strictly neccessary)</li>
+<li>Uncheck all of the other assets groups.</li>
+<li>Click "ok"</li>
+</ol>
+<h3 id="creating-a-soundbank">Creating a soundbank<a class="headerlink" href="#creating-a-soundbank" title="Permanent link">&para;</a></h3>
+<p>The next step is to create our SoundBank.  Look for the project pane:</p>
+<p><img alt="Create a new soundbank" src="wwise-3.png" />
+<em>Figure: Create a new soundbank</em></p>
+<ol>
+<li>Click on the "SoundBanks" tab</li>
+<li>Right click on the "Default Work Unit" item under the "SoundBanks" tree</li>
+<li>Go into the "New Child" submenu</li>
+<li>Select "SoundBank"</li>
+</ol>
+<p>This will create a panel to edit the sound bank.  If not, double click on
+your new sound bank in the tree.  You should get a SoundBank Editor:</p>
+<p><img alt="Naming a new sound bank" src="wwise-4.png" />
+<em>Figure: Naming a new sound bank</em></p>
+<p>Give your sound bank a unique name.  This will be the name on the robot,
+so make it descriptive, but unique.</p>
+<h3 id="importing-audio-files">Importing Audio files<a class="headerlink" href="#importing-audio-files" title="Permanent link">&para;</a></h3>
+<p>Next is importing the audio files.  You will need to convert your audio files
+into the <code>WAV</code> format, if you have not done so already.</p>
+<p><img alt="Import audio files" src="wwise-10.png" />
+<em>Figure: Import audio files</em></p>
+<ol>
+<li>Open the Projects menu</li>
+<li>Select "Import Audio files"</li>
+</ol>
+<p>This will bring up a dialog:</p>
+<p><img alt="Adding audio files" src="wwise-11.png" />
+<em>Figure: Add audio files</em></p>
+<ol>
+<li>Change the "Import Mode" to "Create new objects"</li>
+<li>Change the "Import as" to "Sound SFX"</li>
+<li>Click "Add Files" button</li>
+<li>Select the files you wish through the usual dialog</li>
+</ol>
+<p>Click "Import"</p>
+<h3 id="setting-the-file-properties-ie-name-and-conversion">Setting the file properties, ie, name, and conversion<a class="headerlink" href="#setting-the-file-properties-ie-name-and-conversion" title="Permanent link">&para;</a></h3>
+<p>Next, lets set the audio conversion.  Find the audio file in the project tree:</p>
+<p><img alt="The audio files in the tree" src="wwise-15.png" />
+<em>Figure: The  audio files in the tree</em></p>
+<p>Click on the file.  It should open a panel on the right to configure the
+properties of this file:</p>
+<p><img alt="The audio file properties" src="wwise-16.png" />
+<em>Figure: The audio file properties</em></p>
+<ol>
+<li>Set the name of the file.  Optional, but this is a good time to change the
+   name of the file to have a nice consistent, clean name.</li>
+<li>Click the "Source Settings" tab</li>
+<li>Under than click the chevrons next to the word "Default Conversion Settings"</li>
+</ol>
+<p><img alt="The conversion settings" src="wwise-17.png" />
+<em>Figure: The conversion settings</em></p>
+<p>Clicking on the chverons will bring up a menu</p>
+<ol>
+<li>Click on "Factory Conversion Settngs"</li>
+<li>Select "Vorbis"</li>
+<li>Select one of the Vorbis formats.  Probably any will do.
+   (Probably any ADPCM will do to, but I haven't confirmed it.  I don't have
+    guidance for which to choose.)</li>
+</ol>
+<p>Finally, we need tell it to create a separate WEM file.</p>
+<p><img alt="The stream settings" src="wwise-18.png" />
+<em>Figure: The stream setting</em></p>
+<ol>
+<li>Click on the "General Settings" tab.</li>
+<li>Check the "Stream" check box.</li>
+</ol>
+<h3 id="create-an-event-and-action-to-play-it">Create an event and action to play it<a class="headerlink" href="#create-an-event-and-action-to-play-it" title="Permanent link">&para;</a></h3>
+<p>Next we need tell the audio engine that this is playable.  To do that we need
+to create a Event with a play action.  Click on the "Event" tab:</p>
+<p><img alt="Creating a play event" src="wwise-20.png" />
+<em>Figure: Creating a play event</em></p>
+<ol>
+<li>Right click on the "Default Work Unit"  This will bring up a menu</li>
+<li>Select "New Child"</li>
+<li>Then click on "Play"</li>
+</ol>
+<p>This will add an item to the tree on the left under "Default Work Unit",
+in edit mode:</p>
+<p><img alt="New play event" src="wwise-21.png" />
+<em>Figure: New a play event</em></p>
+<p>Give the name something like "Play_<em>sound name</em>" </p>
+<p>On the right side a panel should appear with the properties for this event.
+It doesn't know yet to play this particular sound.  We'll connect that now.</p>
+<p><img alt="Attach a sound to the play event" src="wwise-22.png" />
+<em>Figure: Attach a sound to the play event</em></p>
+<p>Click on "Browse".  This will pop up a window to select which sound.</p>
+<p><img alt="Selecting a sound to attach to the play event" src="wwise-23.png" />
+<em>Figure: Selecting a sound to attach to the play event</em></p>
+<p>We need to add it to the sound bank.  If the sound bank panel isn't open, click
+on the SoundBanks tab, and double click on the sound bank.</p>
+<p>Click on the Events tab and drag the new event into the soundbank:</p>
+<p><img alt="Adding the play event to the sound bank" src="wwise-25.png" />
+<em>Figure: Adding the play event to the sound bank</em></p>
+<p>You should then see:</p>
+<p><img alt="The play event in the sound bank" src="wwise-26.png" />
+<em>Figure: The play event in the sound bank</em></p>
+<p>Click on the Audio tab, and drag the audio file into the soundbank as well:</p>
+<p><img alt="Adding the audio file to the sound bank" src="wwise-27.png" />
+<em>Figure: Adding the audio file to the sound bank</em></p>
+<p>You should then see:</p>
+<p><img alt="The play event and audio file in the sound bank" src="wwise-28.png" />
+<em>Figure: The play event  and audio file in the sound bank</em></p>
+<h3 id="generating-the-soundbank">Generating the Soundbank<a class="headerlink" href="#generating-the-soundbank" title="Permanent link">&para;</a></h3>
+<p>Now it is time to convert the files and generate the sound bank.</p>
+<p><img alt="Generate the sound bank" src="wwise-30.png" />
+<em>Figure: Generate the sound bank</em></p>
+<ol>
+<li>Click on the SoundBanks tab.</li>
+<li>Right click on our SoundBank.  This will pop up a menu</li>
+<li>Choose "Generate SoundBank(s) for all platforms"</li>
+</ol>
+<p>WWise will convert all of the audio files and create a sound bank.</p>
+<h2 id="packaging-and-installations">Packaging and Installations<a class="headerlink" href="#packaging-and-installations" title="Permanent link">&para;</a></h2>
+<h3 id="the-folder-with-the-files">The folder with the files<a class="headerlink" href="#the-folder-with-the-files" title="Permanent link">&para;</a></h3>
+<p>Lets look at the generated files now.  Open the folder you created for your
+WWise project.  It should look like:</p>
+<p><img alt="The WWise project folder" src="wwise-35.png" />
+<em>Figure: The WWise project folder</em></p>
+<p>Open the "GeneratedSoundBanks" folder; inside of that open the "Linux" folder.
+You should see a folder like:</p>
+<p><img alt="The soundbanks folder" src="wwise-36.png" />
+<em>Figure: The soundbanks folder</em></p>
+<p>(The numbers and names will be different.)</p>
+<p>Make a note of the ".txt" file with the soundbank name.  We will need that later.</p>
+<h3 id="making-a-package">Making a package<a class="headerlink" href="#making-a-package" title="Permanent link">&para;</a></h3>
+<p>We need to get the .wem files and out .bnk file (ignore the Init.bnk) onto
+Vector and placed in the following folder:</p>
+<pre><code>/anki/data/assets/cozmo_resources/sound/
+</code></pre>
+<p>One way to do this is to make a <code>vpkg</code>.  The <code>.ini</code> for the package file might
+look something like:</p>
+<pre><code>[META]
+name=SoundbankStarter
+rel_num=1
+restart_type=maintenance-restart
+
+[files]
+/anki/data/assets/cozmo_resources/sound/SoundbankStarter.bnk=SoundbankStarter.bnk
+/anki/data/assets/cozmo_resources/sound/SoundbankStarter.txt=SoundbankStarter.txt
+/anki/data/assets/cozmo_resources/sound/822718018.wem=822718018.wem
+
+[permissions]
+/anki/data/assets/cozmo_resources/assets/cozmo_resources/sound=anki:anki 0444
+</code></pre>
+<p>Then create a vpkg, in this example called "SoundbankStarter":</p>
+<pre><code>vector-pkg.py install --pkg=SoundbankStarter.vpkg
+</code></pre>
+<p>You will then copy the file on the bot and then install it with a command line like</p>
+<pre><code>vector-pkg.py install --pkg=SoundbankStarter.vpkg
+</code></pre>
+<p>You will also need to edit a file so that Vector's audio engine knows to load it.
+This file is</p>
+<pre><code>/anki/data/assets/cozmo_resources/sound/SoundbankBundleInfo.json
+</code></pre>
+<p>By default in 1.7 it looks like:</p>
+<pre><code>[{"bundle_name": "Victor_Global_Data_English(US)", "language": "English(US)", "path": "English(US)/Victor_Global_Data.bnk", "soundbank_name": "Victor_Global_Data"}, {"bundle_name": "Init", "language": "SFX", "path": "Init.bnk", "soundbank_name": "Init"}, {"bundle_name": "Victor_UI", "language": "SFX", "path": "Victor_UI.bnk", "soundbank_name": "Victor_UI"}, {"bundle_name": "Victor_VO", "language": "SFX", "path": "Victor_VO.bnk", "soundbank_name": "Victor_VO"}, {"bundle_name": "Victor_Alexa", "language": "SFX", "path": "Victor_Alexa.bnk", "soundbank_name": "Victor_Alexa"}, {"bundle_name": "Victor_SFX", "language": "SFX", "path": "Victor_SFX.bnk", "soundbank_name": "Victor_SFX"}, {"bundle_name": "Victor_Dev_English(US)", "language": "English(US)", "path": "English(US)/Victor_Dev.bnk", "soundbank_name": "Victor_Dev"}]
+</code></pre>
+<p>(Yes, this one long run-on line.)</p>
+<p>We want to add a like that it, like so:</p>
+<pre><code>[{"bundle_name": "Victor_Global_Data_English(US)", "language": "English(US)", "path": "English(US)/Victor_Global_Data.bnk", "soundbank_name": "Victor_Global_Data"}, {"bundle_name": "Init", "language": "SFX", "path": "Init.bnk", "soundbank_name": "Init"}, {"bundle_name": "Victor_UI", "language": "SFX", "path": "Victor_UI.bnk", "soundbank_name": "Victor_UI"}, {"bundle_name": "Victor_VO", "language": "SFX", "path": "Victor_VO.bnk", "soundbank_name": "Victor_VO"}, {"bundle_name": "Victor_Alexa", "language": "SFX", "path": "Victor_Alexa.bnk", "soundbank_name": "Victor_Alexa"}, {"bundle_name": "Victor_SFX", "language": "SFX", "path": "Victor_SFX.bnk", "soundbank_name": "Victor_SFX"}, {"bundle_name": "Victor_Dev_English(US)", "language": "English(US)", "path": "English(US)/Victor_Dev.bnk", "soundbank_name": "Victor_Dev"}
+,{"bundle_name": "SoundbankStarter(US)", "language": "English(US)", "path": "SoundbankStarter.bnk", "soundbank_name": "SoundbankStarter"}
+]
+</code></pre>
+<p>Next, restart the Vector application by:</p>
+<pre><code>systemctl stop anki-robot.target
+sleep 5
+systemctl start anki-robot.target
+</code></pre>
+<p>Then we need to check the logs that the file loaded:</p>
+<pre><code>grep SoundBank /var/log/messages
+</code></pre>
+<p>This shouldn't show a problem.  If you see something like the following, there was a problem.</p>
+<pre><code>12-09 04:40:43.725 warning vic-anim 2103 2103 vic-anim: AudioEngineController.LoadSoundbank: Failed to load soundbank 'SoundbankStarter'
+</code></pre>
+<p>(The name of the soundbank being your soundbank.)<br />
+(Check that the time stamp is about "now" -- just so that we aren't confused with old errors)</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>When you wish to play the animation, lets open the text file we saw earlier.
+In the example case it was called "SoundbankStarter.txt".  This file has the
+info we need to play the sound.</p>
+<p><img alt="The soundbank event ids" src="wwise-40.png" />
+<em>Figure: The soundbank event ids</em></p>
+<p>The number is the event id to be used inside of animations.
+The name can be used in some JSON files; but it is als helpful when working
+with multiple sounds in the file, to know which one is the right event.</p>
+<p>The sound file can be tested using the console vars.  Please see 
+<a href="https://oskr.ddl.io/doc/tools.html#development-web-servers">Development Web Servers</a>
+for how to set up access to these.</p>
+<p>Go to 
+    http://localhost:8889/</p>
+<p><img alt="Console vars button" src="console-vars-1.png" />
+<em>Figure: Console vars button</em></p>
+<p>Click on the "consolevars".
+This will bring up a pannel of tabs.  Click on the "Audio" tab:</p>
+<p><img alt="Audio Console vars" src="console-vars-2.png" />
+<em>Figure: Audio Console vars</em></p>
+<p>In the "PostAudioEvent" you can paste the Event Name (from your txt
+above).  Then click "Call"  This should cause your new sound to play.
+The Event ID will not work here.</p>
+<h2 id="future-improvements">Future improvements<a class="headerlink" href="#future-improvements" title="Permanent link">&para;</a></h2>
+<p>It would be nice to be able to bundle the soundbank and files into a folder, so
+that it was clear which files belonged to which soundbank.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<footer class="md-footer">
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+
+<script src="https://unpkg.com/iframe-worker/polyfill"></script>
+<script src="../search/search_index.js"></script>
+
+
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['search.suggest', 'navigation.instant', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
