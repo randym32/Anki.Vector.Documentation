@@ -92,6 +92,15 @@ but there are a few implementations that you might wish to look at/reuse:
 ### WebViz and Console Variables
 "Pure" Developer builds of Vector software contain an HTTP API and webserver. This shows what it is, how to use it, and how it works.
 
+### The Communication Protocols
+
+The communication protocols Vector uses to talk to the cloud.
+(Several of the protocols were specified with gRPC and Protobuf.  The information
+here was reconstructed from binaries, WebViz, logs and other sources.  It is
+hoped to allow reconstruction of significant portions of the Protobuf specification.
+If the source protobuf specification files do become available later, these can be
+used to comment them.)
+
 ### [Vector Enhancement Proposals](vector-enhancement-proposals/Overview.md)
 These are proposals for changes -- enhancements -- to the modules on Vector.
 
