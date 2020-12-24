@@ -107,8 +107,8 @@ _Table: JSON Parameters for the streaming intent request_
 |_input_service_ |||
 |_language_code_     |_LanguageCode_||
 |_mode_              |_RobotMode_||
-|_save_audio         |bool||	
-|_session_ |||
+|_save_audio_        |bool||	
+|_session_           |||
 |_single_utterance_ |||
 |_skip_das_         |bool||	
 |_speech_only_      |bool||
