@@ -7,7 +7,8 @@ See also
   and charger that you will need
 * [Pi issues](Pi issues.md) for information related to troubleshooting the Pi
   hardware
-* TBD for troubleshooting your mdns
+* [Pi connectivity](Pi connectivity.md) to troubleshoot the connection between your
+  Pi, network and computer.  This includes Wifi, and mDNS troubleshooting.
 
 
 ## License code was not sent to Escape pod
@@ -30,7 +31,8 @@ a screen like:
 ![Add license](ep-add-license.png#zoom)
 _Figure: You should see a blue add license button_
 
-If you see the blue-tone Digital Dream Labs screen, but do not see the “Add license to start” button there is a problem.  This is the button that you should see:
+If you see the blue-tone Digital Dream Labs screen, but do not see the "Add
+license to start" button there is a problem.  This is the button that you should see:
 
 ![Add license button](ep-add-license-button.png#center "Add license button")
 _Figure: Add license button_
@@ -50,11 +52,31 @@ Open the browsers error console.  Look for messages like the following:
     DevTools failed to load SourceMap: Could not load content for https://escapepod:8443/react-router-dom.js.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
 ```
 
-If you have this provlem, go to the TBD page to troubleshoot the mdns.
+If you have this problem, go to the following pages:
 
-Alternatively, a person (me!) might have not noticed the swirly’s significance, and clicked on “Add License”.  That will bring up a screen, where one can enter the license. After submitting, the page will appear unresponsive, then provide an error like:
+* [Computer setup](../escape pod/computer setup.md) for information about the
+  software to install on your computer, and other adjustments to make mDNs work.
+* [Pi connectivity](Pi connectivity.md#mDNS) to troubleshoot the mDNS
+  configuration on your network and computer.
+
+
+Alternatively, a person (me!) might have not noticed the swirly’s significance,
+and clicked on "Add License".  That will bring up a screen, where one can enter
+the license. After submitting, the page will appear unresponsive, then provide
+an error like:
 
 
     ***** The entered license is not valid. Make sure you typed it in correctly and try again.**
 
-These might occur if the url used “escapepod” or “escapepod.lan” or an ip address to access the escapepod.  The “escapepod.local” name is not resolving on the computer and it was hidden by the other names work.  To fix this problem see the section earlier related to mdns.  (In my case this was fixed by correcting the OpenWRT router’s default local domain.
+These might occur if the url used "escapepod" or "escapepod.lan" or an IP
+address to access the escapepod.  The "escapepod.local" name is not resolving
+on the computer and it was hidden by the other names work.
+If you have this problem, go to the following pages:
+
+* [Computer setup](../escape pod/computer setup.md) for information about the
+  software to install on your computer, and other adjustments to make mDNs work.
+* [Pi connectivity](Pi connectivity.md#mDNS) to troubleshoot the mDNS
+  configuration on your network and computer.
+
+(In my case this was fixed by correcting 
+the OpenWRT router’s default local domain.)

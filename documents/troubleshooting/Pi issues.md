@@ -1,14 +1,13 @@
-#  Raspberry Pi troubleshooting
+# Pi general troubleshooting
 
 This is a page for troubleshooting the Pi hardware.
 See also:
 
 * [Pi equipment](../escape pod/equipment.md) for information about the Raspberry Pi
   and charger that you will need
-* TBD for troubleshooting your mdns
-* [Troublshooting the EscapePod software setup](EscapePod setup.md), especially adding licenses.
-
-Note: We'll check for wi-fi issues in [tbd]
+* [Pi connectivity](Pi connectivity.md) to troubleshoot the connection between your
+  Pi, network and computer.  This includes Wifi, and mDNS troubleshooting.
+* [Troubleshooting the EscapePod software setup](EscapePod setup.md), especially adding licenses.
 
 
 ## Checking the basics
