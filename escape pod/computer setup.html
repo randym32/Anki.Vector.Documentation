@@ -14,7 +14,7 @@
     
     
       
-        <title>EscapePod: Computer setup - Vector Documentation</title>
+        <title>Computer setup - Vector Documentation</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#escapepod-computer-setup" class="md-skip">
+        <a href="#computer-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              EscapePod: Computer setup
+              Computer setup
             
           </span>
         </div>
@@ -460,12 +460,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        EscapePod: Computer setup
+        Computer setup
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="computer%20setup.html" class="md-nav__link md-nav__link--active">
-      EscapePod: Computer setup
+      Computer setup
     </a>
     
       
@@ -486,12 +486,25 @@
     On Your Computer
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="On Your Computer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#windows-computers" class="md-nav__link">
     Windows Computers
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -516,7 +529,7 @@
 
   <li class="md-nav__item">
     <a href="equipment.html" class="md-nav__link">
-      EscapePod: Equipment
+      Equipment
     </a>
   </li>
 
@@ -1375,8 +1388,20 @@
 
 
   <li class="md-nav__item">
+    <a href="../troubleshooting/Pi%20connectivity.html" class="md-nav__link">
+      Pi Network Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../troubleshooting/Pi%20issues.html" class="md-nav__link">
-      Raspberry Pi troubleshooting
+      Pi general troubleshooting
     </a>
   </li>
 
@@ -1520,12 +1545,25 @@
     On Your Computer
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="On Your Computer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#windows-computers" class="md-nav__link">
     Windows Computers
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1554,11 +1592,13 @@
                 
                 
                 
-                <h1 id="escapepod-computer-setup">EscapePod: Computer setup<a class="headerlink" href="#escapepod-computer-setup" title="Permanent link">&para;</a></h1>
+                <h1 id="computer-setup">Computer setup<a class="headerlink" href="#computer-setup" title="Permanent link">&para;</a></h1>
 <h2 id="on-your-computer">On Your Computer<a class="headerlink" href="#on-your-computer" title="Permanent link">&para;</a></h2>
 <p>You should have Chrome Installed.</p>
-<h2 id="windows-computers">Windows Computers<a class="headerlink" href="#windows-computers" title="Permanent link">&para;</a></h2>
-<p>If you have a Windows computer, you need some software installed for “mdns”.  If you have iTunes installed, this software is already installed for you and you can skip this step.  If not, install bonjour from:</p>
+<h3 id="windows-computers">Windows Computers<a class="headerlink" href="#windows-computers" title="Permanent link">&para;</a></h3>
+<p>If you have a Windows computer, you need some software installed for "mdns".
+If you have iTunes installed, this software is already installed for you and
+you can skip this step.  If not, install bonjour from:</p>
 <ul>
 <li><a href="https://support.apple.com/downloads/bonjour_for_windows">https://support.apple.com/downloads/bonjour_for_windows</a></li>
 </ul>
@@ -1567,8 +1607,44 @@
 
 REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ” EnableMulticast” /t REG_DWORD /d “0” /f
 </code></pre>
+<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<p>If you have a Linux computer, you may need to make a make change
+to the '/etc/nsswitch.conf'.
+<em>Note: this section is not yet confirmed</em></p>
+<p>In a command line, open the  'etc/nsswitch.conf' file.  It probably will look
+like this:</p>
+<pre>
+    #
+    # Example configuration of GNU Name Service Switch functionality.
+    # If you have the `glibc-doc-reference' and `info' packages installed, try:
+    # `info libc "Name Service Switch"' for information about this file.
+    passwd:         files systemd
+    group:          files systemd
+    shadow:         files
+    gshadow:        files
+    <b>hosts:          files mdns4_minimal [NOTFOUND=return] dns</b>
+    networks:       files
+    protocols:      db files
+    services:       db files
+    ethers:         db files
+    rpc:            db files
+    netgroup:       nis
+</pre>
+
+<p>Notice the 'hosts:'  We need to add 'mdns' to the end so that the line looks
+like:</p>
+<pre>
+    hosts:          files mdns4_minimal [NOTFOUND=return] dns <b>mdns</b>
+</pre>
+
+<p>What does this do? Why there are two "mdns" items?
+The second mdns is needed ot make the ".local" domain work.
+"The minimal versions [the mdns4_minimaal] will always deny to resolve host
+names that don't end in .local or addresses that aren't in the range 169.254.x.x"</p>
 <h2 id="replacement-for-the-mobile-app">Replacement for the Mobile App<a class="headerlink" href="#replacement-for-the-mobile-app" title="Permanent link">&para;</a></h2>
-<p>The mobile application will not work.  It expects to talk with the production servers and doesn’t know how to work with the EscapePod.  Instead, use Vector Explorer by Wayne Venables at:</p>
+<p>The mobile application will not work.  It expects to talk with the production
+servers and doesn't know how to work with the EscapePod.  Instead, use Vector
+Explorer by Wayne Venables at:</p>
 <ul>
 <li><a href="https://weekendrobot.com/vectorexplorer/">https://weekendrobot.com/vectorexplorer/</a></li>
 </ul>

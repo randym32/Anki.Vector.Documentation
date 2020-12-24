@@ -450,7 +450,7 @@
 
   <li class="md-nav__item">
     <a href="../escape%20pod/computer%20setup.html" class="md-nav__link">
-      EscapePod: Computer setup
+      Computer setup
     </a>
   </li>
 
@@ -462,7 +462,7 @@
 
   <li class="md-nav__item">
     <a href="../escape%20pod/equipment.html" class="md-nav__link">
-      EscapePod: Equipment
+      Equipment
     </a>
   </li>
 
@@ -1368,8 +1368,20 @@
 
 
   <li class="md-nav__item">
+    <a href="Pi%20connectivity.html" class="md-nav__link">
+      Pi Network Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="Pi%20issues.html" class="md-nav__link">
-      Raspberry Pi troubleshooting
+      Pi general troubleshooting
     </a>
   </li>
 
@@ -1548,7 +1560,8 @@ See also</p>
   and charger that you will need</li>
 <li><a href="Pi%20issues.html">Pi issues</a> for information related to troubleshooting the Pi
   hardware</li>
-<li>TBD for troubleshooting your mdns</li>
+<li><a href="Pi%20connectivity.html">Pi connectivity</a> to troubleshoot the connection between your
+  Pi, network and computer.  This includes Wifi, and mDNS troubleshooting.</li>
 </ul>
 <h2 id="license-code-was-not-sent-to-escape-pod">License code was not sent to Escape pod<a class="headerlink" href="#license-code-was-not-sent-to-escape-pod" title="Permanent link">&para;</a></h2>
 <p>Symptom:  After the hot-word, the wifi/no cloud animation will play.
@@ -1562,7 +1575,8 @@ There isn;t be a cycling white lights on the backpack.  This happens repeatedly.
 a screen like:</p>
 <p><img alt="Add license" src="ep-add-license.png#zoom" />
 <em>Figure: You should see a blue add license button</em></p>
-<p>If you see the blue-tone Digital Dream Labs screen, but do not see the “Add license to start” button there is a problem.  This is the button that you should see:</p>
+<p>If you see the blue-tone Digital Dream Labs screen, but do not see the "Add
+license to start" button there is a problem.  This is the button that you should see:</p>
 <p><img alt="Add license button" src="ep-add-license-button.png#center" title="Add license button" />
 <em>Figure: Add license button</em></p>
 <p>For instance, if you see swirling spinner -- it can be subtle -- like this:</p>
@@ -1574,11 +1588,31 @@ a screen like:</p>
     .local:8085/v1/license/add:1 Failed to load resource: net::ERR_NAME_NOT_RESOLVED
     DevTools failed to load SourceMap: Could not load content for https://escapepod:8443/react-router-dom.js.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
 </code></pre>
-<p>If you have this provlem, go to the TBD page to troubleshoot the mdns.</p>
-<p>Alternatively, a person (me!) might have not noticed the swirly’s significance, and clicked on “Add License”.  That will bring up a screen, where one can enter the license. After submitting, the page will appear unresponsive, then provide an error like:</p>
+<p>If you have this problem, go to the following pages:</p>
+<ul>
+<li><a href="../escape%20pod/computer%20setup.html">Computer setup</a> for information about the
+  software to install on your computer, and other adjustments to make mDNs work.</li>
+<li><a href="Pi%20connectivity.html#mDNS">Pi connectivity</a> to troubleshoot the mDNS
+  configuration on your network and computer.</li>
+</ul>
+<p>Alternatively, a person (me!) might have not noticed the swirly’s significance,
+and clicked on "Add License".  That will bring up a screen, where one can enter
+the license. After submitting, the page will appear unresponsive, then provide
+an error like:</p>
 <pre><code>***** The entered license is not valid. Make sure you typed it in correctly and try again.**
 </code></pre>
-<p>These might occur if the url used “escapepod” or “escapepod.lan” or an ip address to access the escapepod.  The “escapepod.local” name is not resolving on the computer and it was hidden by the other names work.  To fix this problem see the section earlier related to mdns.  (In my case this was fixed by correcting the OpenWRT router’s default local domain.</p>
+<p>These might occur if the url used "escapepod" or "escapepod.lan" or an IP
+address to access the escapepod.  The "escapepod.local" name is not resolving
+on the computer and it was hidden by the other names work.
+If you have this problem, go to the following pages:</p>
+<ul>
+<li><a href="../escape%20pod/computer%20setup.html">Computer setup</a> for information about the
+  software to install on your computer, and other adjustments to make mDNs work.</li>
+<li><a href="Pi%20connectivity.html#mDNS">Pi connectivity</a> to troubleshoot the mDNS
+  configuration on your network and computer.</li>
+</ul>
+<p>(In my case this was fixed by correcting 
+the OpenWRT router’s default local domain.)</p>
                 
               
               
