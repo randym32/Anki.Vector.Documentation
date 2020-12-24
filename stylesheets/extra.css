@@ -20,6 +20,12 @@ img[src*="#zoom"] {
     cursor: zoom-in;
 }
 
+
+img[src*="#center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
 img[src*="#right"] {
     float:right;
     height:auto;
@@ -38,7 +44,6 @@ div.md-typeset__scrollwrap + p>em {
     text-align: center;
     font-size: 90%;
 }
-
 @media print {
   article, section {
     font-size: 9pt !important;
