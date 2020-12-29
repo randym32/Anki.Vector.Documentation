@@ -55,8 +55,7 @@ These try to tell you how to accomplish particular tasks.
 Some highlights:
 
 * Using GDB [to trace function calls](how-to/GDB tracing.md)
-* Using AudioKinetic WWise to [convert sound files to WEM
-  format](how-to/Using AudioKinetic WWise to convert sound files to WEM.md)
+* How to [create a soundbank](how-to/How to create a soundbank.md)
 * Dauler sells stickers with the marker symbols preprinted at
   [3D Designs by Dauler](https://designsbydauler.com/collections/vector-robot)
 
