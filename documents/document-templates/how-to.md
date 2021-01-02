@@ -4,7 +4,7 @@
 ## Preparation
 Include a section on the preparation steps
 
-## Stepss
+## Steps
 
 ## References and Resources
 __Optional__ Include some some links to other resources here.
