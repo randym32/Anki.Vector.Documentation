@@ -45,6 +45,10 @@ Try
 
     ping escapepod.lan
 
+Try 
+
+    ping escapepod.box
+
 Try
 
     ping escapepod
@@ -205,9 +209,10 @@ This will open a settings page like the following:
 _Figure: openWRT local domain settting_
 
 The key thing to look for here is the "Local domain"  In my case the local
-domain was set "lan" (possibly by default, or a choice I made long ago).  This
-setting explains why the name "escapepod.lan" worked. To fix the problem change
-the local domain to "local".
+domain was set "lan" (possibly by default, or a choice I made long ago).
+For some german routers (e.g. from Telekom) may be set to "box".
+This setting explains why the name "escapepod.lan" worked. To fix the problem
+change the local domain to "local".
 
 Once the change has been made, test it on the router.  Open the "Network" menu
 and select "Diagnostics":
