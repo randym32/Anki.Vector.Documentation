@@ -145,8 +145,9 @@ Writing guide.
 Background: This is a note I made for myself to guide me on the right tone, help with consistency and give me some direction.
 
 ### Templates
-The document-templates folder includes some start files that can be used as templates
-when creating new documents:
+To help get started with creating a new entry, the document-templates folder
+includes some start files that can be used as templates when creating new
+documents:
 
 * A template for [how to documents](document-templates/how-to.md)
 * A [generic template](document-templates/template.md) for other files
