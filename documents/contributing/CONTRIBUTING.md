@@ -76,14 +76,14 @@ To help get started with creating a new entry, the document-templates folder
 includes some start files that can be used as templates when creating new
 documents:
 
-* A template for [how to documents](document-templates/how-to.md)
-* A [generic template](document-templates/template.md) for other files
+* A template for [how to documents](documents/document-templates/how-to.md)
+* A [generic template](documents/document-templates/template.md) for other files
 
 
 ### How to Create the HTML and PDF files
 
 The source documentation text files can be found
-[documents directory](./documents). The built out files will be placed within a
+[documents directory](/documents). The built out files will be placed within a
 [site] directory.
 
 First, install the documentation tools:
