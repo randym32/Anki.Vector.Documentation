@@ -31,7 +31,9 @@ Project Victor team on
 
 * [**Official Anki developer forums**](https://forums.anki.com/)
 * [**Anki robots Discord chat**](https://discord.gg/FT8EYwu)
-
+* [**GitHub Discussions**](https://github.com/randym32/Anki.Vector.Documentation/discussions)
+  is directly integrated with the repository.  You can use this to ask for help
+  or share ideas related to improving the documentation or deploying it.
 
 ## Pair programming
 
