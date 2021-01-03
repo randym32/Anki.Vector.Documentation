@@ -8,11 +8,30 @@ To resolve your issue, please select the appropriate category:
 - Documentation
 - Feature Requests
 
-For bug reports, include in your issue:
-
 Please do not use the issue tracker for personal support requests.
 The [discourse and forums](CONTRIBUTING.md#contact) are the
 better places to request help.
+
+
+## Labelling the issues
+
+Issue labels are a tool in GitHub that are used to group issues into one or
+more categories.  Labeling issues helps by identifying:
+
+- good issues for new contributors to work on
+- reported and confirmed bugs
+- feature requests
+- duplicate issues
+- issues that are stalled or blocked
+- the status of an open issue
+- the topic or subject matter of the issue
+
+When an issue is created -- and later examined -- this is a good time to check
+that its label is sensible, and to add an other labels that are helpful -- and
+to remove labels that do not apply. 
+
+You can see a list of this project's [labels (and their descriptions)][1].
+
 
 ## Special Note on Issues
 
@@ -30,6 +49,7 @@ tasks on the list as you can:
 
 
 [0]: https://github.com/randym32/Anki.Vector.Documentation/issues
+[1]: https://github.com/randym32/Anki.Vector.Documentation/issues/labels
 
 _Credits: this was adapted in part from the
-[Gatsbj.js project](https://github.com/gatsbyjs/gatsby/blob/master/docs/contributing/how-to-file-an-issue.md)_
+[Gatsbj.js project](https://github.com/gatsbyjs/gatsby/blob/master/docs/contributing/)_
