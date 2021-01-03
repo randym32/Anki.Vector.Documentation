@@ -89,7 +89,7 @@ and patterns for getting help.  Try
 * [**Anki robots Discord chat**](https://discord.gg/FT8EYwu)
 
 ## Contributing
-View the [Anki.Resources.SDK GitHub Project](https://github.com/randym32/Anki.Resources.SDK)
+View the [Anki.Vector.Documentation GitHub Project](https://github.com/randym32/Anki.Vector.Documentation)
 for information on contributing.
 
 ## Grateful Acknowledgements and Special Thanks
