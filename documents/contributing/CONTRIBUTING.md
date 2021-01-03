@@ -37,7 +37,7 @@ Project Victor team on
 
 ## Pair programming
 
-Other projects offer free [pair programming sessions](https://gatsby.dev/contributing/pair-programming/)
+Other projects offer free [pair programming sessions](https://gatsby.dev/contributing/pair-programming.md)
 to the community.  I think that might be a neat idea, if there's something
 others would like to work on together......
 
@@ -78,8 +78,8 @@ To help get started with creating a new entry, the document-templates folder
 includes some start files that can be used as templates when creating new
 documents:
 
-* A template for [how to documents](documents/document-templates/how-to.md)
-* A [generic template](documents/document-templates/template.md) for other files
+* A template for [how to documents](/documents/document-templates/how-to.md)
+* A [generic template](/documents/document-templates/template.md) for other files
 
 
 ### How to Create the HTML and PDF files
@@ -210,7 +210,7 @@ are happy with your changes first!
 
 
 [0]: code_of_conduct.md
-[1]: style_guidelines.md
+[1]: style-guidelines.md
 [2]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [3]: http://makeapullrequest.com/
 [4]: http://www.firsttimersonly.com
