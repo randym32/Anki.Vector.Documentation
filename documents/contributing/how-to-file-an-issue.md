@@ -1,7 +1,7 @@
 # How to File an Issue
 
 The GitHub [issue tracker][0] is the preferred channel for bug reports,
-documentation, feature requests and [submitting pull requests](CONTRIBUTING.md#pull-request-process).
+documentation, feature requests and [submitting pull requests](pull-requests.md).
 
 To resolve your issue, please select the appropriate category:
 
@@ -45,7 +45,7 @@ tasks on the list as you can:
    happening
 3. Offer to help fix the issue (and it is totally expected that you ask for
    help; open-source maintainers want to help contributors)
-4. [Deliver a well-crafted, tested PR](CONTRIBUTING.md#pull-request-process)
+4. [Deliver a well-crafted, tested PR](pull-requests.md)
 
 
 [0]: https://github.com/randym32/Anki.Vector.Documentation/issues

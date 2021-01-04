@@ -133,87 +133,18 @@ separately from your code changes.
 <a name="pull-request-process"></a>
 ## Pull Request Process
 
-Do you have any labelling conventions?
-
-Add notes for pushing your branch:
-
-> When you are ready to generate a pull request, either for preliminary review,
-> or for consideration of merging into the project you must first push your
-> local topic branch back up to GitHub:
-
-```
-git push origin newfeature
-```
-
-Include a note about submitting the PR:
-
-> Once you've committed and pushed all of your changes to GitHub, go to the
-> page for your fork on GitHub, select your development branch, and click the
-> pull request button. If you need to make any adjustments to your pull
-> request, just push the updates to your branch. Your pull request will
-> automatically track the changes on your development branch and update.
-
-1. Ensure any install or build dependencies are removed before the end of the
-   layer when doing a build.
-4. You may merge the Pull Request in once you have the sign-off of two other
-   developers, or if you do not have permission to do that, you may request the
-   second reviewer to merge it for you.
-
-### Review Process
-
-The process is likely to be lite for many changes.
-
-Many pull requests are likely to open for several days, until the core team
-can apporve them in Github.  In some cases, multiple people will have the
-chance to review/comment. 
-
-Please check your pull request for comments and feedback.
-
-
-### Addressing Feedback
-
-Once a PR has been submitted, your changes will be reviewed and constructive
-feedback may be provided. Feedback isn't meant as an attack, but to help make
-sure the highest-quality code makes it into our project. Changes will be
-approved once required feedback has been addressed.
-
-If a maintainer asks you to "rebase" your PR, they're saying that a lot of
-files has changed, and that you need to update your fork so it's easier to
-merge.
-
-To update your forked repository, follow these steps:
-
-```
-# Fetch upstream master and merge with your repo's master branch
-git fetch upstream
-git checkout master
-git merge upstream/master
-
-# If there were any new commits, rebase your development branch
-git checkout newfeature
-git rebase master
-```
-
-If too much code has changed for git to automatically apply your branches
-changes to the new master, you will need to manually resolve the merge
-conflicts yourself.
-
-Once your new branch has no conflicts and works correctly, you can override
-your old branch using this command:
-
-```
-git push -f
-```
-
-Note that this will overwrite the old branch on the server, so make sure you
+Please see the [pull requests page](pull-requests.md) for the process of
+submitting your changes to the prooject and incorporating feedback.
 are happy with your changes first!
 
 
 [0]: code_of_conduct.md
-[1]: style-guidelines.md
+[1]: style-guide.md
 [2]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [3]: http://makeapullrequest.com/
 [4]: http://www.firsttimersonly.com
 [5]: https://gist.github.com/Chaser324/ce0505fbed06b947d962
-[6]: link/to/your/project/issue/tracker
 [7]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+
+
+_Credits: This page was adapted from an [EmbeddedArtistry template](https://github.com/embeddedartistry/embedded-resources/blob/master/docs/CODE_OF_CONDUCT_template.md)_
