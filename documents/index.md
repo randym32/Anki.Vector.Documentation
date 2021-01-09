@@ -63,6 +63,7 @@ Some highlights:
 These are reference documentation for programming tools to use Vector.
 Some of them are for the remote-access SDK's.
 
+
 <a name="TRM"></a>
 ### [Technical Reference Manual](https://github.com/GooeyChickenman/victor/raw/master/documentation/Vector-TRM.pdf)
 
@@ -72,21 +73,15 @@ Some of them are for the remote-access SDK's.
 * Communication protocols
 
 ### Programmers Guides and Examples
-PC/Mobile SDK (HTTPS API)
+
+The main PC/Mobile SDKs are:
 
 - Python Communication SDK: [Vector - Python SDK](https://github.com/ikkez/vector-python-sdk)
 - C# Communication SDK: [Anki.Vector.SDK](https://github.com/codaris/Anki.Vector.SDK)
-- C# [Anki.Vector.WebVizSDK](https://github.com/randym32/Anki.Vector.WebVizSDK) to access the WebViz related information in developer builds.
-- C# [Anki.Resources.SDK](https://github.com/randym32/Anki.Resources.SDK) to access, analyze local (that is, on your computer) copies of the Vectors' application resources/assets
 
-- See the SDK examples
+- See the examples with each of the packages
 
-Bluetooth LE implementations.  There isnt an SDK for the Bluetooth LE protocol,
-but there are a few implementations that you might wish to look at/reuse:
-
-- [OS-X Objective-C](https://github.com/GooeyChickenman/victor/tree/master/tools/vector-BLE)
-- [linux & C](https://github.com/sandsmark/victor/tree/master/tools/vector-BLE)
-- [Chrome & Javascript](https://github.com/kercre123/victor-web-setup) and [here](https://github.com/digital-dream-labs/vector-web-setup)
+See the [SDKs page](software-design/SDKs.md) for more repositories and other resources.
 
 ### WebViz and Console Variables
 "Pure" Developer builds of Vector software contain an HTTP API and webserver. This shows what it is, how to use it, and how it works.

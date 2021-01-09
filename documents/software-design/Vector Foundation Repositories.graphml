@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 2.3.0.4-RC-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<y:InteriorLabelModel x:Key="1"/>
+			<yjs:Font x:Key="2" fontSize="12" fontFamily="'Arial'"/>
+			<y:CompositeLabelModel x:Key="3">
+				<y:CompositeLabelModel.LabelModels>
+					<y:ExteriorLabelModel Insets="5"/>
+					<y:GraphMLReference ResourceKey="1"/>
+					<y:FreeNodeLabelModel/>
+				</y:CompositeLabelModel.LabelModels>
+			</y:CompositeLabelModel>
+			<yjs:DefaultLabelStyle x:Key="4" font="{y:GraphMLReference 2}" textFill="BLACK"/>
+			<bpmn:GroupNodeStyle x:Key="5"/>
+			<yjs:Stroke x:Key="6" fill="#FFB7C9E3"/>
+			<yjs:SolidColorFill x:Key="7" color="#FFB7C9E3"/>
+			<y:CompositeLabelModelParameter x:Key="8" Model="{y:GraphMLReference 3}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 1}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<yjs:DefaultLabelStyle x:Key="9" verticalTextAlignment="BOTTOM" wrapping="WORD_ELLIPSIS" font="{y:GraphMLReference 2}" textFill="BLACK"/>
+			<y:CompositeLabelModelParameter x:Key="10" Model="{y:GraphMLReference 3}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:InteriorLabelModelParameter Position="North" Model="{y:GraphMLReference 1}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<yjs:DefaultLabelStyle x:Key="11" verticalTextAlignment="BOTTOM" horizontalTextAlignment="CENTER" textFill="BLACK">
+				<yjs:DefaultLabelStyle.font>
+					<yjs:Font fontSize="12" fontFamily="'Arial'" fontWeight="BOLD"/>
+				</yjs:DefaultLabelStyle.font>
+			</yjs:DefaultLabelStyle>
+			<yjs:ShapeNodeStyle x:Key="12" stroke="{y:GraphMLReference 6}" fill="{y:GraphMLReference 7}" shape="ROUND_RECTANGLE"/>
+			<y:CompositeLabelModelParameter x:Key="13" Model="{y:GraphMLReference 3}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:InteriorLabelModelParameter Position="North" Model="{y:GraphMLReference 1}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<yjs:Font x:Key="14" fontSize="12" fontFamily="'Arial'" fontWeight="BOLD"/>
+			<yjs:ShapeNodeStyle x:Key="15" stroke="{y:GraphMLReference 6}" fill="{y:GraphMLReference 7}" shape="ROUND_RECTANGLE"/>
+			<yjs:DefaultLabelStyle x:Key="16" verticalTextAlignment="BOTTOM" wrapping="WORD" font="{y:GraphMLReference 2}" textFill="BLACK" minimumSize="200,0" maximumSize="200,Infinity"/>
+			<yjs:DefaultLabelStyle x:Key="17" verticalTextAlignment="BOTTOM" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 14}" textFill="BLACK"/>
+			<y:CompositeLabelModelParameter x:Key="18" Model="{y:GraphMLReference 3}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:InteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 1}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<y:CompositeLabelModelParameter x:Key="19" Model="{y:GraphMLReference 3}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 1}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<yjs:DefaultLabelStyle x:Key="20" verticalTextAlignment="BOTTOM" wrapping="WORD" font="{y:GraphMLReference 2}" textFill="BLACK" minimumSize="200,0" maximumSize="200,Infinity"/>
+			<yjs:DefaultLabelStyle x:Key="21" verticalTextAlignment="BOTTOM" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 14}" textFill="BLACK"/>
+			<yjs:Stroke x:Key="22" fill="#FF336699"/>
+			<yjs:PolylineEdgeStyle x:Key="23" stroke="{y:GraphMLReference 22}">
+				<yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="{y:GraphMLReference 22}" fill="#FF336699" cropLength="1"/>
+				</yjs:PolylineEdgeStyle.targetArrow>
+			</yjs:PolylineEdgeStyle>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"2.0.0","theme":{"name":"light","version":"1.0.0"},"layout":"layout-hierarchic","config":{"noObf_useDrawingAsSketch":false,"noObf_selectedElementsIncrementally":false,"noObf_nodeToNodeDistance":30,"noObf_automaticEdgeGroupingEnabled":false,"noObf_considerNodeLabels":true,"noObf_edgeLabeling":1,"noObf_orientation":0,"noObf_edgeRouting":0}}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">0</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorLabelModel.North}" Style="{y:GraphMLReference 4}">
+						<y:Label.Text><![CDATA[Vector Software]]></y:Label.Text>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-70.25" Y="-0.5" Width="281.375" Height="152"/>
+			</data>
+			<data key="d7">
+				<y:GraphMLReference ResourceKey="5"/>
+			</data>
+			<graph id="n0:" edgedefault="directed">
+				<node id="n0::n0">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/digital-dream-labs/vector-cloud]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 16}">
+								<y:Label.Text><![CDATA[https://github.com/digital-dream-labs/vector-cloud
+This is the code for the vic-cloud and vic-gateway applications that run on Vector.]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 17}">
+								<y:Label.Text>Vic-cloud,gateway</y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="-21.875" Y="20.5" Width="218" Height="110"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="15"/>
+					</data>
+					<port name="p0">
+						<data key="d16">
+							<y:FreeNodePortLocationModelParameter Ratio="0.9954545454545455,0.5"/>
+						</data>
+					</port>
+				</node>
+			</graph>
+		</node>
+		<node id="n1">
+			<data key="d0">0</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorLabelModel.North}" Style="{y:GraphMLReference 4}">
+						<y:Label.Text><![CDATA[Cloud Software]]></y:Label.Text>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="571.75" Y="-44.59375" Width="484" Height="240.1875"/>
+			</data>
+			<data key="d7">
+				<y:GraphMLReference ResourceKey="5"/>
+			</data>
+			<graph id="n1:" edgedefault="directed">
+				<node id="n1::n0">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/digital-dream-labs/ chipper]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 8}" Style="{y:GraphMLReference 9}">
+								<y:Label.Text><![CDATA[https://github.com/digital-dream-labs/
+chipper
+This is the repository for receiving
+the data
+]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 10}" Style="{y:GraphMLReference 11}">
+								<y:Label.Text><![CDATA[Chipper external interface]]></y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="586.75" Y="-18.09375" Width="218" Height="104"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="12"/>
+					</data>
+				</node>
+				<node id="n1::n1">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/digital-dream-labs/ chipper]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 8}" Style="{y:GraphMLReference 9}">
+								<y:Label.Text><![CDATA[https://github.com/digital-dream-labs/
+api-clients
+This is connects chipper to others]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 10}" Style="{y:GraphMLReference 11}">
+								<y:Label.Text><![CDATA[Chipper internal interface]]></y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="822.75" Y="-18.09375" Width="218" Height="104"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="12"/>
+					</data>
+				</node>
+				<node id="n1::n2">
+					<data key="d0">1</data>
+					<data key="d2"><![CDATA[https://github.com/digital-dream-labs/api]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 19}" Style="{y:GraphMLReference 20}">
+								<y:Label.Text><![CDATA[https://github.com/digital-dream-labs/hugh
+A template gRPC server and utilities]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 21}">
+								<y:Label.Text>Hugh</y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="586.75" Y="95.34375" Width="218" Height="85.25"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="15"/>
+					</data>
+				</node>
+			</graph>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.0020576131687242705,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d0">0</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorLabelModel.North}" Style="{y:GraphMLReference 4}">
+						<y:Label.Text><![CDATA[Application Remote Frameworks]]></y:Label.Text>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-70.25" Y="254.75" Width="489.5" Height="253"/>
+			</data>
+			<data key="d7">
+				<y:GraphMLReference ResourceKey="5"/>
+			</data>
+			<graph id="n2:" edgedefault="directed">
+				<node id="n2::n0">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/codaris/Anki.Vector.SDK]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label Style="{y:GraphMLReference 16}">
+								<y:Label.Text><![CDATA[https://github.com/codaris/Anki.Vector.SDK
+This is a .NET framework to access Vector remotely.]]></y:Label.Text>
+								<y:Label.LayoutParameter>
+									<y:CompositeLabelModelParameter Model="{y:GraphMLReference 3}">
+										<y:CompositeLabelModelParameter.Parameter>
+											<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 1}"/>
+										</y:CompositeLabelModelParameter.Parameter>
+									</y:CompositeLabelModelParameter>
+								</y:Label.LayoutParameter>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 17}">
+								<y:Label.Text><![CDATA[.NET SDK]]></y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="182.5" Y="278.5" Width="218" Height="94"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="15"/>
+					</data>
+				</node>
+				<node id="n2::n1">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/anki/vector-python-sdk]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 16}">
+								<y:Label.Text><![CDATA[https://github.com/anki/vector-python-sdk
+This is a python framework to access Vector remotely.
+OUTDATED.]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 17}">
+								<y:Label.Text><![CDATA[Python SDK]]></y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="-55.25" Y="278" Width="218" Height="100.25"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="15"/>
+					</data>
+				</node>
+				<node id="n2::n2">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/ikkez/vector-python-sdk]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 16}">
+								<y:Label.Text><![CDATA[https://github.com/ikkez/vector-python-sdk
+This is a python framework to access Vector remotely.]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 17}">
+								<y:Label.Text><![CDATA[Python SDK (Ikkez)]]></y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="-55.25" Y="392.5" Width="218" Height="100.25"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="15"/>
+					</data>
+				</node>
+				<node id="n2::n3">
+					<data key="d0">0</data>
+					<data key="d2"><![CDATA[https://github.com/digital-dream-labs/api]]></data>
+					<data key="d4">
+						<x:List>
+							<y:Label LayoutParameter="{y:GraphMLReference 19}" Style="{y:GraphMLReference 20}">
+								<y:Label.Text><![CDATA[https://github.com/randym32/Anki.Vector.WebVizSDK
+Framework to talk to developer bots]]></y:Label.Text>
+							</y:Label>
+							<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 21}">
+								<y:Label.Text>Anki.Vector.WebVizSDK</y:Label.Text>
+							</y:Label>
+						</x:List>
+					</data>
+					<data key="d5">
+						<y:RectD X="182.5" Y="392.5" Width="218" Height="100.25"/>
+					</data>
+					<data key="d7">
+						<y:GraphMLReference ResourceKey="15"/>
+					</data>
+				</node>
+			</graph>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.004094165813715467"/>
+				</data>
+			</port>
+		</node>
+		<node id="n3">
+			<data key="d0">0</data>
+			<data key="d2"><![CDATA[https://github.com/digital-dream-labs/api]]></data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 16}">
+						<y:Label.Text><![CDATA[https://github.com/digital-dream-labs/api
+This defines the cloud and SDK protobufs used to interfaces with them]]></y:Label.Text>
+					</y:Label>
+					<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 17}">
+						<y:Label.Text><![CDATA[Interface Definitions]]></y:Label.Text>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="286" Y="20.5" Width="218" Height="110"/>
+			</data>
+			<data key="d7">
+				<y:GraphMLReference ResourceKey="15"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9954545454545455,0.5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9905660377358491"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.004545454545454519,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n4">
+			<data key="d0">0</data>
+			<data key="d2"><![CDATA[https://github.com/digital-dream-labs/api]]></data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 19}" Style="{y:GraphMLReference 20}">
+						<y:Label.Text><![CDATA[https://github.com/digital-dream-labs/opus-go
+Audio codec]]></y:Label.Text>
+					</y:Label>
+					<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 21}">
+						<y:Label.Text>Opus</y:Label.Text>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="286" Y="-78.25" Width="218" Height="85.25"/>
+			</data>
+			<data key="d7">
+				<y:GraphMLReference ResourceKey="15"/>
+			</data>
+		</node>
+		<node id="n5">
+			<data key="d0">0</data>
+			<data key="d2"><![CDATA[https://github.com/digital-dream-labs/api]]></data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 19}" Style="{y:GraphMLReference 20}">
+						<y:Label.Text><![CDATA[https://github.com/randym32/Anki.Resources.SDK
+Access Vector and Cozmo resources ]]></y:Label.Text>
+					</y:Label>
+					<y:Label LayoutParameter="{y:GraphMLReference 13}" Style="{y:GraphMLReference 21}">
+						<y:Label.Text>Anki.Resources.SDK</y:Label.Text>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="485.5" Y="282.875" Width="218" Height="85.25"/>
+			</data>
+			<data key="d7">
+				<y:GraphMLReference ResourceKey="15"/>
+			</data>
+		</node>
+		<edge id="e0" source="n3" target="n1" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="23"/>
+			</data>
+		</edge>
+		<edge id="e1" source="n3" target="n2" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="395,204.5"/>
+					<y:Bend Location="174.5,204.5"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="23"/>
+			</data>
+		</edge>
+		<edge id="e2" source="n0::n0" target="n3" sourceport="p0" targetport="p2">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="23"/>
+			</data>
+		</edge>
+	</graph>
+</graphml>
