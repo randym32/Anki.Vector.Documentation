@@ -1,4 +1,4 @@
-# URLS listed in the code
+# URLs listed in the code
 There are a bunch of URLs in Anki binary files…  these may be part of schemas, random comments, etc.
 
 ## Servers
