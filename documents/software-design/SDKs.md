@@ -1,4 +1,4 @@
-# Softare Repositories
+# Software Repositories
 
 There are many software repositories for the Vector, cloud servers, and
 interoperating with Vector.  This pages lists a few.  The diagram below summarises
