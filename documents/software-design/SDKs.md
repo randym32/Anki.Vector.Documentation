@@ -23,11 +23,17 @@ The main PC/Mobile SDK (HTTPS API) include:
   access, analyze local (that is, on your computer) copies of the Vectors'
   application resources/assets
 
+- [Go SDK](https://github.com/digital-dream-labs/vector-go-sdk)  
+  This is a Go-based API to access Vector remotely.
+
 - See the SDKs above for examples how to use each
 
 
-
 ## Other interface-related repositories
+
+- The [Escape Pod Extension](https://github.com/digital-dream-labs/escape-pod-extension)
+  framework allows extending the EscapePod to support other voice-command
+  features / connections to cloud servers.  The repository includes examples.
 
 - The [https://github.com/digital-dream-labs/api](https://github.com/digital-dream-labs/api)
   repository defines the cloud and SDK protobufs used to interfaces with them. 
@@ -56,7 +62,7 @@ The main PC/Mobile SDK (HTTPS API) include:
 
 ## Bluetooth LE tools
 
-Bluetooth LE implementations.  There isnt an SDK for the Bluetooth LE protocol,
+Bluetooth LE implementations.  There isn't an SDK for the Bluetooth LE protocol,
 but there are a few implementations that you might wish to look at/reuse:
 
 - [OS-X Objective-C](https://github.com/GooeyChickenman/victor/tree/master/tools/vector-BLE)
@@ -65,7 +71,7 @@ but there are a few implementations that you might wish to look at/reuse:
   [here](https://github.com/digital-dream-labs/vector-web-setup)
 
 
-Bluetooth LE implementations.  There isnt an SDK for the Bluetooth LE protocol,
+Bluetooth LE implementations.  There isn't an SDK for the Bluetooth LE protocol,
 but there are a few implementations that you might wish to look at/reuse:
 
 - [OS-X Objective-C](https://github.com/GooeyChickenman/victor/tree/master/tools/vector-BLE)
