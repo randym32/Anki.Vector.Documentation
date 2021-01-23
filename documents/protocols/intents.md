@@ -7,6 +7,76 @@ a structure that represents an action to carry out in response to the spoken
 request, query, or statement; it may represent the action requested, an answer
 to a query, or an action that emotionally responds to what was said.
 
+## Cloud Intents
+
+|  Cloud Intent      |  Description |
+|--------------------|------------------------------|
+|intent_amazon_signin||
+|intent_amazon_signout||
+|intent_blackjack_hit||
+|intent_blackjack_playagain||
+|intent_blackjack_stand||
+|intent_character_age||
+|intent_clock_checktimer||
+|intent_explore_start||
+|intent_global_delete_extend||
+|intent_global_stop_extend||
+|intent_greeting_goodbye||
+|intent_greeting_hello||
+|intent_greeting_goodmorning ||
+|intent_greeting_goodnight||
+|intent_imperative_abuse||
+|intent_imperative_affirmative||
+|intent_imperative_apologize||
+|intent_imperative_come||
+|intent_imperative_dance||
+|intent_imperative_eyecolor||
+|intent_imperative_eyecolor_specific_extend||
+|intent_imperative_fetchcube||
+|intent_imperative_findcube||
+|intent_imperative_lookatme||
+|intent_imperative_lookoverthere||
+|intent_imperative_love||
+|intent_imperative_negative||
+|intent_imperative_praise||
+|intent_imperative_scold||
+|intent_imperative_quiet||
+|intent_imperative_shutup||
+|intent_imperative_volumedown||
+|intent_imperative_volumelevel_extend||
+|intent_imperative_volumeup||
+|intent_knowledge_promptquestion||
+|intent_knowledge_response_extend||
+|intent_knowledge_no_response||
+|intent_names_username_extend||
+|intent_message_playmessage_extend||
+|intent_message_recordmessage_extend||
+|intent_imperative_backup||
+|intent_imperative_forward||
+|intent_imperative_turnaround||
+|intent_imperative_turnleft||
+|intent_imperative_turnright||
+|intent_names_ask||
+|intent_play_anygame||
+|intent_play_anytrick||
+|intent_play_blackjack||
+|intent_play_fistbump||
+|intent_play_pickupcube||
+|intent_play_popawheelie||
+|intent_play_rollcube||
+|intent_play_specific_extend||
+|intent_seasonal_happyholidays||
+|intent_seasonal_happynewyear||
+|intent_clock_settimer_extend||
+|intent_clock_time||
+|intent_system_noaudio||
+|intent_status_feeling||
+|intent_system_charger||
+|intent_system_sleep||
+|intent_photo_take_extend||
+|intent_weather_extend||
+|||
+
 ## Parameters for the Intents
 
 The following are the parameters for each of the  intents.  These structures
@@ -35,7 +105,7 @@ _Table: **intent_global_stop_deletable** properties_
 
 The set of acceptable items that can be deleted include:
 
-| String | Description|
+| Property Value | Description|
 |--------|------------|
 |message ||
 |photo   ||
@@ -63,7 +133,7 @@ _Table: **intent_imperative_eyecolor_extend** properties_
 
 The enumeration of eye color values:
 
-| String | Description|
+| Property Value | Description|
 |--------|------------|
 |COLOR_BLUE| |
 |COLOR_GREEN||
@@ -85,7 +155,7 @@ _Table: **intent_imperative_volumelevel_extend** properties_
 
 The enumeration of volume levels:
 
-| String | Description|
+| Property Value | Description|
 |--------|------------|
 |VOLUME_1||
 |VOLUME_2||
