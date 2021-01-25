@@ -801,6 +801,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../how-to/How%20to%20create%20voice%20commands.html" class="md-nav__link">
+      How to add (or change) voice commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../how-to/How%20to%20make%20a%20companion%20cube.html" class="md-nav__link">
       How to make a companion cube
     </a>
@@ -977,6 +989,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-intents" class="md-nav__link">
+    Cloud Intents
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#parameters-for-the-intents" class="md-nav__link">
@@ -1281,7 +1300,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/SDKs.html" class="md-nav__link">
-      Softare Repositories
+      Software Repositories
     </a>
   </li>
 
@@ -1293,7 +1312,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/URLs%20in%20code.html" class="md-nav__link">
-      URLS listed in the code
+      URLs listed in the code
     </a>
   </li>
 
@@ -1687,6 +1706,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#cloud-intents" class="md-nav__link">
+    Cloud Intents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#parameters-for-the-intents" class="md-nav__link">
     Parameters for the Intents
   </a>
@@ -1794,17 +1820,288 @@ The servers send a response back, in the form of an intent.  This is a code and
 a structure that represents an action to carry out in response to the spoken
 request, query, or statement; it may represent the action requested, an answer
 to a query, or an action that emotionally responds to what was said.</p>
-<h2 id="parameters-for-the-intents">Parameters for the Intents<a class="headerlink" href="#parameters-for-the-intents" title="Permanent link">&para;</a></h2>
-<p>The following are the parameters for each of the  intents.  These structures
-are serialized as a JSON string and passed in the parameters field of the ASR
-response.  The intents not listed below do not have any added parameters fields.</p>
-<h3 id="clock-set-timer">Clock set timer<a class="headerlink" href="#clock-set-timer" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_clock_settimer_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_clock_settimer_extend</strong> parameters</em></p>
+<h2 id="cloud-intents">Cloud Intents<a class="headerlink" href="#cloud-intents" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Cloud Intent</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>intent_amazon_signin</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_amazon_signout</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_blackjack_hit</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_blackjack_playagain</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_blackjack_stand</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_character_age</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_clock_checktimer</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_explore_start</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_global_delete_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_global_stop_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_greeting_goodbye</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_greeting_hello</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_greeting_goodmorning</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_greeting_goodnight</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_abuse</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_affirmative</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_apologize</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_come</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_dance</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_eyecolor</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_eyecolor_specific_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_fetchcube</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_findcube</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_lookatme</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_lookoverthere</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_love</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_negative</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_praise</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_scold</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_quiet</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_shutup</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_volumedown</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_volumelevel_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_volumeup</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_knowledge_promptquestion</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_knowledge_response_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_knowledge_no_response</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_names_username_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_message_playmessage_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_message_recordmessage_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_backup</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_forward</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_turnaround</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_turnleft</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_imperative_turnright</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_names_ask</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_anygame</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_anytrick</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_blackjack</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_fistbump</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_pickupcube</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_popawheelie</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_rollcube</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_play_specific_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_seasonal_happyholidays</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_seasonal_happynewyear</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_clock_settimer_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_clock_time</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_system_noaudio</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_status_feeling</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_system_charger</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_system_sleep</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_photo_take_extend</td>
+<td></td>
+</tr>
+<tr>
+<td>intent_weather_extend</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameters-for-the-intents">Parameters for the Intents<a class="headerlink" href="#parameters-for-the-intents" title="Permanent link">&para;</a></h2>
+<p>The following are the parameters for each of the  intents.  These structures
+are serialized as a JSON string and passed in the parameters property of the ASR
+response.  The intents not listed below do not have any added parameters properties.</p>
+<h3 id="clock-set-timer">Clock set timer<a class="headerlink" href="#clock-set-timer" title="Permanent link">&para;</a></h3>
+<p>The <em>intent_clock_settimer_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_clock_settimer_extend</strong> properties</em></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1820,12 +2117,12 @@ response.  The intents not listed below do not have any added parameters fields.
 </tbody>
 </table>
 <h3 id="global-delete">Global Delete<a class="headerlink" href="#global-delete" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_global_delete_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_global_stop_deletable</strong> parameters</em></p>
+<p>The <em>intent_global_delete_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_global_stop_deletable</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1834,19 +2131,42 @@ response.  The intents not listed below do not have any added parameters fields.
 <tbody>
 <tr>
 <td><em>entity_behavior_deletable</em></td>
-<td>bool</td>
+<td>string</td>
+<td>See the table below for an enumeration of the allowed values.</td>
+<td>The item to delete.</td>
+</tr>
+</tbody>
+</table>
+<p>The set of acceptable items that can be deleted include:</p>
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
 <td></td>
+</tr>
+<tr>
+<td>photo</td>
+<td></td>
+</tr>
+<tr>
+<td>timer</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h3 id="global-stop">Global stop<a class="headerlink" href="#global-stop" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_global_stop_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_global_stop_extend</strong> parameters</em></p>
+<p>The <em>intent_global_stop_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_global_stop_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1855,19 +2175,19 @@ response.  The intents not listed below do not have any added parameters fields.
 <tbody>
 <tr>
 <td><em>entity_behavior_stoppable</em></td>
-<td>bool</td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>See the table above for an enumeration of the allowed values.</td>
+<td>The item to delete.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="imperative-eye-color">Imperative Eye Color<a class="headerlink" href="#imperative-eye-color" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_imperative_eyecolor_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_imperative_eyecolor_extend</strong> parameters</em></p>
+<p>The <em>intent_imperative_eyecolor_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_imperative_eyecolor_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1877,18 +2197,53 @@ response.  The intents not listed below do not have any added parameters fields.
 <tr>
 <td><em>eye_color</em></td>
 <td>string</td>
+<td>See the table below for an enumeration of the allowed values.</td>
+<td>The name of the color to set the eye color to.</td>
+</tr>
+</tbody>
+</table>
+<p>The enumeration of eye color values:</p>
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COLOR_BLUE</td>
 <td></td>
-<td>The name of the color to set the eye color to</td>
+</tr>
+<tr>
+<td>COLOR_GREEN</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_ORANGE</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_PURPLE</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_TEAL</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_YELLOW</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <h3 id="imperative-volume-lvel">Imperative Volume Lvel<a class="headerlink" href="#imperative-volume-lvel" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_imperative_volumelevel_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_imperative_volumelevel_extend</strong> parameters</em></p>
+<p>The <em>intent_imperative_volumelevel_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_imperative_volumelevel_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1898,18 +2253,49 @@ response.  The intents not listed below do not have any added parameters fields.
 <tr>
 <td><em>volume_level</em></td>
 <td>string</td>
+<td>See the table below for an enumeration of the allowed values.</td>
+<td>The name of the volume level to change to.</td>
+</tr>
+</tbody>
+</table>
+<p>The enumeration of volume levels:</p>
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VOLUME_1</td>
 <td></td>
+</tr>
+<tr>
+<td>VOLUME_2</td>
+<td></td>
+</tr>
+<tr>
+<td>VOLUME_3</td>
+<td></td>
+</tr>
+<tr>
+<td>VOLUME_4</td>
+<td></td>
+</tr>
+<tr>
+<td>VOLUME_5</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h3 id="knowledge-response">Knowledge Response<a class="headerlink" href="#knowledge-response" title="Permanent link">&para;</a></h3>
-<p>This <em>intent_knowledge_response_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_knowledge_response_extend</strong> parameters</em></p>
+<p>This <em>intent_knowledge_response_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_knowledge_response_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1937,12 +2323,12 @@ response.  The intents not listed below do not have any added parameters fields.
 </tbody>
 </table>
 <h3 id="play-message">Play Message<a class="headerlink" href="#play-message" title="Permanent link">&para;</a></h3>
-<p>This <em>intent_message_playmessage_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_message_playmessage_extend</strong> parameters</em></p>
+<p>This <em>intent_message_playmessage_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_message_playmessage_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1958,12 +2344,12 @@ response.  The intents not listed below do not have any added parameters fields.
 </tbody>
 </table>
 <h3 id="user-name">User name<a class="headerlink" href="#user-name" title="Permanent link">&para;</a></h3>
-<p>This <em>intent_names_username_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_names_username_extend</strong> parameters</em></p>
+<p>This <em>intent_names_username_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_names_username_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -1979,12 +2365,12 @@ response.  The intents not listed below do not have any added parameters fields.
 </tbody>
 </table>
 <h3 id="take-photo">Take Photo<a class="headerlink" href="#take-photo" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_photo_take_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_photo_take_extend</strong> parameters</em></p>
+<p>The <em>intent_photo_take_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_photo_take_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>
@@ -2000,12 +2386,12 @@ response.  The intents not listed below do not have any added parameters fields.
 </tbody>
 </table>
 <h3 id="weather">Weather<a class="headerlink" href="#weather" title="Permanent link">&para;</a></h3>
-<p>The <em>intent_weather_extend</em> intent has the parameter following fields:</p>
-<p><em>Table: <strong>intent_weather_extend</strong> parameters</em></p>
+<p>The <em>intent_weather_extend</em> intent parameters structure has the following properties:</p>
+<p><em>Table: <strong>intent_weather_extend</strong> properties</em></p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Property</th>
 <th>Type</th>
 <th>Units</th>
 <th>Description</th>

@@ -1,0 +1,2215 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>How to add (or change) voice commands - Vector Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-add-or-change-voice-commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="Vector Documentation" class="md-header-nav__button md-logo" aria-label="Vector Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Vector Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              How to add (or change) voice commands
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+  
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    Vector Documentation
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Vector Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary.html" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Boards
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Boards" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Boards
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boards/vector%20boards.html" class="md-nav__link">
+      Vector boards
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/CONTRIBUTING.html" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/code_of_conduct.html" class="md-nav__link">
+      Contributor Covenant Code of Conduct
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/how-to-file-an-issue.html" class="md-nav__link">
+      How to File an Issue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/pull-requests.html" class="md-nav__link">
+      Pull Requests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/style-guide.html" class="md-nav__link">
+      Style Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Body%20modification.html" class="md-nav__link">
+      Body modifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Customization%2C%20personalization.html" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Enable%20Cozmo-like%20animations%20for%20being%20on%20his%20side%2C%20and%20flipping%20down%20from%20his%20back.html" class="md-nav__link">
+      How to enable Cozmo-like animations for being on his side, and flipping down from being on his back
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Nose%20art.html" class="md-nav__link">
+      Nose Art Showcase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Document templates
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document templates" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Document templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/VEP-template.html" class="md-nav__link">
+      VEP Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/how-to.html" class="md-nav__link">
+      How-to template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/template.html" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+    <label class="md-nav__link" for="nav-7">
+      Escape pod
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Escape pod" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Escape pod
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../escape%20pod/computer%20setup.html" class="md-nav__link">
+      Computer setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../escape%20pod/equipment.html" class="md-nav__link">
+      Equipment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Guides
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Guides" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Cozmo%20design%20guide.html" class="md-nav__link">
+      Cozmo Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Typefaces.html" class="md-nav__link">
+      Typefaces
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Vector%20character%20design%20guide.html" class="md-nav__link">
+      Vector Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Vector%20character%20study.html" class="md-nav__link">
+      Vector Character Study
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/behavior%20taxonomy.html" class="md-nav__link">
+      Behavior Taxonomy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Historical bots
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Historical bots" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Historical bots
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Bingo.html" class="md-nav__link">
+      Bingo and mini-Bingo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT1.html" class="md-nav__link">
+      Victor DVT1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT2.html" class="md-nav__link">
+      Victor DVT2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT3.html" class="md-nav__link">
+      Victor DVT3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT4.html" class="md-nav__link">
+      Victor DVT4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Whiskey.html" class="md-nav__link">
+      Whiskey
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+    <label class="md-nav__link" for="nav-10">
+      How to
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon"></span>
+        How to
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="GDB%20tracing.html" class="md-nav__link">
+      How to trace calls using GDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20change%20where%20the%20logs%20are%20sent.html" class="md-nav__link">
+      How change where Vector sends the logs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20convert%20animation%20bin%20files%20to%20JSON.html" class="md-nav__link">
+      How to convert animation bin files to JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20create%20a%20soundbank.html" class="md-nav__link">
+      How to create a soundbank
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to add (or change) voice commands
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="How%20to%20create%20voice%20commands.html" class="md-nav__link md-nav__link--active">
+      How to add (or change) voice commands
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-glossary-of-terms" class="md-nav__link">
+    A glossary of terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planning" class="md-nav__link">
+    Planning
+  </a>
+  
+    <nav class="md-nav" aria-label="Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#making-table-of-what-you-can-say" class="md-nav__link">
+    Making Table of What you can say
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#see-if-vector-needs-extra-information-in-the-intent-and-creating-a-helper-table" class="md-nav__link">
+    See if Vector needs extra information in the intent and creating a helper table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entering-this-into-the-escapepod-ui" class="md-nav__link">
+    Entering this into the EscapePod UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Entering this into the EscapePod UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entering-the-intent-name-and-trigger-phrases" class="md-nav__link">
+    Entering the Intent name and trigger phrases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entering-the-property-names-and-their-phrases" class="md-nav__link">
+    Entering the property names, and their phrases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-properties-wild-cards" class="md-nav__link">
+    Advanced Properties: Wild cards
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Properties: Wild cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entering-this-into-the-escapepod-ui_1" class="md-nav__link">
+    Entering this into the EscapePod UI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-with-the-escapepod" class="md-nav__link">
+    Linking with the EscapePod
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-up" class="md-nav__link">
+    Follow up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20make%20a%20companion%20cube.html" class="md-nav__link">
+      How to make a companion cube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20re-authenticate%20SDK%20apps.html" class="md-nav__link">
+      How to re authenticate SDK apps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20re-enable%20the%20Snowglobe.html" class="md-nav__link">
+      How to bring back the Snowglobe effect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20set%20up%20a%20new%20Yocto-linux%20build%20environment.html" class="md-nav__link">
+      How to set up a new Yocto-linux build environment for Vector’s base OS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link">
+      How to unzip the OTA files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="How%20to%20use%20Cozmo%20animations.html" class="md-nav__link">
+      How to use Cozmo animation files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="OSKR%20Tutorial%20Windows%2010.html" class="md-nav__link">
+      OSKR Tutorial for Windows 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Paper%20dolls.html" class="md-nav__link">
+      Making paper dolls for Vector to play with
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
+    <label class="md-nav__link" for="nav-11">
+      Protocols
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Protocols" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon"></span>
+        Protocols
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/Chipper.html" class="md-nav__link">
+      The Chipper Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/JDocs.html" class="md-nav__link">
+      The JDocs Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/intents.html" class="md-nav__link">
+      Intent Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/log%20server.html" class="md-nav__link">
+      Log Server for Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/token%20manager.html" class="md-nav__link">
+      The Token Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" >
+    <label class="md-nav__link" for="nav-12">
+      Service
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Service" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon"></span>
+        Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Arms.html" class="md-nav__link">
+      Arms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Battery%20replacement.html" class="md-nav__link">
+      Replacing the Battery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Disassembly%20notes.html" class="md-nav__link">
+      Disassembly notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Exploded%20View.html" class="md-nav__link">
+      Exploded View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/LCD%20replacement.html" class="md-nav__link">
+      LCD Replacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Parts%20kits.html" class="md-nav__link">
+      Parts kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" >
+    <label class="md-nav__link" for="nav-13">
+      Software design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software design" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        <span class="md-nav__icon md-icon"></span>
+        Software design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Animation%20triggers.html" class="md-nav__link">
+      Animation Triggers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20IDs.html" class="md-nav__link">
+      Behaviour IDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20classes.html" class="md-nav__link">
+      Behavior Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Behavior%20tree.html" class="md-nav__link">
+      Behavior Tree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Console%20variables.html" class="md-nav__link">
+      Console variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/SDKs.html" class="md-nav__link">
+      Software Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/URLs%20in%20code.html" class="md-nav__link">
+      URLs listed in the code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/channels.html" class="md-nav__link">
+      Channels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/classes.html" class="md-nav__link">
+      Software Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/communication%20trouble.html" class="md-nav__link">
+      Communication trouble behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/files.html" class="md-nav__link">
+      Source Files referenced in the binaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/mandatoryPhysicalReactions.html" class="md-nav__link">
+      Mandatory physical reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/power%20management.html" class="md-nav__link">
+      Power management behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/quiet%20mode.html" class="md-nav__link">
+      Quiet mode behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/startup%20behavior.html" class="md-nav__link">
+      Start up behavior
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" >
+    <label class="md-nav__link" for="nav-14">
+      Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        <span class="md-nav__icon md-icon"></span>
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Animation%20tool.html" class="md-nav__link">
+      Animation tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Playpen.html" class="md-nav__link">
+      Playpen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Webots.html" class="md-nav__link">
+      Webots
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" >
+    <label class="md-nav__link" for="nav-15">
+      Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        <span class="md-nav__icon md-icon"></span>
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/EscapePod%20setup.html" class="md-nav__link">
+      Escape pod setup troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/FAC.html" class="md-nav__link">
+      FAC (Factory) Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Hardware%20error%20codes.html" class="md-nav__link">
+      Hardware error codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Pi%20connectivity.html" class="md-nav__link">
+      Pi Network Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Pi%20issues.html" class="md-nav__link">
+      Pi general troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Software%20error%20codes.html" class="md-nav__link">
+      Software error codes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" >
+    <label class="md-nav__link" for="nav-16">
+      Vector enhancement proposals
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vector enhancement proposals" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        <span class="md-nav__icon md-icon"></span>
+        Vector enhancement proposals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/Overview.html" class="md-nav__link">
+      Vector Enhancement Proposals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP1%20-%20Update-engine%20changes.html" class="md-nav__link">
+      VEP1 - Update-engine changes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html" class="md-nav__link">
+      VEP2 - Package management for modules on Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP3%20-%20Developer%20configurations%20for%20robot.html" class="md-nav__link">
+      VEP3 - Developer configurations for robot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP4%20-%20Logging.html" class="md-nav__link">
+      VEP4 - Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+
+  <!-- Further information -->
+      <!-- Copyright and theme information -->
+        
+          <div style="font-size:60%;" xclass="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Randall Maas and team
+          </div>
+        
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-glossary-of-terms" class="md-nav__link">
+    A glossary of terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planning" class="md-nav__link">
+    Planning
+  </a>
+  
+    <nav class="md-nav" aria-label="Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#making-table-of-what-you-can-say" class="md-nav__link">
+    Making Table of What you can say
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#see-if-vector-needs-extra-information-in-the-intent-and-creating-a-helper-table" class="md-nav__link">
+    See if Vector needs extra information in the intent and creating a helper table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entering-this-into-the-escapepod-ui" class="md-nav__link">
+    Entering this into the EscapePod UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Entering this into the EscapePod UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entering-the-intent-name-and-trigger-phrases" class="md-nav__link">
+    Entering the Intent name and trigger phrases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entering-the-property-names-and-their-phrases" class="md-nav__link">
+    Entering the property names, and their phrases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-properties-wild-cards" class="md-nav__link">
+    Advanced Properties: Wild cards
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Properties: Wild cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entering-this-into-the-escapepod-ui_1" class="md-nav__link">
+    Entering this into the EscapePod UI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-with-the-escapepod" class="md-nav__link">
+    Linking with the EscapePod
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-up" class="md-nav__link">
+    Follow up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/randym32/Anki.Vector.Documentation/edit/master/documents/how-to/How to create voice commands.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                
+                <h1 id="how-to-add-or-change-voice-commands">How to add (or change) voice commands<a class="headerlink" href="#how-to-add-or-change-voice-commands" title="Permanent link">&para;</a></h1>
+<p>This is an article describing how to add (or modify) a Voice command 
+on the EscapePod.  It focuses on how to craft a small grammar 
+and convert it into rule(s) for EscapePod.  (I hope to create a later
+article explaining in more detail how to create behaviors that exist
+on extensions to the Escape Pod.)</p>
+<h2 id="a-glossary-of-terms">A glossary of terms<a class="headerlink" href="#a-glossary-of-terms" title="Permanent link">&para;</a></h2>
+<p>Let's define some terms first to be clear and consistent within the article:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>behavior</td>
+<td>A structure on Vector to represent and manage a potentially complex task that might involve animations, changing his emotions, path planing, driving, and so on.  It is also used on the EscapePod as a catchall for utterances and how they are made into an intent.</td>
+</tr>
+<tr>
+<td>intent</td>
+<td>An intent is a structure with an internal code that is used to represent the how to respond to the phrases spoken by a person. It may represent the action requested, an answer to a query, or an action that emotionally responds to what was said.</td>
+</tr>
+<tr>
+<td>property name</td>
+<td>The name of a key in the structure; also called a field.</td>
+</tr>
+<tr>
+<td>structure</td>
+<td>A table of property names (aka field, or key) and the value associated with it.</td>
+</tr>
+<tr>
+<td>utterance</td>
+<td>What a person said, and in the context of this article, the transcription to text of what the person said.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="planning">Planning<a class="headerlink" href="#planning" title="Permanent link">&para;</a></h2>
+<p>I'm going to focus on the idea of a new voice command, to give an idea of the
+overall process.  After all, modifying an existing voice command is easier,
+just a matter of winging it.  This may give some idea how to extend existing
+commands.</p>
+<p>We'll use 5 steps to create a voice command on the EscapePod:</p>
+<ol>
+<li>Decide what you want Vector to do when he hears the voice command</li>
+<li>Make a list of what you want to say</li>
+<li><em>Optional (or in rare cases)</em> what extra information that Vector needs to know</li>
+<li>Create a helper table, in preparation for entering it into the EscapePod</li>
+<li>Plonk this into the EscapePod; the EscapePod UI is  still a bit new and very
+   techy-focused in this area, so I'll try to explain what some of the fields do.</li>
+</ol>
+<p>The first step is to decide what you want Vector to do, from the <a href="../protocols/intents.html">list of
+supported cloud intents</a>.  (For now let's ignore EscapePod extensions.)
+It has to be one that Vector recognizes.
+(See <a href="../protocols/intents.html">here</a> for a table of the intents Vector recognizes.)</p>
+<p>For demonstration purposes I'm going to use <strong>intent_imperative_eyecolor_extend</strong>
+(and pretend that it does not already have a voice command.)</p>
+<h3 id="making-table-of-what-you-can-say">Making Table of What you can say<a class="headerlink" href="#making-table-of-what-you-can-say" title="Permanent link">&para;</a></h3>
+<p>Making a list of what you want to say to Vector is the second easiest part.
+Write the items down in a bullet-pointed list.  For the set eye color intent, 
+the stock list of phrases that Vector recognizes include:</p>
+<ul>
+<li>change eyes</li>
+<li>change eye color</li>
+<li>make your eyes</li>
+</ul>
+<p>Tip: stick with one to two words, occasionally three; try getting rid of common
+articles (a, the, his), determiner (your) and other common words.  Go for "google
+whacks" — where the word or word pair is not used in any other voice command.</p>
+<p>Following this tip, we might change the last item to:</p>
+<ul>
+<li>make your eyes</li>
+</ul>
+<h3 id="see-if-vector-needs-extra-information-in-the-intent-and-creating-a-helper-table">See if Vector needs extra information in the intent and creating a helper table<a class="headerlink" href="#see-if-vector-needs-extra-information-in-the-intent-and-creating-a-helper-table" title="Permanent link">&para;</a></h3>
+<p>Next, look up in the cloud intents page to find if the intent needs extra
+information.</p>
+<p>There are three possiblities here</p>
+<ol>
+<li>The cloud intent doesn't need any extra information (most cases)
+   If this is the case, skip to the next section.</li>
+<li>The cloud intent has a single property that it needs a value for;
+   this property have a name, and fixed set of values that it accepts.
+   (This happens for a handful of intents.)</li>
+<li>The cloud intent takes a single property, but the value can be anything.
+   This is used with the intent to teach Vector your name.</li>
+</ol>
+<p>Following the eye color example, it takes one property, <strong>eye_color</strong>, that
+says which color to shade the eyes.  This property only accepts very specific
+values. Lets create a table of the property values to keep it organized.</p>
+<table>
+<thead>
+<tr>
+<th>Property Value</th>
+<th>Spoken phrases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COLOR_BLUE</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_GREEN</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_ORANGE</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_PURPLE</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_TEAL</td>
+<td></td>
+</tr>
+<tr>
+<td>COLOR_YELLOW</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>What we need to do now is add the  phrases that go with each possible value:</p>
+<table>
+<thead>
+<tr>
+<th>Property Value</th>
+<th>Spoken phrases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COLOR_BLUE</td>
+<td>blue, azure, sapphire</td>
+</tr>
+<tr>
+<td>COLOR_GREEN</td>
+<td>green, lime</td>
+</tr>
+</tbody>
+</table>
+<p>etc.</p>
+<p>Tip:  like earlier stick with one to two words, occasionally three; try getting
+rid of common articles (a, the, his), determiner (your) and other common words.
+And go for”google whacks” — where the word or word pair is only used here for a
+color.</p>
+<h2 id="entering-this-into-the-escapepod-ui">Entering this into the EscapePod UI<a class="headerlink" href="#entering-this-into-the-escapepod-ui" title="Permanent link">&para;</a></h2>
+<p>Now we're ready.
+Let's begin entering this into the EscapePod now.</p>
+<ol>
+<li>
+<p>First, Click on the menu in the upper right hand corner, and select "Behaviors":</p>
+<p><img alt="" src="EPMenuIntents.png#center" />
+<em>Figure: Behaviors item on menu</em></p>
+</li>
+<li>
+<p>Next, Click on the pull down menu and slect "Add A Behavior"</p>
+<p><img alt="" src="EPDevMenuAddBehavior.png#center" />
+<em>Figure: Add Behavior item on menu</em></p>
+</li>
+<li>
+<p>A popup will appear giving dire warings.  Just click ok.</p>
+<p><img alt="" src="EPDamnTheTorpedos.png#center" />
+<em>Figure: Add Behavior item on menu</em></p>
+</li>
+<li>
+<p>Next you'll a place to start entering the information</p>
+<p><img alt="" src="EPIntentCreate1.png#center" />
+<em>Figure: Starting to create a voice command</em></p>
+<p>Leave the checkbox clear for now.
+Give it a nice name (it doesn't matter,
+and a helpful description (again it won't affect anything).</p>
+</li>
+</ol>
+<h3 id="entering-the-intent-name-and-trigger-phrases">Entering the Intent name and trigger phrases<a class="headerlink" href="#entering-the-intent-name-and-trigger-phrases" title="Permanent link">&para;</a></h3>
+<p>Next fill in the intent name -- <strong>intent_imperative_eyecolor_extend</strong> --
+in the field below the word "Behavior"</p>
+<p><img alt="" src="EPEnterIntentName.png#center" />
+<em>Figure: Enter the intent name</em></p>
+<p>Then take the list of words and phrases were made earlier -- e.g. "change eyes"
+-- and combine them using commas to separate the phrases.  If the intent has
+extra properties (like this one does), then add all of the
+words and phrases for the  property values from the table made earlier;
+separate with commas too.</p>
+<p>Take this big, long list of words, and put it into the field below "Key Words".
+(The field is small so I recommend combining the words into a list in 
+your favorite text editor, then copy-pasting it to the field.)</p>
+<p><img alt="" src="EPEnterKeyWords.png#center" />
+<em>Figure: Enter the key words</em></p>
+<p>If you don't have any extra properties, then just click "Save" and you're
+done.  If you do have properties, then we need to go to the next step:</p>
+<h3 id="entering-the-property-names-and-their-phrases">Entering the property names, and their phrases<a class="headerlink" href="#entering-the-property-names-and-their-phrases" title="Permanent link">&para;</a></h3>
+<p>To enter in the property names and their key words, we have to leap thru a few
+extra hoops:</p>
+<ol>
+<li>
+<p>Check the box for “Check to enable developer options”</p>
+<p><img alt="" src="EPEnableDeveloperOptions.png#center" />
+<em>Figure: Click it to enable devleper options</em></p>
+</li>
+<li>
+<p>Another popup will appear giving more dire warings.  Just click ok.</p>
+<p><img alt="" src="EPDamnTheTorpedos2.png#center" />
+<em>Figure: Enabling developer options is... scary?</em></p>
+</li>
+<li>
+<p>Click “Add Extended Key”</p>
+<p><img alt="" src="EPAddExtendedKey.png#center" />
+<em>Figure: Time to add the property names and values</em></p>
+</li>
+<li>
+<p>Enter the property name in the “Extended Key” entry.</p>
+<p><img alt="" src="EPExtendedKey.png#center" />
+<em>Figure: Enter the property name</em></p>
+</li>
+</ol>
+<p>Now let's go back to the table of property values and their phrases that we made
+earlier. For each row in the table:</p>
+<ol>
+<li>
+<p>In the “Key Phrase” field, enter the property name (left column of the row
+   in the table we made):</p>
+<p><img alt="" src="EPPropertyValue.png#center" />
+<em>Figure: Enter the property value</em></p>
+<p>For example:</p>
+<p><img alt="" src="EPPropertyValueEx.png#center" />
+<em>Figure: An example the property value</em></p>
+</li>
+<li>
+<p>Add in the phrase that indicate this value .  Unlike the main list of phrases,
+    we have to enter each of the phrases in here separately.  Enter the
+    first key word or phrase into the "Parameter" field.</p>
+<p><img alt="" src="EPLotsOfPVKeywords.png#center" />
+<em>Figure: One property value key phrase at time</em></p>
+<p>Then click “Add Parameter” and repeat for the rest of the phrases
+for this property.</p>
+</li>
+<li>
+<p>If there is are more rows in the table, click “Add Key Phrase”</p>
+</li>
+</ol>
+<p>Once you're done entering in the table, click "Save."</p>
+<h2 id="advanced-properties-wild-cards">Advanced Properties: Wild cards<a class="headerlink" href="#advanced-properties-wild-cards" title="Permanent link">&para;</a></h2>
+<p>Now that we've gotten used to the property name and values for intents, we can
+go on to an advanced case.  Phrases can also capture whatever the person
+actually said and send that text for the property value.</p>
+<p>This is used in only one intent at present: Teaching Vector your name. Let's
+look at it.  The list of phrases that trigger the intent are like any other
+intent:</p>
+<ul>
+<li>my name is</li>
+<li>call me</li>
+<li>you may call me</li>
+<li>please call me</li>
+</ul>
+<p>In this example <strong>username</strong> is the property name and will be filled in with
+whatever the persons says after the phrases above.</p>
+<h3 id="entering-this-into-the-escapepod-ui_1">Entering this into the EscapePod UI<a class="headerlink" href="#entering-this-into-the-escapepod-ui_1" title="Permanent link">&para;</a></h3>
+<p>Here;s how to do it.  Go thru all of steps before.
+And stop before clicking on "Add Extended Key".</p>
+<ol>
+<li>
+<p>Enter the property name in the field called "Extended Key" under "Parser":</p>
+<p><img alt="" src="EPWildcardKey.png#center" />
+<em>Figure: Where the Wild Card property names grow.. erm, go</em></p>
+<p>For example:</p>
+<p><img alt="" src="EPWildcardKeyEx.png#center" />
+_Figure: Example of the <strong>usename</strong> wild card property name _</p>
+</li>
+<li>
+<p>Then add in <code>[INTENT_INVERSE]</code> to the "Parser Target" field:</p>
+<p><img alt="" src="EPParserTarget.png#center" />
+<em>Figure: Magic field values!</em></p>
+</li>
+</ol>
+<p>Then click "Save" and you're done.</p>
+<h2 id="linking-with-the-escapepod">Linking with the EscapePod<a class="headerlink" href="#linking-with-the-escapepod" title="Permanent link">&para;</a></h2>
+<p>A voice command can be tagged to be sent to an EscapePod extension for
+further processing.  The steps are the same as the above, except
+modify these to work with EscapePod extensions:</p>
+<ol>
+<li>
+<p>Make up a fake intent name for the intent for your 
+EscapePod extension to key off of.</p>
+</li>
+<li>
+<p>Under the "Parser" section, check the "Enable External Parsing"
+   option.</p>
+<p><img alt="" src="EPEnableExternal.png#center" />
+<em>Figure: Check this to forward it to an EscapePod extension</em></p>
+</li>
+<li>
+<p>Click "Add Response Parameter" :</p>
+<p><img alt="" src="EPAddResponseParameter.png#center" />
+<em>Figure: Check this to forward it to an EscapePod extension</em></p>
+</li>
+<li>
+<p>Enter "final_intent" into the "Parameter Key" field, and the name of the
+   intent to use as a back up if the EscapePod can't contact the extension or
+   doesn't get a result.  <strong>intent_play_cantdo</strong> is recommended, but you can
+   use whatever you  want.</p>
+<p><img alt="" src="EPFinalIntent.png#center" />
+<em>Figure: The intent name to use if the EscapePod extension doesn't work out</em></p>
+</li>
+</ol>
+<p>Then click "Save" and you're done.</p>
+<h2 id="follow-up">Follow up<a class="headerlink" href="#follow-up" title="Permanent link">&para;</a></h2>
+<p>Note: someone can copy the table of intents to the forums wiki</p>
+<p>Note: You can, in principal, have more than one property in your phrase pattern.
+Including combining an enumerated property and a wild card, but I have
+ not characterized how well tested that works or a use case where it’d feel
+ natura.</p>
+<p>I recommend changing the following in the EscapePod UI:</p>
+<ul>
+<li>“Extended Key” to “Parameter Name” (or at least something less confusing)</li>
+<li>(“Wildcard Key” is also a parameter, so renaming to “Wildcard Parameter Name”
+   at the same time ould be more consistent)</li>
+<li>“Key Phrase” isn’t a phrase, it’s a very programmer specific thing. I
+  recommend that it be changed to “Property Value”</li>
+<li>(“Parameter” isn’t a parameter at all, its key words or other utterance.
+   Recommend changing it to “Key words”</li>
+<li>"Behavior" to a more correct term.  Leaving it as is will cause lots of
+  confusion, frustration and hard to help people who being to work with the
+  behavior tree and we have to spend half a dozen messages establishing
+  which ambiguous thing they are working on.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<footer class="md-footer">
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+
+<script src="https://unpkg.com/iframe-worker/polyfill"></script>
+<script src="../search/search_index.js"></script>
+
+
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['search.suggest', 'navigation.instant', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
