@@ -10,7 +10,7 @@ There are three parts
 2. Next, the system files are extracted from the sysfs archive
 3. Finally boot initramfs files can be extracted.  (Their archive is a bit different)
 
-## Decrypting the OTA arcrhives
+## Decrypting the OTA archives
 
 The OTA files are tar.gz files, so they can be opened with tar (or similar tool).  Among the files inside are two files:
 
