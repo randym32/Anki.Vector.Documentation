@@ -20,6 +20,10 @@ Similarities to Victor DVT1:
 
 Their shells (+ motor boards, backpack board, laser) are fully compatible with regular Vector circutry.
 
+Their heads come with a strange partition table, but it can be upgraded through QDL to be able to run custom firmware. Check the Qualcomm Download Mode section.
+
+Their ABOOTs are compatible with DVT1/3, and support boot slots. Their aboots can be used in a newer partition table, and allow for unsigned kernels. None of the CPU fuses are set, so you can run whatever you want.
+
 Some of these connect to a network with the credentials below, which can be faked on your own router or hotspot so you can use ADB over TCP:
 
 SSID: `AnkiRobits`

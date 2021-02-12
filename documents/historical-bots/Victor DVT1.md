@@ -18,6 +18,10 @@ There are some positives if you are a passionate developer. They have ADB open w
 
 Their shells (+ motor boards, backpack board, laser) are fully compatible with regular Vector circutry.
 
+The headboard can be upgraded to be like a normal Vector through USB. Check the Qualcomm Download Mode section.
+
+They can use DVT2 ABOOTs, which allows for more modern and/or unsigned kernels. Their CPU fuses are not set.
+
 Some of these connect to a network with the credentials below, which can be faked on your own router or hotspot so you can use ADB over TCP:
 
 SSID: `AnkiRobits`

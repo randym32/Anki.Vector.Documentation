@@ -15,13 +15,17 @@ These look exactly like DVT2s, but there are a few differences here and there:
 Similarities to Victor DVT1/2:
 
 * Their serial numbers started off as strings such as "1f19f8b7".
-* The "head board" hardware is pretty much exactly the same, but the "body board" hardware is very different compared to modern Vector hardware. This locks them to old DFU and they are not viable for normal Vector body replacements.
+* The "head board" hardware is pretty much exactly the same, but the "body board" hardware is different compared to modern Vector hardware. This locks them to old DFU and they are not viable for normal Vector body replacements.
 
 Their shells (+ motor boards, backpack board, laser) are fully compatible with regular Vector circutry.
 
 DVT3 is when a lot of Vector personality development happened. Their firmwares can vary between 0.9 to 0.12 betas. These act similar to how Vector is today.
 
 Some of these bots may boot up to an exclaimation point. Turning them upside-down then double (or triple) pressing the button will let them finish bootup. Then, you can shake them around to make them explore around.
+
+Many DVT3s have unlock OTAs. This means you have the choice to run normal dev firmware, prod firmware, OSKR firmware if you pay for it, and unsigned kernels (read ahead).
+
+Just like DVT1/2, none of the CPU fuses are set. You can put in a DVT2 aboot, compile your own kernel, and have a bunch of fun.
 
 These turn up from time to time on Ebay.
 
