@@ -83,7 +83,7 @@ that I can find by Keith Lango:
 > Saccadic Eye Movement "using well timed shifting of the eyes.  The shift
 > could be motivated by the internal thoughts or feelings of the character
 > while they are presented with a moment of quietness or thought.  There the
-> relative pace of the shfts gives indication to the speed of the unfolding of
+> relative pace of the shifts gives indication to the speed of the unfolding of
 > thoughts in the head or the emotional energy of the moment.  If the darts are
 > fast paced and come quickly one after the other it can indicate a great
 > flurry of thought or a rapid firing of emotional energy.  Slower pace
