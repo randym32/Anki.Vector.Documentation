@@ -18,16 +18,34 @@ Taking inspiration in its spirit and shape from dogs and other animals:
 ![Dogs 2](Bingo_RnD_2019_006b-e1582640749420.jpg#zoom)
 
 
-## Picture of Bingo prototype
-A prototype:
-
-![Picture of Bingo prototype](bingo-prototype.png#zoom)
+## Picture of the Mini Bingo mock-up
 
 A mini Bingo on the desk ([source](https://discord.com/channels/527874754342944770/672181630240161794/682549620152467481))
 
 ![](Screenshot_20200217-185546.png)
 
+From Matthew Mallet:
+
+> "miniBINGO is a black iPhone 7 with polymer clay modeled over the top of a
+> thin clear plastic lining. When miniBINGO is placed on a flat surface, it
+> leans against a large piece of clay as a stand attached to what looks like an
+> hourglass conveyer roller. The clay wraps around the front of the iPhone in a
+> set of 3 diagonal partitions from top corner towards the bottom corner.  Each
+> of these pieces of clay have cuts giving it a sharper modern look.  When he
+> is plugged in on normal boot he displays the name of the device as miniBINGO."
+
+> "Fun fact: miniBINGO was never meant to be a finished robot.  It was a way to
+> show character design from idea to working prototype."
+
+
+## Picture of the Big Bingo prototype
+
+A prototype:
+
+![Picture of Bingo prototype](bingo-prototype.png#zoom)
+
 A Bingo in the office ([source](https://discord.com/channels/527874754342944770/672181630240161794/761798072358404096))
+
 
 ![Big Bingo](big-bingo.jpg#zoom)
 
