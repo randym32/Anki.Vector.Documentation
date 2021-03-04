@@ -1,0 +1,3893 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Software Classes - Vector Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#software-classes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../index.html" title="Vector Documentation" class="md-header-nav__button md-logo" aria-label="Vector Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Vector Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Software Classes
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+  
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    Vector Documentation
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/randym32/Anki.Vector.Documentation/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vector Community Documents
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Vector Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary.html" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Boards
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Boards" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Boards
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../boards/vector%20boards.html" class="md-nav__link">
+      Vector boards
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Contributing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/CONTRIBUTING.html" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/code_of_conduct.html" class="md-nav__link">
+      Contributor Covenant Code of Conduct
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/how-to-file-an-issue.html" class="md-nav__link">
+      How to File an Issue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/pull-requests.html" class="md-nav__link">
+      Pull Requests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/style-guide.html" class="md-nav__link">
+      Style Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Body%20modification.html" class="md-nav__link">
+      Body modifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Customization%2C%20personalization.html" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Enable%20Cozmo-like%20animations%20for%20being%20on%20his%20side%2C%20and%20flipping%20down%20from%20his%20back.html" class="md-nav__link">
+      How to enable Cozmo-like animations for being on his side, and flipping down from being on his back
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization/Nose%20art.html" class="md-nav__link">
+      Nose Art Showcase
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Document templates
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document templates" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Document templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/VEP-template.html" class="md-nav__link">
+      VEP Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/how-to.html" class="md-nav__link">
+      How-to template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../document-templates/template.html" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+    <label class="md-nav__link" for="nav-7">
+      Escape pod
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Escape pod" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Escape pod
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../escape%20pod/computer%20setup.html" class="md-nav__link">
+      Computer setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../escape%20pod/equipment.html" class="md-nav__link">
+      Equipment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Guides
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Guides" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Cozmo%20design%20guide.html" class="md-nav__link">
+      Cozmo Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Typefaces.html" class="md-nav__link">
+      Typefaces
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Vector%20character%20design%20guide.html" class="md-nav__link">
+      Vector Character Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/Vector%20character%20study.html" class="md-nav__link">
+      Vector Character Study
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../guides/behavior%20taxonomy.html" class="md-nav__link">
+      Behavior Taxonomy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Historical bots
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Historical bots" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Historical bots
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Bingo.html" class="md-nav__link">
+      Bingo and mini-Bingo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Qualcomm%20Download%20Mode.html" class="md-nav__link">
+      Qualcomm Download Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT1.html" class="md-nav__link">
+      Victor DVT1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT2.html" class="md-nav__link">
+      Victor DVT2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT3.html" class="md-nav__link">
+      Victor DVT3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Victor%20DVT4.html" class="md-nav__link">
+      Victor DVT4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/Whiskey.html" class="md-nav__link">
+      Whiskey
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" >
+    <label class="md-nav__link" for="nav-10">
+      How to
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon"></span>
+        How to
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/GDB%20tracing.html" class="md-nav__link">
+      How to trace calls using GDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20change%20where%20the%20logs%20are%20sent.html" class="md-nav__link">
+      How change where Vector sends the logs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20convert%20animation%20bin%20files%20to%20JSON.html" class="md-nav__link">
+      How to convert animation bin files to JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20create%20a%20soundbank.html" class="md-nav__link">
+      How to create a soundbank
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20create%20voice%20commands.html" class="md-nav__link">
+      How to add (or change) voice commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20make%20a%20companion%20cube.html" class="md-nav__link">
+      How to make a companion cube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20re-authenticate%20SDK%20apps.html" class="md-nav__link">
+      How to re authenticate SDK apps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20re-enable%20the%20Snowglobe.html" class="md-nav__link">
+      How to bring back the Snowglobe effect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20set%20up%20a%20new%20Yocto-linux%20build%20environment.html" class="md-nav__link">
+      How to set up a new Yocto-linux build environment for Vector’s base OS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20unzip%20the%20OTA%20file.html" class="md-nav__link">
+      How to unzip the OTA files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/How%20to%20use%20Cozmo%20animations.html" class="md-nav__link">
+      How to use Cozmo animation files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/OSKR%20Tutorial%20Windows%2010.html" class="md-nav__link">
+      OSKR Tutorial for Windows 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how-to/Paper%20dolls.html" class="md-nav__link">
+      Making paper dolls for Vector to play with
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
+    <label class="md-nav__link" for="nav-11">
+      Protocols
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Protocols" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon"></span>
+        Protocols
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/Chipper.html" class="md-nav__link">
+      The Chipper Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/JDocs.html" class="md-nav__link">
+      The JDocs Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/intents.html" class="md-nav__link">
+      Intent Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/log%20server.html" class="md-nav__link">
+      Log Server for Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../protocols/token%20manager.html" class="md-nav__link">
+      The Token Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" >
+    <label class="md-nav__link" for="nav-12">
+      Service
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Service" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon"></span>
+        Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Arms.html" class="md-nav__link">
+      Arms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Battery%20replacement.html" class="md-nav__link">
+      Replacing the Battery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Disassembly%20notes.html" class="md-nav__link">
+      Disassembly notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Exploded%20View.html" class="md-nav__link">
+      Exploded View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/LCD%20replacement.html" class="md-nav__link">
+      LCD Replacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../service/Parts%20kits.html" class="md-nav__link">
+      Parts kits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
+    <label class="md-nav__link" for="nav-13">
+      Software design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software design" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        <span class="md-nav__icon md-icon"></span>
+        Software design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Animation%20triggers.html" class="md-nav__link">
+      Animation Triggers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20IDs.html" class="md-nav__link">
+      Behaviour IDs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20classes.html" class="md-nav__link">
+      Behavior Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Behavior%20tree.html" class="md-nav__link">
+      Behavior Tree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Console%20variables.html" class="md-nav__link">
+      Console variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="SDKs.html" class="md-nav__link">
+      Software Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="URLs%20in%20code.html" class="md-nav__link">
+      URLs listed in the code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="channels.html" class="md-nav__link">
+      Channels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="communication%20trouble.html" class="md-nav__link">
+      Communication trouble behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="files.html" class="md-nav__link">
+      Source Files referenced in the binaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="mandatoryPhysicalReactions.html" class="md-nav__link">
+      Mandatory physical reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="power%20management.html" class="md-nav__link">
+      Power management behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="quiet%20mode.html" class="md-nav__link">
+      Quiet mode behaviors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="software%20classes.html" class="md-nav__link md-nav__link--active">
+      Software Classes
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="sound%20banks.html" class="md-nav__link">
+      Sound Banks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="sound-events.html" class="md-nav__link">
+      Sound Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="sound-parameters.html" class="md-nav__link">
+      Sound Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="startup%20behavior.html" class="md-nav__link">
+      Start up behavior
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" >
+    <label class="md-nav__link" for="nav-14">
+      Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        <span class="md-nav__icon md-icon"></span>
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Animation%20tool.html" class="md-nav__link">
+      Animation tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Playpen.html" class="md-nav__link">
+      Playpen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Webots.html" class="md-nav__link">
+      Webots
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" >
+    <label class="md-nav__link" for="nav-15">
+      Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        <span class="md-nav__icon md-icon"></span>
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/EscapePod%20setup.html" class="md-nav__link">
+      Escape pod setup troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/FAC.html" class="md-nav__link">
+      FAC (Factory) Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Hardware%20error%20codes.html" class="md-nav__link">
+      Hardware error codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Pi%20connectivity.html" class="md-nav__link">
+      Pi Network Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Pi%20issues.html" class="md-nav__link">
+      Pi general troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/Software%20error%20codes.html" class="md-nav__link">
+      Software error codes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" >
+    <label class="md-nav__link" for="nav-16">
+      Vector enhancement proposals
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vector enhancement proposals" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        <span class="md-nav__icon md-icon"></span>
+        Vector enhancement proposals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/Overview.html" class="md-nav__link">
+      Vector Enhancement Proposals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP1%20-%20Update-engine%20changes.html" class="md-nav__link">
+      VEP1 - Update-engine changes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html" class="md-nav__link">
+      VEP2 - Package management for modules on Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP3%20-%20Developer%20configurations%20for%20robot.html" class="md-nav__link">
+      VEP3 - Developer configurations for robot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector-enhancement-proposals/VEP4%20-%20Logging.html" class="md-nav__link">
+      VEP4 - Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+
+  <!-- Further information -->
+      <!-- Copyright and theme information -->
+        
+          <div style="font-size:60%;" xclass="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Randall Maas and team
+          </div>
+        
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/randym32/Anki.Vector.Documentation/edit/master/documents/software-design/software classes.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                
+                <h1 id="software-classes">Software Classes<a class="headerlink" href="#software-classes" title="Permanent link">&para;</a></h1>
+<p>Vector's software has a lot of modules -- I'm assuming these are C++ classes.
+They are not all annotated or understood.
+Here are some that we've spotted:</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>AIWhiteboard</td>
+<td></td>
+</tr>
+<tr>
+<td>AccountSettingsManager</td>
+<td></td>
+</tr>
+<tr>
+<td>ActionList</td>
+<td></td>
+</tr>
+<tr>
+<td>ActionQueue</td>
+<td></td>
+</tr>
+<tr>
+<td>Actions</td>
+<td></td>
+</tr>
+<tr>
+<td>ActiveFeatureComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>AddActiveObject</td>
+<td></td>
+</tr>
+<tr>
+<td>AdvertisementService</td>
+<td></td>
+</tr>
+<tr>
+<td>AkAlsaSink</td>
+<td></td>
+</tr>
+<tr>
+<td>Alexa</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaAudioInput</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaClient</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaImpl</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaMediaPlayer</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaObserver</td>
+<td></td>
+</tr>
+<tr>
+<td>AlexaPlaybackRecognizerComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>AlignWithObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimComms</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimContext</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimEngine</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimProcessMessages</td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationAudioClient</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationGroup</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationGroupContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationGroupEntry</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationStreamer</td>
+<td></td>
+</tr>
+<tr>
+<td>Animations</td>
+<td></td>
+</tr>
+<tr>
+<td>AnkiLab</td>
+<td></td>
+</tr>
+<tr>
+<td>AppCubeConnectionSubscriber</td>
+<td></td>
+</tr>
+<tr>
+<td>Array2d</td>
+<td></td>
+</tr>
+<tr>
+<td>AttentionTransferComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>AudienceTags</td>
+<td></td>
+</tr>
+<tr>
+<td>Audio</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioBehaviorStackListener</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioEngineController</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioEventGroupRef</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioMultipleFileLocation</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioMultiplexer</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioMuxClient</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioScene</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioSceneEvent</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioSceneParameter</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioSceneStateGroup</td>
+<td></td>
+</tr>
+<tr>
+<td>AudioWaveFileReader</td>
+<td></td>
+</tr>
+<tr>
+<td>BEIConditionFactory</td>
+<td></td>
+</tr>
+<tr>
+<td>BEIConditionMessageHelper</td>
+<td></td>
+</tr>
+<tr>
+<td>BackpackLightAnimationContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>BackpackLightComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>BackpackLightsKeyFrame</td>
+<td></td>
+</tr>
+<tr>
+<td>BackupOntoChargerAction</td>
+<td></td>
+</tr>
+<tr>
+<td>Battery</td>
+<td></td>
+</tr>
+<tr>
+<td>BatteryComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>BeatDetector</td>
+<td></td>
+</tr>
+<tr>
+<td>BeatDetectorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorAcknowledgeFace</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorAcknowledgeObject</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorAlexa</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorAnimSequenceWithObject</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorAskForHelp</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorBlackJack</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorBumpObject</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorClearChargerArea</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorConfirmObject</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorConnectToCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorCoordinateInHabitat</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorCoordinateWeather</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorCountingAnimation</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDanceToTheBeat</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDanceToTheBeatCoordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDevCubeSpinnerConsole</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDevSquawkBoxTest</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDevTurnInPlaceTest</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDispatchAfterShake</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDispatcherPassThrough</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDispatcherQueue</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDispatcherRandom</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDispatcherStrictPriorityWithCooldown</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDisplayWallTime</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDisplayWeather</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDockingTest</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDockingTestSimple</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorDriveOffCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorEnrollFace</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorExploring</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorExploringExamineObstacle</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorEyeColorVoiceCommand</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorFactoryCentroidExtractor</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorFetchCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorFindCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorFindFaceAndThen</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorFindHome</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorFistBump</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorGoHome</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorGreetAfterLongTime</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorHowOldAreYou</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorInspectCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorInteractWithFaces</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorKeepaway</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorKnowledgeGraphQuestionc</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorLiftLoadTest</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorLookForFaceAndCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorObservingLookAtFaces</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorObservingWithoutTurn</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorOnboardingCoordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPRDemo</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaceCubeByCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaypenCameraCalibration</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaypenDistanceSensor</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaypenDriftCheck</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaypenEndChecks</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaypenPickupCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPlaypenTest</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPopAWheelie</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPounceOnMotion</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPoweringRobotOff</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPromptUserForVoiceCommand</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorPuzzleMaze</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorQuietModeCoordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToBody</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToCliff</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToCubeTap</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToDarkness</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToHand</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToMicDirection</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToMotion</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToMotorCalibration</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToPlacedOnSlope</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToRobotOnBack</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToRobotOnFace</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToTouchPetting</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToUncalibratedHeadAndLift</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToUnexpectedMovement</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorReactToVoiceCommand</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorRequestToGoHome</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorResetState</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorRespondToRenameFace</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorRobustChargerObservation</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSDKInterface</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSDKLock</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSayName</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSelfTest</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSelfTestDockWithCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSelfTestDriftCheck</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSelfTestLookAtCharger</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSleepCycle</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSystem</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorSystemManager</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorTakeAPhotoCoordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorTextToSpeechLoop</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorTrackCube</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorTrackFace</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorUserDefinedBehaviorTreeRouter</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorUserDefinedBehaviorTreeSelector</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorVolume</td>
+<td></td>
+</tr>
+<tr>
+<td>Behaviors</td>
+<td></td>
+</tr>
+<tr>
+<td>BehaviorsBootLoader</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJackGame</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJackSimulation</td>
+<td></td>
+</tr>
+<tr>
+<td>BlackJackVisualizer</td>
+<td></td>
+</tr>
+<tr>
+<td>Block</td>
+<td></td>
+</tr>
+<tr>
+<td>BlockPool</td>
+<td></td>
+</tr>
+<tr>
+<td>BlockTapFilterComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>BlockWorld</td>
+<td></td>
+</tr>
+<tr>
+<td>BodyMotionKeyFrame</td>
+<td></td>
+</tr>
+<tr>
+<td>CalculateExperimentHashBucket</td>
+<td></td>
+</tr>
+<tr>
+<td>Camera</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraCalibrator</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraParamsController</td>
+<td></td>
+</tr>
+<tr>
+<td>CannedAnimationContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>CannedAnimationLoader</td>
+<td></td>
+</tr>
+<tr>
+<td>CardSimulation</td>
+<td></td>
+</tr>
+<tr>
+<td>CarryingComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>ChannelFilter</td>
+<td></td>
+</tr>
+<tr>
+<td>CladEnumToStringMap</td>
+<td></td>
+</tr>
+<tr>
+<td>CliffAlignToWhiteAction</td>
+<td></td>
+</tr>
+<tr>
+<td>CliffSensor</td>
+<td></td>
+</tr>
+<tr>
+<td>CliffSensorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>ColorRGBA</td>
+<td></td>
+</tr>
+<tr>
+<td>CompositeImage</td>
+<td></td>
+</tr>
+<tr>
+<td>CompositeImageLayer</td>
+<td></td>
+</tr>
+<tr>
+<td>CompoundActionParallel</td>
+<td></td>
+</tr>
+<tr>
+<td>CompoundActionSequential</td>
+<td></td>
+</tr>
+<tr>
+<td>ComputePlacementApproachAngle</td>
+<td></td>
+</tr>
+<tr>
+<td>ComputePreActionPoseDistThreshold</td>
+<td></td>
+</tr>
+<tr>
+<td>ConditionCompound</td>
+<td></td>
+</tr>
+<tr>
+<td>ConditionEngineErrorCodeReceived</td>
+<td></td>
+</tr>
+<tr>
+<td>ConditionIlluminationDetected</td>
+<td></td>
+</tr>
+<tr>
+<td>ConditionMotionDetected</td>
+<td></td>
+</tr>
+<tr>
+<td>ConfirmHabitat</td>
+<td></td>
+</tr>
+<tr>
+<td>ConnectionFlow</td>
+<td></td>
+</tr>
+<tr>
+<td>Console</td>
+<td></td>
+</tr>
+<tr>
+<td>ConsoleSystem</td>
+<td></td>
+</tr>
+<tr>
+<td>Context</td>
+<td></td>
+</tr>
+<tr>
+<td>ContinuityComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>CoreTech</td>
+<td></td>
+</tr>
+<tr>
+<td>CozmoAPI</td>
+<td></td>
+</tr>
+<tr>
+<td>CozmoAnimMain</td>
+<td></td>
+</tr>
+<tr>
+<td>CozmoAudioController</td>
+<td></td>
+</tr>
+<tr>
+<td>CozmoEngine</td>
+<td></td>
+</tr>
+<tr>
+<td>CozmoGameImpl</td>
+<td></td>
+</tr>
+<tr>
+<td>CropScheduler</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeAccelComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeBatteryComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeComms</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeCommsComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeConnectionCoordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeInteractionTracker</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeLightAnimationContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeLightAnimationHelpers</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeLightComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeLightController</td>
+<td></td>
+</tr>
+<tr>
+<td>CubeSpinnerGame</td>
+<td></td>
+</tr>
+<tr>
+<td>CustomObject</td>
+<td></td>
+</tr>
+<tr>
+<td>DTRawPixelsClassifier</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceAnimMetadata</td>
+<td></td>
+</tr>
+<tr>
+<td>DancePhrase</td>
+<td></td>
+</tr>
+<tr>
+<td>DanceSession</td>
+<td></td>
+</tr>
+<tr>
+<td>DasToSdkHandler</td>
+<td></td>
+</tr>
+<tr>
+<td>DasToSdkManager</td>
+<td></td>
+</tr>
+<tr>
+<td>DataPlatform</td>
+<td></td>
+</tr>
+<tr>
+<td>Demo</td>
+<td></td>
+</tr>
+<tr>
+<td>DevEventSequenceCapture</td>
+<td></td>
+</tr>
+<tr>
+<td>DoleAvailableAnimations</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveAndFlipBlockAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveStraightAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveToActions</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveToFlipBlockPoseAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveToObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveToPlaceCarriedObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveToPlaceRelObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DriveToPoseAction</td>
+<td></td>
+</tr>
+<tr>
+<td>DrivingAnimationHandler</td>
+<td></td>
+</tr>
+<tr>
+<td>EmotionAffector</td>
+<td></td>
+</tr>
+<tr>
+<td>EmotionEvent</td>
+<td></td>
+</tr>
+<tr>
+<td>EmotionEventMapper</td>
+<td></td>
+</tr>
+<tr>
+<td>EmotionScorer</td>
+<td></td>
+</tr>
+<tr>
+<td>EngineRobotAudioClient</td>
+<td></td>
+</tr>
+<tr>
+<td>EngineRobotAudioInput</td>
+<td></td>
+</tr>
+<tr>
+<td>EnrolledFaceEntry</td>
+<td></td>
+</tr>
+<tr>
+<td>EraseAllFaces</td>
+<td></td>
+</tr>
+<tr>
+<td>Error</td>
+<td></td>
+</tr>
+<tr>
+<td>EventKeyFrame</td>
+<td></td>
+</tr>
+<tr>
+<td>Expected</td>
+<td></td>
+</tr>
+<tr>
+<td>Experiment</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceDisplay</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceInfoScreenManager</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceLayerManager</td>
+<td></td>
+</tr>
+<tr>
+<td>FacePlantAction</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceRecognizer</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceTrackerImpl</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceWorld</td>
+<td></td>
+</tr>
+<tr>
+<td>Factory</td>
+<td></td>
+</tr>
+<tr>
+<td>FactoryTestLogger</td>
+<td></td>
+</tr>
+<tr>
+<td>FeatureGate</td>
+<td></td>
+</tr>
+<tr>
+<td>FileTransfer</td>
+<td></td>
+</tr>
+<tr>
+<td>FindFaces</td>
+<td></td>
+</tr>
+<tr>
+<td>FlipBlockAction</td>
+<td></td>
+</tr>
+<tr>
+<td>FormatBytesAsHex</td>
+<td></td>
+</tr>
+<tr>
+<td>GMMRawPixelsClassifier</td>
+<td></td>
+</tr>
+<tr>
+<td>GetAnimationName</td>
+<td></td>
+</tr>
+<tr>
+<td>GetBroadcastAddressFromIfAddr</td>
+<td></td>
+</tr>
+<tr>
+<td>GetIPv6LinkLocalAddress</td>
+<td></td>
+</tr>
+<tr>
+<td>GetLocalIpAddress</td>
+<td></td>
+</tr>
+<tr>
+<td>GetLocalIpAddressFromIfAddr</td>
+<td></td>
+</tr>
+<tr>
+<td>GetLocalIpv6LinkLocalAddress</td>
+<td></td>
+</tr>
+<tr>
+<td>GetMaxOffsetObjectStillVisible</td>
+<td></td>
+</tr>
+<tr>
+<td>GetNextAlbumEntryToUse</td>
+<td></td>
+</tr>
+<tr>
+<td>GetNextPacketFromEngine</td>
+<td></td>
+</tr>
+<tr>
+<td>GetNextPacketFromRobot</td>
+<td></td>
+</tr>
+<tr>
+<td>GetRecognitionData</td>
+<td></td>
+</tr>
+<tr>
+<td>GetSerializedAlbum</td>
+<td></td>
+</tr>
+<tr>
+<td>GoogleBreakpad</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphEvaluator2d</td>
+<td></td>
+</tr>
+<tr>
+<td>GroundPlaneClassifier</td>
+<td></td>
+</tr>
+<tr>
+<td>HabitatDetectorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>HandleAnimationEvent</td>
+<td></td>
+</tr>
+<tr>
+<td>HandleMotorAutoEnabled</td>
+<td></td>
+</tr>
+<tr>
+<td>HandleMotorCalibration</td>
+<td></td>
+</tr>
+<tr>
+<td>HashStringTable</td>
+<td></td>
+</tr>
+<tr>
+<td>HeldInPalmTracker</td>
+<td></td>
+</tr>
+<tr>
+<td>HueSatWrapper</td>
+<td></td>
+</tr>
+<tr>
+<td>IAction</td>
+<td></td>
+</tr>
+<tr>
+<td>IActionRunner</td>
+<td></td>
+</tr>
+<tr>
+<td>IBEICondition</td>
+<td></td>
+</tr>
+<tr>
+<td>IBehavior</td>
+<td></td>
+</tr>
+<tr>
+<td>IBehaviorPlaypen</td>
+<td></td>
+</tr>
+<tr>
+<td>IBehaviorSelfTest</td>
+<td></td>
+</tr>
+<tr>
+<td>ICompoundAction</td>
+<td></td>
+</tr>
+<tr>
+<td>IConditionUserIntent</td>
+<td></td>
+</tr>
+<tr>
+<td>ICozmoBehavior</td>
+<td></td>
+</tr>
+<tr>
+<td>IDockAction</td>
+<td></td>
+</tr>
+<tr>
+<td>IDriveToInteractWithObject</td>
+<td></td>
+</tr>
+<tr>
+<td>IFormattedLoggerProvider</td>
+<td></td>
+</tr>
+<tr>
+<td>IKeyFrame</td>
+<td></td>
+</tr>
+<tr>
+<td>INeuralNetMain</td>
+<td></td>
+</tr>
+<tr>
+<td>INeuralNetModel</td>
+<td></td>
+</tr>
+<tr>
+<td>IPathPlanner</td>
+<td></td>
+</tr>
+<tr>
+<td>IPv6</td>
+<td></td>
+</tr>
+<tr>
+<td>IScoredBehavior</td>
+<td></td>
+</tr>
+<tr>
+<td>ISensorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>ITrackAction</td>
+<td></td>
+</tr>
+<tr>
+<td>ITrackLayerManager</td>
+<td></td>
+</tr>
+<tr>
+<td>IVisuallyVerifyAction</td>
+<td></td>
+</tr>
+<tr>
+<td>Id</td>
+<td></td>
+</tr>
+<tr>
+<td>IdCount</td>
+<td></td>
+</tr>
+<tr>
+<td>Image</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageBase</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageBrightnessHistogram</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageCache</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageSaver</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageSensor</td>
+<td></td>
+</tr>
+<tr>
+<td>ImuComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>InternalStatesBehavior</td>
+<td></td>
+</tr>
+<tr>
+<td>Interruption</td>
+<td></td>
+</tr>
+<tr>
+<td>IsCloseEnoughToPreActionPose</td>
+<td></td>
+</tr>
+<tr>
+<td>IsExternalSdkConnection</td>
+<td></td>
+</tr>
+<tr>
+<td>JdocsManager</td>
+<td></td>
+</tr>
+<tr>
+<td>JsonTools</td>
+<td></td>
+</tr>
+<tr>
+<td>KnowledgeGraph</td>
+<td></td>
+</tr>
+<tr>
+<td>KnownMarker</td>
+<td></td>
+</tr>
+<tr>
+<td>LOG</td>
+<td></td>
+</tr>
+<tr>
+<td>LaserPointDetector</td>
+<td></td>
+</tr>
+<tr>
+<td>LinearClassifier</td>
+<td></td>
+</tr>
+<tr>
+<td>LocalUdpSocketComms</td>
+<td></td>
+</tr>
+<tr>
+<td>Locale</td>
+<td></td>
+</tr>
+<tr>
+<td>LocaleComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>Location</td>
+<td></td>
+</tr>
+<tr>
+<td>Looking</td>
+<td></td>
+</tr>
+<tr>
+<td>LoopBoundOverflow</td>
+<td></td>
+</tr>
+<tr>
+<td>MapComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>Marker</td>
+<td></td>
+</tr>
+<tr>
+<td>MarkerDetector</td>
+<td></td>
+</tr>
+<tr>
+<td>Mask</td>
+<td></td>
+</tr>
+<tr>
+<td>MenuConsoleChannel</td>
+<td></td>
+</tr>
+<tr>
+<td>Message</td>
+<td></td>
+</tr>
+<tr>
+<td>MicComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>MicDataInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>MicDataProcessor</td>
+<td></td>
+</tr>
+<tr>
+<td>MicDataSystem</td>
+<td></td>
+</tr>
+<tr>
+<td>MicDirectionHistory</td>
+<td></td>
+</tr>
+<tr>
+<td>MicTriggerConfig</td>
+<td></td>
+</tr>
+<tr>
+<td>Microphones</td>
+<td></td>
+</tr>
+<tr>
+<td>MinimalAnglePlanner</td>
+<td></td>
+</tr>
+<tr>
+<td>Mood</td>
+<td></td>
+</tr>
+<tr>
+<td>MoodDecayEvaulator</td>
+<td></td>
+</tr>
+<tr>
+<td>MoodManager</td>
+<td></td>
+</tr>
+<tr>
+<td>MoodScorer</td>
+<td></td>
+</tr>
+<tr>
+<td>MountChargerAction</td>
+<td></td>
+</tr>
+<tr>
+<td>MoveHeadToAngleAction</td>
+<td></td>
+</tr>
+<tr>
+<td>MoveLiftToAngleAction</td>
+<td></td>
+</tr>
+<tr>
+<td>MoveLiftToHeightAction</td>
+<td></td>
+</tr>
+<tr>
+<td>Movement</td>
+<td></td>
+</tr>
+<tr>
+<td>MovementComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>MultiClientComms</td>
+<td></td>
+</tr>
+<tr>
+<td>MusicConductor</td>
+<td></td>
+</tr>
+<tr>
+<td>NVStorage</td>
+<td></td>
+</tr>
+<tr>
+<td>NVStorageComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>NamedColors</td>
+<td></td>
+</tr>
+<tr>
+<td>NativeAnkiUtilConsoleCallFunction</td>
+<td></td>
+</tr>
+<tr>
+<td>NativeAnkiUtilConsoleIsDefaultValue</td>
+<td></td>
+</tr>
+<tr>
+<td>NativeAnkiUtilConsoleResetValueToDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>NativeAnkiUtilConsoleSetValueWithString</td>
+<td></td>
+</tr>
+<tr>
+<td>NativeAnkiUtilConsoleToggleValue</td>
+<td></td>
+</tr>
+<tr>
+<td>NetEmulatorUDPSocket</td>
+<td></td>
+</tr>
+<tr>
+<td>Network</td>
+<td></td>
+</tr>
+<tr>
+<td>NeuralNetModel</td>
+<td></td>
+</tr>
+<tr>
+<td>NeuralNetParams</td>
+<td></td>
+</tr>
+<tr>
+<td>NeuralNetRunner</td>
+<td></td>
+</tr>
+<tr>
+<td>NeuralNets</td>
+<td></td>
+</tr>
+<tr>
+<td>ObjectInteractionInfoCache</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservableObject</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservableObjectLibrary</td>
+<td></td>
+</tr>
+<tr>
+<td>ObservableObjectsLibrary</td>
+<td></td>
+</tr>
+<tr>
+<td>OffboardModel</td>
+<td></td>
+</tr>
+<tr>
+<td>OverheadMap</td>
+<td></td>
+</tr>
+<tr>
+<td>PackMaskedId</td>
+<td></td>
+</tr>
+<tr>
+<td>PackMaskedIds</td>
+<td></td>
+</tr>
+<tr>
+<td>PanAndTiltAction</td>
+<td></td>
+</tr>
+<tr>
+<td>ParamTraits</td>
+<td></td>
+</tr>
+<tr>
+<td>PathComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>PathDolerOuter</td>
+<td></td>
+</tr>
+<tr>
+<td>PerfMetric</td>
+<td></td>
+</tr>
+<tr>
+<td>PetTracker</td>
+<td></td>
+</tr>
+<tr>
+<td>PhotographyManager</td>
+<td></td>
+</tr>
+<tr>
+<td>PickupObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>PlaceObjectOnGroundAction</td>
+<td></td>
+</tr>
+<tr>
+<td>PlaceRelObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>Planner</td>
+<td></td>
+</tr>
+<tr>
+<td>PlayAnimationAction</td>
+<td></td>
+</tr>
+<tr>
+<td>PopAWheelieAction</td>
+<td></td>
+</tr>
+<tr>
+<td>Pose3d</td>
+<td></td>
+</tr>
+<tr>
+<td>PoseBase</td>
+<td></td>
+</tr>
+<tr>
+<td>PowerStateManager</td>
+<td></td>
+</tr>
+<tr>
+<td>PowerStates</td>
+<td></td>
+</tr>
+<tr>
+<td>PreActionPose</td>
+<td></td>
+</tr>
+<tr>
+<td>ProceduralFace</td>
+<td></td>
+</tr>
+<tr>
+<td>ProcessRegistrationMsg</td>
+<td></td>
+</tr>
+<tr>
+<td>ProxSensorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>PublicStateBroadcast</td>
+<td></td>
+</tr>
+<tr>
+<td>PublicStateBroadcaster</td>
+<td></td>
+</tr>
+<tr>
+<td>Puzzle</td>
+<td></td>
+</tr>
+<tr>
+<td>QuadTree</td>
+<td></td>
+</tr>
+<tr>
+<td>QuadTreeNode</td>
+<td></td>
+</tr>
+<tr>
+<td>QuestEngine</td>
+<td></td>
+</tr>
+<tr>
+<td>Ran</td>
+<td></td>
+</tr>
+<tr>
+<td>RandomGenerator</td>
+<td></td>
+</tr>
+<tr>
+<td>RandomVectorSampler</td>
+<td></td>
+</tr>
+<tr>
+<td>ReactionStrategyFacePositionUpdate</td>
+<td></td>
+</tr>
+<tr>
+<td>ReadBMP</td>
+<td></td>
+</tr>
+<tr>
+<td>RecentOccurrenceTracker</td>
+<td></td>
+</tr>
+<tr>
+<td>RecognizeFace</td>
+<td></td>
+</tr>
+<tr>
+<td>Rectangle</td>
+<td></td>
+</tr>
+<tr>
+<td>RegisterNewUser</td>
+<td></td>
+</tr>
+<tr>
+<td>RejectIfChargerOutOfView</td>
+<td></td>
+</tr>
+<tr>
+<td>RejectIfWouldCrossCliff</td>
+<td></td>
+</tr>
+<tr>
+<td>ReliableConnection</td>
+<td></td>
+</tr>
+<tr>
+<td>ReliableTransport</td>
+<td></td>
+</tr>
+<tr>
+<td>RemoveUser</td>
+<td></td>
+</tr>
+<tr>
+<td>RequestAvailableAnimations</td>
+<td></td>
+</tr>
+<tr>
+<td>ReselectingLoopAnimationAction</td>
+<td></td>
+</tr>
+<tr>
+<td>RetryWrapperAction</td>
+<td></td>
+</tr>
+<tr>
+<td>Robot</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotActionParams</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotAudioKeyFrame</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotConnectionManager</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotDataLoader</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotEventHandler</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotHealthReporter</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotImplMessaging</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotInitialConnection</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotManager</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotState</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotStateHistory</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotStats</td>
+<td></td>
+</tr>
+<tr>
+<td>RobotStatsTracker</td>
+<td></td>
+</tr>
+<tr>
+<td>RollObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>RollingShutterCorrector</td>
+<td></td>
+</tr>
+<tr>
+<td>RotationMatrixBase</td>
+<td></td>
+</tr>
+<tr>
+<td>RotationVector3d</td>
+<td></td>
+</tr>
+<tr>
+<td>SDKComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>SayNameProbabilityTable</td>
+<td></td>
+</tr>
+<tr>
+<td>SayTextAction</td>
+<td></td>
+</tr>
+<tr>
+<td>SdkAudioComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>SdkComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>SdkLock</td>
+<td></td>
+</tr>
+<tr>
+<td>SendPacketToRobot</td>
+<td></td>
+</tr>
+<tr>
+<td>SetSerializedAlbum</td>
+<td></td>
+</tr>
+<tr>
+<td>SetSockOpt</td>
+<td></td>
+</tr>
+<tr>
+<td>SetThreadPriority</td>
+<td></td>
+</tr>
+<tr>
+<td>Setting</td>
+<td></td>
+</tr>
+<tr>
+<td>SettingsCommManager</td>
+<td></td>
+</tr>
+<tr>
+<td>SettingsManager</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowAudioStreamStateManager</td>
+<td></td>
+</tr>
+<tr>
+<td>Shutting</td>
+<td></td>
+</tr>
+<tr>
+<td>SimpleMoodScorer</td>
+<td></td>
+</tr>
+<tr>
+<td>SleepTracker</td>
+<td></td>
+</tr>
+<tr>
+<td>SoundbankBundleInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>SoundbankLoader</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeechRecognizer</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeechRecognizerPryonLite</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeechRecognizerSystem</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeechRecognizerTHF</td>
+<td></td>
+</tr>
+<tr>
+<td>SpeedChooser</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteCache</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteEntry</td>
+<td></td>
+</tr>
+<tr>
+<td>SpritePathMap</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteSequence</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteSequenceContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteSequenceKeyFrame</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteSequenceLoader</td>
+<td></td>
+</tr>
+<tr>
+<td>SpriteWrapper</td>
+<td></td>
+</tr>
+<tr>
+<td>StandardWaveDataContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>Starting</td>
+<td></td>
+</tr>
+<tr>
+<td>StaticMoodData</td>
+<td></td>
+</tr>
+<tr>
+<td>Stopping</td>
+<td></td>
+</tr>
+<tr>
+<td>StreamingAnimationModifier</td>
+<td></td>
+</tr>
+<tr>
+<td>StreamingWaveDataInstance</td>
+<td></td>
+</tr>
+<tr>
+<td>TFLiteLogReporter</td>
+<td></td>
+</tr>
+<tr>
+<td>TFLiteModel</td>
+<td></td>
+</tr>
+<tr>
+<td>TId</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeech</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechCoordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechProvider</td>
+<td></td>
+</tr>
+<tr>
+<td>TextToSpeechProviderImpl</td>
+<td></td>
+</tr>
+<tr>
+<td>TimerUtility</td>
+<td></td>
+</tr>
+<tr>
+<td>TouchBaselineCalibrator</td>
+<td></td>
+</tr>
+<tr>
+<td>TouchSensor</td>
+<td></td>
+</tr>
+<tr>
+<td>TouchSensorComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>Track</td>
+<td></td>
+</tr>
+<tr>
+<td>TrackFaceAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TrackGroundPointAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TrackLayerManager</td>
+<td></td>
+</tr>
+<tr>
+<td>TrackObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TrackPetFaceAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TrackpetFaceAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TransportAddress</td>
+<td></td>
+</tr>
+<tr>
+<td>TriggerAnimationAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TriggerEmotionEvent</td>
+<td></td>
+</tr>
+<tr>
+<td>TurnInPlaceAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TurnTowardsFaceAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TurnTowardsObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>TurnTowardsPoseAction</td>
+<td></td>
+</tr>
+<tr>
+<td>UDPTransport</td>
+<td></td>
+</tr>
+<tr>
+<td>UdpSocketComms</td>
+<td></td>
+</tr>
+<tr>
+<td>UiComms</td>
+<td></td>
+</tr>
+<tr>
+<td>UiMessageHandler</td>
+<td></td>
+</tr>
+<tr>
+<td>Undistorter</td>
+<td></td>
+</tr>
+<tr>
+<td>Unfiltered</td>
+<td></td>
+</tr>
+<tr>
+<td>UnpackMaskedIds</td>
+<td></td>
+</tr>
+<tr>
+<td>Update</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateExistingAlbumEntry</td>
+<td></td>
+</tr>
+<tr>
+<td>UpdateRecognitionData</td>
+<td></td>
+</tr>
+<tr>
+<td>UseLoadedAlbumAndEnrollData</td>
+<td></td>
+</tr>
+<tr>
+<td>UseLoadedAlbumAndEnrollmentData</td>
+<td></td>
+</tr>
+<tr>
+<td>User</td>
+<td></td>
+</tr>
+<tr>
+<td>UserDefinedBehaviorTreeComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>UserEntitlementsManager</td>
+<td></td>
+</tr>
+<tr>
+<td>UserIntentComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>UserIntentMap</td>
+<td></td>
+</tr>
+<tr>
+<td>Util</td>
+<td></td>
+</tr>
+<tr>
+<td>VariableSnapshotComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>VerifyDecayGraph</td>
+<td></td>
+</tr>
+<tr>
+<td>VisionComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>VisionModeSchedule</td>
+<td></td>
+</tr>
+<tr>
+<td>VisionProcessingResult</td>
+<td></td>
+</tr>
+<tr>
+<td>VisionScheduleMediator</td>
+<td></td>
+</tr>
+<tr>
+<td>VisionSystem</td>
+<td></td>
+</tr>
+<tr>
+<td>VisuallyVerifyObjectAction</td>
+<td></td>
+</tr>
+<tr>
+<td>VizManager</td>
+<td></td>
+</tr>
+<tr>
+<td>VoiceMessage</td>
+<td></td>
+</tr>
+<tr>
+<td>VoiceMessageSystem</td>
+<td></td>
+</tr>
+<tr>
+<td>WeatherIntentParser</td>
+<td></td>
+</tr>
+<tr>
+<td>WwiseComponent</td>
+<td></td>
+</tr>
+<tr>
+<td>XYPlanner</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<footer class="md-footer">
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+
+<script src="https://unpkg.com/iframe-worker/polyfill"></script>
+<script src="../search/search_index.js"></script>
+
+
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['search.suggest', 'navigation.instant', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
