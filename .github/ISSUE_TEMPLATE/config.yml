@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+    - name: 📝 Read the docs
+      url: https://randym32.github.io/Anki.Vector.Documentation
+      about: Be sure you've read the docs!
