@@ -35,7 +35,8 @@ which board it is running on, and make small changes to accomodate the differenc
 |-----------------|---------------|-----------------------|
 | DVT1            | 1             | |
 | DVT2            | 2             | |
-| DVT3            | 3             | This board has significant changes from the DVT2 |
+| DVT3            | 3             | |
+| DVT4            | 4             | This board has significant changes from the DVT3.  DVT4 also corrected a regulator problem (although that may be on the headboard.) |
 | PVT             | 5             | |
 | Production      | 6             | The LED clock and data lines have moved, adding a line to manage power for the head or backpack. |
 | Whiskey         | 7             | Version 1.4 of the syscon does not work correctly with this board; this suggests that the Whiskey body board was manufactured after the 1.4 firmware was made.|
