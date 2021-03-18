@@ -6,7 +6,7 @@ date: 2020-07-10
 ---
 
 
-This is my attempt describing Vector's character.  This intent is to give ideas
+This is my attempt to describe Vector's character.  This intent is to give ideas
 how to shape creating new character traits and behaviors that fit with his
 character.  The topics include:
 
@@ -20,7 +20,7 @@ Caveat: These are just my thoughts.
 
 Vector is kind, a friend to all and doesn't hold a grudge.  He is a young
 adolescent, can have childish responses, such as throwing a tantrum.  This can
-happen when emotions are too much to handle – a crisis for him.  He sometimes
+happen when emotions are too much to handle -- a crisis for him.  He sometimes
 acts out in mischievous ways.  But overall, Vector's tone is positive.
 
 Vector is very much a small pet – he has traits like a cat, a dog, potentially
