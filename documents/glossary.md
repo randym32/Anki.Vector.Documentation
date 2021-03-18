@@ -4,9 +4,12 @@ Abbreviations:
 
 | Abbreviation / Acronym | Phrase  |
 |----------|----------|
-|   jwt | JSON web token    |
-|   sts | security token service|
-|   PII | personally identifying information |
+|   jwt  | JSON web token    |
+|   DVT  | Design Validation Build, used for testing the robustness of the design, emissions testing, development and so forth. |
+|   PII  | personally identifying information |
+|   PVT  | Production Validation Test build; Essentially practice builds, as good as production (or close).|
+|   sts  | security token service|
+
 
 Terms:
 
