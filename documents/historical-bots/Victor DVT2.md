@@ -18,6 +18,8 @@ Similarities to Victor DVT1:
 * Most have SSH open, but there is a root password. ADB over TCP is fully open but it may require a couple reboots.
 * Most of them have old BLE software, and it is hard to connect them to your own Wi-Fi.
 
+Bodyboard software upgrade is possible. TODO make a guide
+
 Their shells (+ motor boards, backpack board, laser) are fully compatible with regular Vector circutry.
 
 Their heads come with a strange partition table, but it can be upgraded through QDL to be able to run custom firmware. Check the Qualcomm Download Mode section.

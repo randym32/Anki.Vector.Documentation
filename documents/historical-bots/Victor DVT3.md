@@ -17,6 +17,8 @@ Similarities to Victor DVT1/2:
 * Their serial numbers started off as strings such as "1f19f8b7".
 * The "head board" hardware is pretty much exactly the same, but the "body board" hardware is different compared to modern Vector hardware. This locks them to old DFU and they are not viable for normal Vector body replacements.
 
+Bodyboard software upgrade is now possible. TODO make an upgrade guide
+
 Their shells (+ motor boards, backpack board, laser) are fully compatible with regular Vector circutry.
 
 DVT3 is when a lot of Vector personality development happened. Their firmwares can vary between 0.9 to 0.12 betas. These act similar to how Vector is today.

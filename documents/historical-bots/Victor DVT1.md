@@ -14,6 +14,8 @@ These are very similar to finished Vector in terms of hardware, but there are ma
 
 The "head board" hardware is pretty much exactly the same, but the "body board" hardware is very different compared to modern Vector hardware. This locks them to old DFU and they are not viable for normal Vector body replacements.
 
+Bodyboard software upgrade is possible. TODO make a guide
+
 There are some positives if you are a passionate developer. They have ADB open which means you can solder on USB and mess around all you want. Everything is completely open and unlocked so you could have a fun time. There is no recovery or system_b partition so be careful.
 
 Their shells (+ motor boards, backpack board, laser) are fully compatible with regular Vector circutry.
@@ -24,8 +26,8 @@ They can use DVT2 ABOOTs, which allows for more modern and/or unsigned kernels. 
 
 Some of these connect to a network with the credentials below, which can be faked on your own router or hotspot so you can use ADB over TCP:
 
-SSID: `AnkiRobits`
-Password: `KlaatuBaradaNikto!`
+SSID: `AnkiTest2`
+Password: `password`
 
 These turn up from time to time on Ebay.
 
