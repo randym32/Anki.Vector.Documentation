@@ -1,6 +1,6 @@
 # Backpack Lights
 
-![Summary of the back lights](Vector LED summary.png)
+![Summary of the back lights](Vector%20LED%20summary.png)
 
 Things that this could do:
 
