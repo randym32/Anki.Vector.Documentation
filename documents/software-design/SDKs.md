@@ -4,7 +4,7 @@ There are many software repositories for the Vector, cloud servers, and
 interoperating with Vector.  This pages lists a few.  The diagram below summarises
 some of the main ones:
 
-![](Vector Foundation Repositories.png#zoom)
+![](Vector%20Foundation%20Repositories.png#zoom)
 _Figure: Synopsis of the main repositories for Vector's software, the cloud software, and interacting with him via an SDK_
 
 ## Programmers API, Guides and Examples
