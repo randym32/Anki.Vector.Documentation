@@ -4,7 +4,7 @@ There are many software repositories for the Vector, cloud servers, and
 interoperating with Vector.  This pages lists a few.  The diagram below summarises
 some of the main ones:
 
-![](Vector Foundation Repositories.png#zoom)
+![](Vector%20Foundation%20Repositories.png#zoom)
 _Figure: Synopsis of the main repositories for Vector's software, the cloud software, and interacting with him via an SDK_
 
 ## Programmers API, Guides and Examples
@@ -58,6 +58,21 @@ The main PC/Mobile SDK (HTTPS API) include:
 
 - The [hugh](https://github.com/digital-dream-labs/hugh) repository holds
   a framework that acts as a template gRPC server and utilities.
+
+### Source Code Location for each Program
+
+| Main service  | repo    | location |
+|---------------|---------|----------|
+|vic-cloud      |repo     | https://github.com/digital-dream-labs/vector-cloud |
+|               |Offboard Vision| https://github.com/digital-dream-labs/vector-cloud/tree/main/internal/offboard_vision |
+|               |Token client| https://github.com/digital-dream-labs/vector-cloud/tree/main/internal/token |
+|               |Voice stream| https://github.com/digital-dream-labs/vector-cloud/tree/main/internal/voice |
+|vic-gateway    | repo     | https://github.com/digital-dream-labs/vector-cloud <br> in [/gateway](https://github.com/digital-dream-labs/vector-cloud/tree/main/gateway) |
+|vic-switchboard| ||
+|vic-aim        | ||
+|vic-engine     | ||
+|vic-robot      | ||
+
 
 
 ## Bluetooth LE tools
