@@ -735,6 +735,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../historical-bots/P1.html" class="md-nav__link">
+      P1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/P2.html" class="md-nav__link">
+      P2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/P3.html" class="md-nav__link">
+      P3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../historical-bots/Qualcomm%20Download%20Mode.html" class="md-nav__link">
       Qualcomm Download Mode
     </a>
@@ -1207,6 +1243,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../software-design/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../software-design/Behavior%20IDs.html" class="md-nav__link">
       Behaviour IDs
     </a>
@@ -1244,7 +1292,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/Console%20variables.html" class="md-nav__link">
-      Console variables
+      Console Variables
     </a>
   </li>
 
@@ -1257,6 +1305,18 @@
   <li class="md-nav__item">
     <a href="../software-design/SDKs.html" class="md-nav__link">
       Software Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Source%20Code%20Location.html" class="md-nav__link">
+      Source Code Location for each Program
     </a>
   </li>
 
@@ -1795,18 +1855,32 @@ the export.. but since   Maya is expensive, and hard.. </p>
 <p>Digital Dream Labs has made a Python script which makes it easy to turn GIFs into animations very easily.</p>
 <p><a href="https://oskr.ddl.io/doc/examples.html#change-boot-animation">DDL official instructions</a></p>
 <ul>
-<li>A working installation of python with the Pillow package installed.</li>
-<li>An animated .gif with a resolution of 184x96 pixels</li>
-<li>The script gif_to_raw.py to convert the .gif to a raw image.</li>
-<li>Convert the .gif to a raw image:
-  <code>python gif_to_raw.py bootscreen.gif</code>
-  This will create a new file bootscreen.gif.raw</li>
-<li>Mount the filesystem for writing. Here we’ll do that from the host system:
-  <code>ssh root@192.168.1.110 "mount -o remount,rw /"</code></li>
-<li>Use scp to copy the file in to place:
-  <code>scp bootscreen.gif.raw root@192.168.1.110:/anki/data/assets/cozmo_resources/config/engine/animations/boot_anim.raw</code></li>
-<li>Reboot Vector from the host system:
-  <code>ssh root@192.168.1.110 "/sbin/reboot"</code></li>
+<li>
+<p>A working installation of python with the Pillow package installed.</p>
+</li>
+<li>
+<p>An animated .gif with a resolution of 184x96 pixels</p>
+</li>
+<li>
+<p>The script gif_to_raw.py to convert the .gif to a raw image.</p>
+</li>
+<li>
+<p>Convert the .gif to a raw image:
+<code>python gif_to_raw.py bootscreen.gif</code>
+This will create a new file bootscreen.gif.raw</p>
+</li>
+<li>
+<p>Mount the filesystem for writing. Here we’ll do that from the host system:
+<code>ssh root@192.168.1.110 "mount -o remount,rw /"</code></p>
+</li>
+<li>
+<p>Use scp to copy the file in to place:
+<code>scp bootscreen.gif.raw root@192.168.1.110:/anki/data/assets/cozmo_resources/config/engine/animations/boot_anim.raw</code></p>
+</li>
+<li>
+<p>Reboot Vector from the host system:
+<code>ssh root@192.168.1.110 "/sbin/reboot"</code></p>
+</li>
 </ul>
 <h2 id="sounds">Sounds<a class="headerlink" href="#sounds" title="Permanent link">&para;</a></h2>
 <h2 id="behavior-tree-crafting">Behavior tree crafting<a class="headerlink" href="#behavior-tree-crafting" title="Permanent link">&para;</a></h2>

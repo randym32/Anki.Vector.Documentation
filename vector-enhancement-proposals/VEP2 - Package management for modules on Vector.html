@@ -668,6 +668,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../historical-bots/P1.html" class="md-nav__link">
+      P1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/P2.html" class="md-nav__link">
+      P2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/P3.html" class="md-nav__link">
+      P3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../historical-bots/Qualcomm%20Download%20Mode.html" class="md-nav__link">
       Qualcomm Download Mode
     </a>
@@ -1140,6 +1176,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../software-design/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../software-design/Behavior%20IDs.html" class="md-nav__link">
       Behaviour IDs
     </a>
@@ -1177,7 +1225,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/Console%20variables.html" class="md-nav__link">
-      Console variables
+      Console Variables
     </a>
   </li>
 
@@ -1190,6 +1238,18 @@
   <li class="md-nav__item">
     <a href="../software-design/SDKs.html" class="md-nav__link">
       Software Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Source%20Code%20Location.html" class="md-nav__link">
+      Source Code Location for each Program
     </a>
   </li>
 
@@ -1612,10 +1672,10 @@
       
         <li class="md-nav__item">
   <a href="#some-design-decisions" class="md-nav__link">
-    Some Design decisions:
+    Some Design decisions
   </a>
   
-    <nav class="md-nav" aria-label="Some Design decisions:">
+    <nav class="md-nav" aria-label="Some Design decisions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1753,10 +1813,10 @@
       
         <li class="md-nav__item">
   <a href="#some-design-decisions" class="md-nav__link">
-    Some Design decisions:
+    Some Design decisions
   </a>
   
-    <nav class="md-nav" aria-label="Some Design decisions:">
+    <nav class="md-nav" aria-label="Some Design decisions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1868,7 +1928,7 @@ files.  (Ie, don't force it to be unbootable)</p>
 <p>Can set the premissions for the files.</p>
 </li>
 </ul>
-<h2 id="some-design-decisions">Some Design decisions:<a class="headerlink" href="#some-design-decisions" title="Permanent link">&para;</a></h2>
+<h2 id="some-design-decisions">Some Design decisions<a class="headerlink" href="#some-design-decisions" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>The tool had to be small, and not hard to deploy</p>
@@ -1884,6 +1944,19 @@ files.  (Ie, don't force it to be unbootable)</p>
 <li>
 <p>It is preferred to separate out the package manager from the update-engine
   as much as possible, to make int more understandable and support testing.</p>
+</li>
+<li>
+<p>The package manager needs to protect the /mnt /dev directories; any access
+  to these could irreversible destroy the bot.  Since the packages are intended
+  to be used by lots of people who won't (or won't be able to) examine the
+  package for negative consequences we need to limit these unusual risks.
+  If changes are needed to these the owner should ssh in and consciously make
+  changes.</p>
+</li>
+<li>
+<p>It can't run arbitrary commands from the package file during installation;
+  the packager can be run as root and this could irreversible destroy the bot.
+  This has the same rationale as above.</p>
 </li>
 </ul>
 <h3 id="it-just-installs-the-packages">It just installs the packages<a class="headerlink" href="#it-just-installs-the-packages" title="Permanent link">&para;</a></h3>
@@ -1930,32 +2003,27 @@ here everything has to be on a Vector.</p>
 <pre><code class="language-bash">   ./vector-pkg.py uninstall —pkg=demo-1
 </code></pre>
 <h3 id="adding-a-restart-step-after-installation">Adding a restart step after installation<a class="headerlink" href="#adding-a-restart-step-after-installation" title="Permanent link">&para;</a></h3>
-<p>There are four different ways to restart after applying the package.
+<p>If <code>vector-pkg</code> is by called the modified <code>update-engine</code> it can tell it to
+restart the application or reboot the operating system after the package has
+installed.  This is done using a <code>restart_type=</code> key  in the <code>[META]</code> section.</p>
+<p>There are four different values to say how  to restart after applying the package.
 To simply restart Vector's application:</p>
-<pre><code>[post_deploy]
-0=systemctl stop anki-robot.target
-1=sleep
-2=systemctl start anki-robot.target
+<pre><code>[META]
+restart_type=restart
 </code></pre>
 <p>To restart Vector's application, but silently -- that is, not play the
 <em>InitialWakeUp</em> animation:</p>
-<pre><code>[post_deploy]
-0=systemctl stop anki-robot.target
-1=sleep
-2=echo 1 &gt; /data/maintenance_reboot
-3=systemctl start anki-robot.target
-</code></pre>
-<p>If <code>vector-pkg</code> is by called the modified <code>update-engine</code> it can tell it to
-reboot the operating system after the package has installed, using the key
-<code>reboot_after_install</code> in the <code>META</code> section.  For example:</p>
 <pre><code>[META]
-reboot_after_install=1
+restart_type=maintenance-restart
+</code></pre>
+<p>To reboot the operating system after the package has installed:</p>
+<pre><code>[META]
+restart_type=reboot
 </code></pre>
 <p>The following will reboot the operating system using a "maintenance reboot"
 so that the <em>InitialWakeUp</em> animation is not played:</p>
-<pre><code>[post_deploy]
-0=/anki/bin/vic-log-event update-engine robot.maintenance_reboot success
-1=echo 1 &gt; /data/maintenance_reboot
+<pre><code>[META]
+restart_type=maintenance-reboot
 </code></pre>
 <h2 id="cavaets">Cavaets<a class="headerlink" href="#cavaets" title="Permanent link">&para;</a></h2>
 <h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
@@ -1977,6 +2045,14 @@ end, it downloads it, and then pass it to the package manager.</p>
 <tr>
 <td>2020-8-30</td>
 <td>Created</td>
+</tr>
+<tr>
+<td>2020-12-3</td>
+<td>Added how to restart after installing a package</td>
+</tr>
+<tr>
+<td>2020-12-5</td>
+<td>Removed unsafe features, changed how to restart after installing a package</td>
 </tr>
 </tbody>
 </table>

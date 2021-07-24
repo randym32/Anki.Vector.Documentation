@@ -668,6 +668,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../historical-bots/P1.html" class="md-nav__link">
+      P1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/P2.html" class="md-nav__link">
+      P2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../historical-bots/P3.html" class="md-nav__link">
+      P3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../historical-bots/Qualcomm%20Download%20Mode.html" class="md-nav__link">
       Qualcomm Download Mode
     </a>
@@ -1140,6 +1176,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../software-design/Backpack%20lights.html" class="md-nav__link">
+      Backpack Lights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../software-design/Behavior%20IDs.html" class="md-nav__link">
       Behaviour IDs
     </a>
@@ -1177,7 +1225,7 @@
 
   <li class="md-nav__item">
     <a href="../software-design/Console%20variables.html" class="md-nav__link">
-      Console variables
+      Console Variables
     </a>
   </li>
 
@@ -1190,6 +1238,18 @@
   <li class="md-nav__item">
     <a href="../software-design/SDKs.html" class="md-nav__link">
       Software Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../software-design/Source%20Code%20Location.html" class="md-nav__link">
+      Source Code Location for each Program
     </a>
   </li>
 
@@ -1599,6 +1659,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#some-design-decisions" class="md-nav__link">
+    Some Design decisions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
     Documentation
   </a>
@@ -1719,6 +1786,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#some-design-decisions" class="md-nav__link">
+    Some Design decisions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
     Documentation
   </a>
@@ -1782,41 +1856,83 @@
 
                 
                 <h2 id="description-of-the-changes">Description of the changes<a class="headerlink" href="#description-of-the-changes" title="Permanent link">&para;</a></h2>
-<p>Motivation: Building a new, experimental development release is not possible with an stock update-engine:</p>
+<p>Motivation: Building a new, experimental development release is possible but
+inconvenient with an stock update-engine:</p>
 <ol>
 <li>
-<p>We can't create an OTA file for unmodified production, development and OSKR bots, as it needs to be signed in order for the update-engine to apply it.</p>
+<p>The OTA update is very "heavy weight" -- it needs to update the boot and
+   system file-system partitions (with a 200+MB file!) just to change a couple
+   of files.</p>
 </li>
 <li>
-<p>The OTA update is very "heavy weight" -- it needs to update the boot and system files systems (with a
-200+MB file!) just to change a couple of files.</p>
+<p>Creating an update an OTA file for OSKR bots and modified development bots
+   is possible, but it too difficult for most people. </p>
+</li>
+<li>
+<p>There is no way to blend changes from updates.</p>
 </li>
 </ol>
 <p>This enhancement changes the following to the update engine:</p>
 <ul>
-<li>remove signing check of the manifest, update files</li>
-<li>Allows replacing individual partitions, esp just the system file system; usually it replaces several at a time</li>
-<li>Allows using tar to update the contents of the system file system</li>
-<li>This is not recommended since it doesn't get the permissions right</li>
+<li>Making the signing check of the manifest, update files optional</li>
+<li>Making the encryption of the OTA optional</li>
+<li>Allows replacing individual partitions, esp just the system file system</li>
+<li>Allows using a package manager or other tool to update the contents of the
+  file system.<ul>
+<li>A package manager has been created to help with the process, and handle
+  issues like file permissions.  See
+  <a href="VEP2%20-%20Package%20management%20for%20modules%20on%20Vector.html">VEP2 - Package management for modules on Vector</a></li>
 </ul>
+</li>
+</ul>
+<h2 id="some-design-decisions">Some Design decisions<a class="headerlink" href="#some-design-decisions" title="Permanent link">&para;</a></h2>
+<p>Using the <code>tar</code> utility is not used, and we found a small tool modify for out
+purposes instead.  The busybox <code>tar</code> doesn't preserve permissions, which led
+to unexpected results and problems when updating executables.</p>
 <h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
-<ul>
-<li>none at this time</li>
-</ul>
+<p>The <code>update-engine</code> looks the same to the rest of the system as before.
+(The OTA format, rules are described in the TRM...)
+It now accepts URLs with a <code>.vpkg</code> extension.  If these are seen, the 
+There is no at this time.  </p>
 <h2 id="cavaets">Cavaets<a class="headerlink" href="#cavaets" title="Permanent link">&para;</a></h2>
 <ul>
-<li>the tar based updating of the system file system doesn't always work as expected, since the busybox tar doesn't preserve permissions</li>
-<li>it is tricky to create a tar file</li>
-<li>there is no undo for a partial update</li>
-<li>this probably doesn't disable delta updates properly, so if a delta update were to be issued, we'd need a way to make sure it doesn't mess up the FS.</li>
+<li>this probably doesn't disable delta updates properly, so if a delta update
+  were to be issued, we'd need a way to make sure it doesn't mess up the FS.</li>
 </ul>
 <h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
+<p>The update</p>
 <ul>
-<li>it works well (except the system fs file-only changes), I believe that Wire has used this or a modified version</li>
-<li>I am considering other changes to support package-based updates to the file system, to better address the above issues.</li>
+<li>I believe that Wire has used an earlier modified version</li>
 </ul>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>The format and rules of the OTA files are in Chapter 32 of the
+  <a href="https://github.com/GooeyChickenman/victor/raw/master/documentation/Vector-TRM.pdf">Technical Reference Manual</a></p>
+</li>
+<li>
+<p>A reference implementation of these changes is on github in a <a href="https://gist.github.com/randym32/67cad96725c765e5398334f2cba5ac2f">gist</a></p>
+</li>
+</ul>
 <h2 id="change-history-synopsis">Change history synopsis<a class="headerlink" href="#change-history-synopsis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-8-30</td>
+<td>Created</td>
+</tr>
+<tr>
+<td>2020-12-6</td>
+<td>Updated formatting, updated based on changes to 1.7.1, links to code style.   Note: Changes in 1.7.1 made it  possible to create -- especially encrypt and sign -- the files, a feature needed by the update-engine.  Earlier versions of this proposal were mandated because of the inability to sign.</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
